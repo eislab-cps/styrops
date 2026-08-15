@@ -96,4 +96,4 @@ require (
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
-replace github.com/styrops/colonies => ../colonies
+replace github.com/styrops/colonies => ../../../styrops/colonies
