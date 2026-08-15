@@ -223,30 +223,6 @@ curl -s http://127.0.0.1:30000/v1/chat/completions \
   }' | python -m json.tool
 ```
 
-## Configure Exec
-
-The `llm-vllm` entry in `/home/johan/.config/exec/executors.yaml` should contain
-these values:
-
-```yaml
-model: Qwen3.8-27B
-context_size: 131072
-max_tokens: 32768
-tool_call_parser: qwen3_xml
-family: qwen3
-max_concurrent: 1
-```
-
-The knowledge executor uses the same multimodal server:
-
-```yaml
-vision_host: http://10.0.0.200:30000
-vision_model: Qwen3.8-27B
-```
-
-Restart Exec after changing its configuration. The vLLM server itself is still
-started with `run_qwen3.8-27b-nvfp4.sh`.
-
 ## Troubleshooting
 
 ### FlashInfer version mismatch
