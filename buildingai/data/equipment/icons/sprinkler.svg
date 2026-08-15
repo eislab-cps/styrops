@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="spPipe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#33414e"/>
+      <stop offset="16%" stop-color="#9db2c6"/>
+      <stop offset="30%" stop-color="#dfeaf6"/>
+      <stop offset="45%" stop-color="#4c5f70"/>
+      <stop offset="62%" stop-color="#1c2731"/>
+      <stop offset="82%" stop-color="#778da2"/>
+      <stop offset="100%" stop-color="#2a3744"/>
+    </linearGradient>
+    <linearGradient id="spBrass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2f2c25"/>
+      <stop offset="16%" stop-color="#7e7358"/>
+      <stop offset="30%" stop-color="#a99c78"/>
+      <stop offset="46%" stop-color="#4c4738"/>
+      <stop offset="63%" stop-color="#211e18"/>
+      <stop offset="83%" stop-color="#6e6650"/>
+      <stop offset="100%" stop-color="#2d2a22"/>
+    </linearGradient>
+    <linearGradient id="spRing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfe0f0"/>
+      <stop offset="22%" stop-color="#5c7082"/>
+      <stop offset="52%" stop-color="#1b2632"/>
+      <stop offset="78%" stop-color="#7e94a8"/>
+      <stop offset="100%" stop-color="#2f3d4a"/>
+    </linearGradient>
+    <linearGradient id="spDefl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a99c78"/>
+      <stop offset="24%" stop-color="#56503c"/>
+      <stop offset="55%" stop-color="#1d1b16"/>
+      <stop offset="80%" stop-color="#6e6750"/>
+      <stop offset="100%" stop-color="#2d2a22"/>
+    </linearGradient>
+    <radialGradient id="spBulb" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#ffcc7a"/>
+      <stop offset="45%" stop-color="#ee8820"/>
+      <stop offset="100%" stop-color="#8a3d06"/>
+    </radialGradient>
+    <radialGradient id="spao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="spsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="spGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffaa40" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffaa40" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Ceiling pipe (chrome) -->
+  <rect x="58" y="4" width="12" height="26" rx="3" fill="url(#spPipe)"/>
+  <rect x="59.6" y="5" width="1.6" height="24" rx="0.8" fill="#ffffff" opacity="0.5"/>
+  <!-- Escutcheon ring (ceiling plate, chrome) -->
+  <ellipse cx="64" cy="28" rx="30" ry="8" fill="url(#spRing)"/>
+  <ellipse cx="64" cy="28" rx="22" ry="5.5" fill="#2c3946"/>
+  <ellipse cx="64" cy="28" rx="22" ry="5.5" fill="url(#spsheen)"/>
+  <ellipse cx="64" cy="28.4" rx="14" ry="3" fill="#3a4a55"/>
+  <path d="M34 28 A30 8 0 0 1 64 20" fill="none" stroke="#dfeaf6" stroke-width="0.9" opacity="0.45"/>
+  <path d="M94 28 A30 8 0 0 1 64 36" fill="none" stroke="#060a10" stroke-width="1" opacity="0.5"/>
+  <!-- Occlusion where the frame stem enters the escutcheon -->
+  <ellipse cx="64" cy="33" rx="14" ry="6" fill="url(#spao)"/>
+  <!-- Frame stem -->
+  <rect x="61.5" y="28" width="5" height="18" rx="1" fill="url(#spBrass)"/>
+  <!-- Horizontal frame arms (brass) -->
+  <rect x="36" y="44" width="56" height="5" rx="2" fill="url(#spBrass)"/>
+  <path d="M37 44.6 H91" fill="none" stroke="#cfc39c" stroke-width="0.7" opacity="0.3"/>
+  <path d="M37 48.6 H91" fill="none" stroke="#060a10" stroke-width="0.8" opacity="0.5"/>
+  <!-- Frame diagonal arms -->
+  <line x1="64" y1="46" x2="42" y2="56" stroke="#2b2519" stroke-width="3.4" stroke-linecap="round"/>
+  <line x1="64" y1="46" x2="86" y2="56" stroke="#2b2519" stroke-width="3.4" stroke-linecap="round"/>
+  <line x1="64" y1="45.4" x2="42" y2="55.4" stroke="#7b7256" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+  <line x1="64" y1="45.4" x2="86" y2="55.4" stroke="#625b45" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Glass bulb -->
+  <circle cx="64" cy="46" r="13" fill="url(#spGlow)"/>
+  <ellipse cx="64" cy="46" rx="7" ry="10" fill="url(#spBulb)" opacity="0.85"/>
+  <ellipse cx="64" cy="46" rx="4.4" ry="7" fill="#ffbb55" opacity="0.55"/>
+  <ellipse cx="61.6" cy="42" rx="1.8" ry="3.4" fill="#ffffff" opacity="0.6" transform="rotate(-18 61.6 42)"/>
+  <ellipse cx="64" cy="46" rx="7" ry="10" fill="none" stroke="#ffd9a0" stroke-width="0.6" opacity="0.35"/>
+  <!-- Deflector plate (brass) -->
+  <ellipse cx="64" cy="63.4" rx="26" ry="6" fill="url(#spao)"/>
+  <ellipse cx="64" cy="62" rx="28" ry="6" fill="url(#spDefl)"/>
+  <ellipse cx="64" cy="62.4" rx="20" ry="4" fill="#3e3a2d"/>
+  <ellipse cx="60" cy="61" rx="14" ry="2.4" fill="#cfc5a0" opacity="0.12"/>
+  <path d="M36 62 A28 6 0 0 1 64 56" fill="none" stroke="#cfc39c" stroke-width="0.9" opacity="0.32"/>
+  <path d="M92 62 A28 6 0 0 1 64 68" fill="none" stroke="#060a10" stroke-width="1" opacity="0.5"/>
+  <!-- Deflector serrations -->
+  <g stroke="#231e16" stroke-width="2">
+    <line x1="40" y1="62" x2="40" y2="68"/>
+    <line x1="46" y1="62" x2="46" y2="68"/>
+    <line x1="52" y1="62" x2="52" y2="68"/>
+    <line x1="58" y1="62" x2="58" y2="68"/>
+    <line x1="64" y1="62" x2="64" y2="68"/>
+    <line x1="70" y1="62" x2="70" y2="68"/>
+    <line x1="76" y1="62" x2="76" y2="68"/>
+    <line x1="82" y1="62" x2="82" y2="68"/>
+    <line x1="88" y1="62" x2="88" y2="68"/>
+  </g>
+  <!-- Spray lines (water pattern arcs) -->
+  <path d="M36 66 Q20 80 16 96" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <path d="M44 70 Q36 86 32 104" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+  <path d="M54 72 Q50 88 48 108" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+  <path d="M64 72 Q64 88 64 108" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+  <path d="M74 72 Q78 88 80 108" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+  <path d="M84 70 Q92 86 96 104" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+  <path d="M92 66 Q108 80 112 96" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <!-- Water droplets -->
+  <circle cx="18" cy="98" r="2" fill="#88aacc" opacity="0.4"/>
+  <circle cx="32" cy="108" r="2" fill="#88aacc" opacity="0.35"/>
+  <circle cx="64" cy="110" r="2" fill="#88aacc" opacity="0.35"/>
+  <circle cx="96" cy="108" r="2" fill="#88aacc" opacity="0.35"/>
+  <circle cx="110" cy="98" r="2" fill="#88aacc" opacity="0.4"/>
+</svg>

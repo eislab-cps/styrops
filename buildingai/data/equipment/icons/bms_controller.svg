@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bmsBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f414d"/>
+      <stop offset="100%" stop-color="#18222c"/>
+    </linearGradient>
+    <linearGradient id="bmsPCB" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1a2820"/>
+      <stop offset="100%" stop-color="#0c1510"/>
+    </linearGradient>
+    <radialGradient id="bmsao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bmssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- DIN rail clip bottom -->
+  <rect x="16" y="114" width="96" height="10" rx="2" fill="#161e2a"/>
+  <rect x="16" y="114" width="20" height="10" rx="2" fill="#2a3040"/>
+  <rect x="92" y="114" width="20" height="10" rx="2" fill="#2a3040"/>
+  <rect x="16" y="114" width="20" height="2" rx="1" fill="#8fa8c4" opacity="0.1"/>
+  <rect x="92" y="114" width="20" height="2" rx="1" fill="#8fa8c4" opacity="0.1"/>
+  <!-- Main PLC housing -->
+  <rect x="16" y="10" width="96" height="106" rx="6" fill="url(#bmsBody)"/>
+  <rect x="16" y="10" width="96" height="106" rx="6" fill="url(#bmssheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="64" cy="113" rx="46" ry="10" fill="url(#bmsao)"/>
+  <rect x="16" y="10" width="96" height="106" rx="6" fill="none" stroke="#465a6b" stroke-width="1.2" opacity="0.5"/>
+  <!-- Top LED row status -->
+  <ellipse cx="64" cy="20" rx="48" ry="10" fill="url(#bmsao)"/>
+  <rect x="20" y="14" width="88" height="12" rx="4" fill="#161e2a"/>
+  <rect x="21" y="14.8" width="86" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <!-- LED status indicators (6 leds) -->
+  <circle cx="30" cy="20" r="6" fill="#cfe6ff" opacity="0.09"/>
+  <circle cx="30" cy="20" r="3.5" fill="#160c0c"/><circle cx="30" cy="20" r="2.2" fill="#e8f3ff" opacity="0.85"/><circle cx="29.4" cy="19.4" r="0.7" fill="#ffffff"/>
+  <circle cx="42" cy="20" r="5.5" fill="#cfe6ff" opacity="0.06"/>
+  <circle cx="42" cy="20" r="3.5" fill="#160c0c"/><circle cx="42" cy="20" r="2.2" fill="#e8f3ff" opacity="0.6"/>
+  <circle cx="54" cy="20" r="3.5" fill="#160c0c"/><circle cx="54" cy="20" r="2.2" fill="#dbe8f5" opacity="0.5"/>
+  <circle cx="66" cy="20" r="3.5" fill="#160c0c"/><circle cx="66" cy="20" r="2.2" fill="#dbe8f5" opacity="0.4"/>
+  <circle cx="78" cy="20" r="3.5" fill="#160c0c"/><circle cx="78" cy="20" r="2.2" fill="#dbe8f5" opacity="0.4"/>
+  <circle cx="90" cy="20" r="3.5" fill="#160c0c"/><circle cx="90" cy="20" r="2.2" fill="#dbe8f5" opacity="0.3"/>
+  <!-- PCB area (visible) -->
+  <ellipse cx="64" cy="55" rx="48" ry="29" fill="url(#bmsao)"/>
+  <rect x="20" y="30" width="88" height="50" rx="4" fill="url(#bmsPCB)"/>
+  <rect x="20" y="30" width="88" height="50" rx="4" fill="none" stroke="#2a4030" stroke-width="0.7"/>
+  <!-- PCB traces -->
+  <line x1="26" y1="36" x2="60" y2="36" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="60" y1="36" x2="60" y2="66" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="26" y1="50" x2="50" y2="50" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="70" y1="40" x2="100" y2="40" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="80" y1="40" x2="80" y2="70" stroke="#2f5c36" stroke-width="0.8"/>
+  <!-- Main CPU chip -->
+  <ellipse cx="43.5" cy="48" rx="16" ry="13" fill="url(#bmsao)"/>
+  <rect x="32" y="38" width="22" height="18" rx="2" fill="#16211a"/>
+  <rect x="32" y="38" width="22" height="18" rx="2" fill="none" stroke="#3a5040" stroke-width="0.8"/>
+  <rect x="32.8" y="38.8" width="20.4" height="3" rx="1" fill="#8fa8c4" opacity="0.1"/>
+  <!-- CPU pins -->
+  <line x1="32" y1="42" x2="28" y2="42" stroke="#3a5040" stroke-width="0.8"/>
+  <line x1="32" y1="46" x2="28" y2="46" stroke="#3a5040" stroke-width="0.8"/>
+  <line x1="32" y1="50" x2="28" y2="50" stroke="#3a5040" stroke-width="0.8"/>
+  <line x1="54" y1="42" x2="58" y2="42" stroke="#3a5040" stroke-width="0.8"/>
+  <line x1="54" y1="46" x2="58" y2="46" stroke="#3a5040" stroke-width="0.8"/>
+  <line x1="54" y1="50" x2="58" y2="50" stroke="#3a5040" stroke-width="0.8"/>
+  <!-- Small memory chip -->
+  <ellipse cx="75.4" cy="49.8" rx="10" ry="8" fill="url(#bmsao)"/>
+  <rect x="68" y="44" width="14" height="10" rx="1" fill="#16211a" stroke="#3a5040" stroke-width="0.5"/>
+  <rect x="68.6" y="44.6" width="12.8" height="2.4" rx="0.8" fill="#8fa8c4" opacity="0.09"/>
+  <!-- DIP switches -->
+  <ellipse cx="40" cy="67.5" rx="17" ry="8" fill="url(#bmsao)"/>
+  <rect x="26" y="62" width="28" height="10" rx="2" fill="#161e2a"/>
+  <rect x="28" y="64" width="4" height="6" rx="1" fill="#3b4d5e"/>
+  <rect x="34" y="64" width="4" height="6" rx="1" fill="#3b4d5e"/>
+  <rect x="40" y="64" width="4" height="6" rx="1" fill="#3b4d5e"/>
+  <rect x="46" y="64" width="4" height="6" rx="1" fill="#3b4d5e"/>
+  <rect x="28" y="66" width="4" height="2" rx="0.5" fill="#2f5c36"/>
+  <rect x="40" y="66" width="4" height="2" rx="0.5" fill="#2f5c36"/>
+  <!-- Ports row -->
+  <ellipse cx="87" cy="64.5" rx="21" ry="8" fill="url(#bmsao)"/>
+  <rect x="70" y="60" width="12" height="8" rx="1" fill="#141c26" stroke="#334455" stroke-width="0.6"/>
+  <rect x="84" y="60" width="12" height="8" rx="1" fill="#141c26" stroke="#334455" stroke-width="0.6"/>
+  <rect x="98" y="60" width="8" height="8" rx="1" fill="#141c26" stroke="#334455" stroke-width="0.6"/>
+  <!-- PCB glass sheen -->
+  <rect x="20" y="30" width="88" height="50" rx="4" fill="url(#bmssheen)" opacity="0.35"/>
+  <!-- Shell seam -->
+  <line x1="20" y1="81.6" x2="108" y2="81.6" stroke="#050a10" stroke-width="0.6" opacity="0.45"/>
+  <line x1="20" y1="82.3" x2="108" y2="82.3" stroke="#8fa8c4" stroke-width="0.5" opacity="0.12"/>
+  <!-- Terminal blocks (bottom) -->
+  <ellipse cx="64" cy="96" rx="48" ry="16" fill="url(#bmsao)"/>
+  <rect x="20" y="84" width="88" height="24" rx="3" fill="#18202e"/>
+  <rect x="20" y="84" width="88" height="24" rx="3" fill="none" stroke="#334455" stroke-width="0.7"/>
+  <rect x="21" y="84.8" width="86" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <!-- Terminal screws row -->
+  <rect x="22" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="26" cy="90" r="2" fill="#334455"/><circle cx="26" cy="90" r="1" fill="#7d92a8"/>
+  <rect x="32" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="36" cy="90" r="2" fill="#334455"/>
+  <rect x="42" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="46" cy="90" r="2" fill="#334455"/>
+  <rect x="52" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="56" cy="90" r="2" fill="#334455"/>
+  <rect x="62" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="66" cy="90" r="2" fill="#334455"/>
+  <rect x="72" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="76" cy="90" r="2" fill="#334455"/>
+  <rect x="82" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="86" cy="90" r="2" fill="#334455"/>
+  <rect x="92" y="86" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="96" cy="90" r="2" fill="#334455"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M16.6 96 L16.6 16.6 A6 6 0 0 1 22.6 10.6 L94 10.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M111.4 34 L111.4 109.4 A6 6 0 0 1 105.4 115.4 L38 115.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="msBody" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#43555f"/>
+      <stop offset="55%" stop-color="#2b3843"/>
+      <stop offset="100%" stop-color="#1a232c"/>
+    </linearGradient>
+    <linearGradient id="msBracket" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#2e3947"/>
+      <stop offset="100%" stop-color="#161d26"/>
+    </linearGradient>
+    <!-- fresnel glass: dark well lifting to a lit rim -->
+    <radialGradient id="msDome" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#7d95a6" stop-opacity="0.6"/>
+      <stop offset="32%" stop-color="#41576a" stop-opacity="0.7"/>
+      <stop offset="72%" stop-color="#16222e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b131c" stop-opacity="0.95"/>
+    </radialGradient>
+    <linearGradient id="msRim" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#cbdeef" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#8fa8c4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#8fa8c4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="msGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="msao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Detection zone rays (behind the housing) -->
+  <g stroke="#cfe0f2" stroke-linecap="round">
+    <path d="M22 44 L4 22" stroke-width="1" opacity="0.13"/>
+    <path d="M22 58 L4 58" stroke-width="1" opacity="0.11"/>
+    <path d="M22 72 L4 94" stroke-width="1" opacity="0.13"/>
+    <path d="M24 38 L11 16" stroke-width="0.8" opacity="0.08"/>
+    <path d="M24 78 L11 100" stroke-width="0.8" opacity="0.08"/>
+  </g>
+
+  <!-- Wall mounting plate -->
+  <rect x="44" y="6" width="40" height="16" rx="4" fill="url(#msBracket)"/>
+  <rect x="44" y="6" width="40" height="16" rx="4" fill="url(#mssheen)"/>
+  <path d="M44.6 18 L44.6 9.6 Q44.6 6.6 47.6 6.6 L80 6.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M83.4 12 L83.4 18.4 Q83.4 21.4 80.4 21.4 L50 21.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="56" cy="14" r="4" fill="#0b1017"/><circle cx="56" cy="14" r="2.5" fill="#3a4b5c"/><circle cx="55.2" cy="13.2" r="0.9" fill="#b6cbe2" opacity="0.5"/>
+  <circle cx="72" cy="14" r="4" fill="#0b1017"/><circle cx="72" cy="14" r="2.5" fill="#3a4b5c"/><circle cx="71.2" cy="13.2" r="0.9" fill="#b6cbe2" opacity="0.5"/>
+
+  <!-- Swivel neck -->
+  <rect x="58" y="18" width="12" height="16" rx="3" fill="url(#msBracket)"/>
+  <path d="M59.4 20 L59.4 32" stroke="#8fa8c4" stroke-width="0.7" opacity="0.24" stroke-linecap="round"/>
+  <path d="M68.8 21 L68.8 33" stroke="#060a10" stroke-width="0.9" opacity="0.45" stroke-linecap="round"/>
+
+  <!-- PIR housing -->
+  <rect x="20" y="30" width="88" height="56" rx="8" fill="url(#msBody)"/>
+  <rect x="20" y="30" width="88" height="56" rx="8" fill="url(#mssheen)"/>
+  <ellipse cx="64" cy="33" rx="20" ry="5" fill="url(#msao)"/>
+  <ellipse cx="64" cy="84" rx="42" ry="7" fill="url(#msao)"/>
+  <path d="M20.6 74 L20.6 36.6 Q20.6 30.6 26.6 30.6 L101 30.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M107.4 44 L107.4 79.4 Q107.4 85.4 101.4 85.4 L34 85.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- Shell seam -->
+  <path d="M22 74 L106 74" stroke="#060a10" stroke-width="0.7" opacity="0.38"/>
+  <path d="M22 74.9 L106 74.9" stroke="#8fa8c4" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Fresnel lens seat -->
+  <ellipse cx="54" cy="60" rx="26" ry="24" fill="#111a22"/>
+  <ellipse cx="54" cy="60" rx="24.6" ry="22.6" fill="url(#msDome)"/>
+  <!-- fresnel facets -->
+  <g stroke="#9fbcd6" stroke-width="0.4" opacity="0.2">
+    <path d="M54 38 L54 82"/>
+    <path d="M31 60 L77 60"/>
+    <path d="M38.5 44.5 L69.5 75.5"/>
+    <path d="M69.5 44.5 L38.5 75.5"/>
+  </g>
+  <g fill="none" stroke="#9fbcd6" stroke-width="0.45" opacity="0.22">
+    <ellipse cx="54" cy="60" rx="16" ry="14.7"/>
+    <ellipse cx="54" cy="60" rx="9" ry="8.3"/>
+  </g>
+  <ellipse cx="54" cy="60.5" rx="5" ry="4.6" fill="#0a1220" opacity="0.85"/>
+  <!-- lit rim + crescent -->
+  <ellipse cx="54" cy="60" rx="24.9" ry="22.9" fill="none" stroke="url(#msRim)" stroke-width="1.5"/>
+  <path d="M39.5 42.5 A24.6 22.6 0 0 0 32.4 55.5" fill="none" stroke="#e2eefb" stroke-width="1.5" opacity="0.48" stroke-linecap="round"/>
+  <path d="M72.5 71.5 A24.6 22.6 0 0 1 52 82.6" fill="none" stroke="#04070c" stroke-width="1.3" opacity="0.5" stroke-linecap="round"/>
+  <!-- reflection streak across the upper third -->
+  <ellipse cx="50" cy="48" rx="15" ry="4" fill="#dceafa" opacity="0.12" transform="rotate(-20 50 48)"/>
+  <!-- hard catch-light -->
+  <circle cx="43.5" cy="49" r="5" fill="url(#msGlow)"/>
+  <circle cx="43.2" cy="48.6" r="1.8" fill="#ffffff" opacity="0.95"/>
+
+  <!-- LED indicator -->
+  <circle cx="93" cy="40" r="5" fill="#0a1017"/>
+  <circle cx="93" cy="40" r="3.4" fill="#e8f2ff" opacity="0.8"/>
+  <circle cx="93" cy="40" r="1.9" fill="#ffffff"/>
+
+  <!-- Status readout, recessed into the shell -->
+  <ellipse cx="93" cy="69" rx="14" ry="4" fill="url(#msao)"/>
+  <rect x="82" y="52" width="22" height="16" rx="3" fill="#0e151d"/>
+  <path d="M83.6 52.8 L102.4 52.8" stroke="#04070c" stroke-width="1" opacity="0.6"/>
+  <path d="M83.6 67.3 L102.4 67.3" stroke="#8fa8c4" stroke-width="0.7" opacity="0.16"/>
+  <rect x="84" y="54" width="18" height="4" rx="1" fill="#9fbcd6" opacity="0.42"/>
+  <rect x="84" y="61" width="12" height="3" rx="1" fill="#9fbcd6" opacity="0.3"/>
+  <rect x="84" y="54" width="18" height="1.4" rx="0.7" fill="#eaf3ff" opacity="0.24"/>
+
+  <!-- Corner screws -->
+  <circle cx="28" cy="38" r="2.5" fill="#0c1219"/><circle cx="28" cy="38" r="1.4" fill="#3c4e5f"/><circle cx="27.4" cy="37.4" r="0.6" fill="#b6cbe2" opacity="0.45"/>
+  <circle cx="100" cy="38" r="2.5" fill="#0c1219"/><circle cx="100" cy="38" r="1.4" fill="#3c4e5f"/>
+  <circle cx="28" cy="78" r="2.5" fill="#0c1219"/><circle cx="28" cy="78" r="1.4" fill="#3c4e5f"/>
+  <circle cx="100" cy="78" r="2.5" fill="#0c1219"/><circle cx="100" cy="78" r="1.4" fill="#3c4e5f"/>
+
+  <!-- Cable entry -->
+  <ellipse cx="64" cy="88" rx="14" ry="4" fill="url(#msao)"/>
+  <rect x="54" y="84" width="20" height="8" rx="3" fill="#131a24"/>
+  <path d="M55.5 84.7 L72.5 84.7" stroke="#04070c" stroke-width="0.9" opacity="0.6"/>
+  <path d="M55.5 91.3 L72.5 91.3" stroke="#8fa8c4" stroke-width="0.6" opacity="0.16"/>
+  <rect x="57" y="86" width="5" height="4" rx="1" fill="#33455a"/>
+  <rect x="64" y="86" width="5" height="4" rx="1" fill="#33455a"/>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="co2Body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f414d"/>
+      <stop offset="100%" stop-color="#18222c"/>
+    </linearGradient>
+    <linearGradient id="co2Display" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0c1d26"/>
+      <stop offset="100%" stop-color="#050d12"/>
+    </linearGradient>
+    <radialGradient id="co2ao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="co2sheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- DIN rail clip (bottom) -->
+  <rect x="30" y="108" width="68" height="10" rx="2" fill="#161e2a"/>
+  <rect x="30" y="108" width="14" height="10" rx="2" fill="#2a3040"/>
+  <rect x="84" y="108" width="14" height="10" rx="2" fill="#2a3040"/>
+  <rect x="30" y="108" width="14" height="2" rx="1" fill="#8fa8c4" opacity="0.1"/>
+  <rect x="84" y="108" width="14" height="2" rx="1" fill="#8fa8c4" opacity="0.1"/>
+  <rect x="36" y="114" width="56" height="4" rx="1" fill="#15141c" opacity="0.85"/>
+  <!-- Module body -->
+  <rect x="20" y="10" width="88" height="100" rx="6" fill="url(#co2Body)"/>
+  <rect x="20" y="10" width="88" height="100" rx="6" fill="url(#co2sheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="64" cy="107" rx="42" ry="10" fill="url(#co2ao)"/>
+  <rect x="20" y="10" width="88" height="100" rx="6" fill="none" stroke="#465a6b" stroke-width="1.2" opacity="0.5"/>
+  <!-- Top bar -->
+  <rect x="20" y="10" width="88" height="8" rx="4" fill="#3b4d5e" opacity="0.6"/>
+  <!-- Shell seam -->
+  <line x1="23" y1="18.4" x2="105" y2="18.4" stroke="#050a10" stroke-width="0.6" opacity="0.45"/>
+  <line x1="23" y1="19.1" x2="105" y2="19.1" stroke="#8fa8c4" stroke-width="0.5" opacity="0.12"/>
+  <!-- CO2 label display -->
+  <ellipse cx="64" cy="37" rx="43" ry="19" fill="url(#co2ao)"/>
+  <rect x="24.5" y="20.5" width="79" height="33" rx="6" fill="#6aa5d8" opacity="0.07"/>
+  <rect x="26" y="22" width="76" height="30" rx="4" fill="url(#co2Display)"/>
+  <rect x="26" y="22" width="76" height="30" rx="4" fill="none" stroke="#334455" stroke-width="0.8"/>
+  <!-- CO2 text (large) -->
+  <text x="34" y="44" font-size="20" font-weight="bold" fill="#9dc0e0" opacity="0.92" font-family="monospace">CO2</text>
+  <text x="82" y="44" font-size="8" fill="#7d92a8" font-family="monospace">ppm</text>
+  <!-- Display glass reflection -->
+  <path d="M27 51 L27 26 A4 4 0 0 1 31 22 L54 22 L32 51Z" fill="#c6d7ea" opacity="0.07"/>
+  <!-- Concentration readout -->
+  <ellipse cx="64" cy="64" rx="43" ry="12" fill="url(#co2ao)"/>
+  <rect x="24.8" y="54.8" width="78.4" height="18.4" rx="4" fill="#6aa5d8" opacity="0.06"/>
+  <rect x="26" y="56" width="76" height="16" rx="3" fill="#0a1020"/>
+  <rect x="26" y="56" width="76" height="16" rx="3" fill="none" stroke="#2a3845" stroke-width="0.7"/>
+  <text x="30" y="68" font-size="11" fill="#ffffff" opacity="0.82" font-family="monospace">421 ppm</text>
+  <path d="M27 71 L27 59 A3 3 0 0 1 30 56 L44 56 L32 71Z" fill="#c6d7ea" opacity="0.07"/>
+  <!-- Vent slots -->
+  <ellipse cx="64" cy="85" rx="43" ry="13" fill="url(#co2ao)"/>
+  <rect x="26" y="76" width="76" height="18" rx="3" fill="#18202e"/>
+  <rect x="26" y="76" width="76" height="18" rx="3" fill="none" stroke="#2a3845" stroke-width="0.7"/>
+  <line x1="28" y1="80" x2="100" y2="80" stroke="#36495e" stroke-width="1.2" opacity="0.85"/>
+  <line x1="28" y1="85" x2="100" y2="85" stroke="#36495e" stroke-width="1.2" opacity="0.85"/>
+  <line x1="28" y1="90" x2="100" y2="90" stroke="#36495e" stroke-width="1.2" opacity="0.85"/>
+  <rect x="27" y="76.8" width="74" height="1.5" rx="0.75" fill="#8fa8c4" opacity="0.09"/>
+  <!-- LED indicator -->
+  <circle cx="36" cy="100" r="6.5" fill="#cfe6ff" opacity="0.1"/>
+  <circle cx="36" cy="100" r="4" fill="#111a24"/>
+  <circle cx="36" cy="100" r="2.5" fill="#e8f3ff" opacity="0.85"/>
+  <circle cx="35.3" cy="99.3" r="0.7" fill="#ffffff"/>
+  <!-- Status LED 2 -->
+  <circle cx="50" cy="100" r="4" fill="#111a24"/>
+  <circle cx="50" cy="100" r="2.5" fill="#dbe8f5" opacity="0.4"/>
+  <!-- Mounting screw holes -->
+  <circle cx="28" cy="18" r="2.5" fill="#141c26"/><circle cx="28" cy="18" r="1.5" fill="#3b4d5e"/>
+  <circle cx="100" cy="18" r="2.5" fill="#141c26"/><circle cx="100" cy="18" r="1.5" fill="#3b4d5e"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M20.6 92 L20.6 16.6 A6 6 0 0 1 26.6 10.6 L92 10.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M107.4 32 L107.4 103.4 A6 6 0 0 1 101.4 109.4 L40 109.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+</svg>

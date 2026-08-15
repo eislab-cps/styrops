@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="lfHousing" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3a4b58"/>
+      <stop offset="55%" stop-color="#26333e"/>
+      <stop offset="100%" stop-color="#18212b"/>
+    </linearGradient>
+    <linearGradient id="lfBracket" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#2c3646"/>
+      <stop offset="100%" stop-color="#151b26"/>
+    </linearGradient>
+    <!-- frosted diffuser: milky, brightest just under the lamp line -->
+    <linearGradient id="lfDiffuser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fb6c9" stop-opacity="0.55"/>
+      <stop offset="26%" stop-color="#f4f8ff" stop-opacity="0.82"/>
+      <stop offset="62%" stop-color="#e2ecf7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7b8f9f" stop-opacity="0.62"/>
+    </linearGradient>
+    <!-- lateral falloff so the acrylic darkens into the end caps -->
+    <linearGradient id="lfFrost" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a222c" stop-opacity="0.4"/>
+      <stop offset="12%" stop-color="#1a222c" stop-opacity="0.06"/>
+      <stop offset="88%" stop-color="#1a222c" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#1a222c" stop-opacity="0.45"/>
+    </linearGradient>
+    <radialGradient id="lfLed" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="45%" stop-color="#f2f7ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e8f1ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lfCone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d8" stop-opacity="0.24"/>
+      <stop offset="35%" stop-color="#f4f2ee" stop-opacity="0.075"/>
+      <stop offset="100%" stop-color="#e8eefc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lfCore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8e6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#fff8e6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lfSpill" cx="0.5" cy="0" r="1">
+      <stop offset="0%" stop-color="#fff6e2" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#fff6e2" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#fff6e2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lfao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lfsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Light cone (behind everything below the fixture) -->
+  <path d="M23 52 L105 52 L120 116 L8 116 Z" fill="url(#lfCone)"/>
+  <path d="M45 52 L83 52 L92 112 L36 112 Z" fill="url(#lfCore)"/>
+  <ellipse cx="64" cy="54" rx="54" ry="34" fill="url(#lfSpill)"/>
+  <g stroke="#fff6e2" stroke-linecap="round">
+    <path d="M30 56 L18 92" stroke-width="1" opacity="0.07"/>
+    <path d="M48 56 L42 100" stroke-width="1" opacity="0.05"/>
+    <path d="M64 56 L64 104" stroke-width="1.6" opacity="0.08"/>
+    <path d="M80 56 L86 100" stroke-width="1" opacity="0.05"/>
+    <path d="M98 56 L110 92" stroke-width="1" opacity="0.07"/>
+  </g>
+
+  <!-- Ceiling mount bracket -->
+  <rect x="44" y="6" width="40" height="10" rx="3" fill="url(#lfBracket)"/>
+  <rect x="44" y="6" width="40" height="10" rx="3" fill="url(#lfsheen)"/>
+  <path d="M44.6 13 L44.6 8.6 Q44.6 6.6 46.6 6.6 L81 6.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M83.4 9 L83.4 13.4 Q83.4 15.4 81.4 15.4 L48 15.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="52" cy="11" r="3" fill="#0c1219"/><circle cx="52" cy="11" r="1.9" fill="#3c4e5f"/><circle cx="51.3" cy="10.3" r="0.8" fill="#b6cbe2" opacity="0.5"/>
+  <circle cx="76" cy="11" r="3" fill="#0c1219"/><circle cx="76" cy="11" r="1.9" fill="#3c4e5f"/><circle cx="75.3" cy="10.3" r="0.8" fill="#b6cbe2" opacity="0.5"/>
+
+  <!-- Housing body -->
+  <rect x="16" y="14" width="96" height="40" rx="5" fill="url(#lfHousing)"/>
+  <rect x="16" y="14" width="96" height="40" rx="5" fill="url(#lfsheen)"/>
+  <ellipse cx="64" cy="16" rx="26" ry="6" fill="url(#lfao)"/>
+  <path d="M16.6 44 L16.6 18.6 Q16.6 14.6 20.6 14.6 L108 14.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M111.4 24 L111.4 49.4 Q111.4 53.4 107.4 53.4 L24 53.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Reflector throat above the diffuser -->
+  <ellipse cx="64" cy="34" rx="45" ry="7" fill="url(#lfao)"/>
+  <rect x="20" y="26" width="88" height="9" rx="3" fill="#0f1720"/>
+  <path d="M22 26.8 L106 26.8" stroke="#04070c" stroke-width="1.1" opacity="0.6"/>
+  <rect x="22" y="29" width="84" height="5" rx="2.5" fill="#7d93a8" opacity="0.14"/>
+
+  <!-- Knock-outs on the end caps -->
+  <circle cx="24" cy="20" r="3" fill="#0c1219"/><circle cx="24" cy="20" r="1.8" fill="#3c4e5f" opacity="0.8"/>
+  <circle cx="104" cy="20" r="3" fill="#0c1219"/><circle cx="104" cy="20" r="1.8" fill="#3c4e5f" opacity="0.8"/>
+
+  <!-- Frosted diffuser panel -->
+  <rect x="20" y="34" width="88" height="18" rx="3" fill="url(#lfDiffuser)"/>
+  <!-- blurred LED array seen through the acrylic -->
+  <g>
+    <circle cx="30" cy="41" r="7" fill="url(#lfLed)"/>
+    <circle cx="44" cy="41" r="7" fill="url(#lfLed)"/>
+    <circle cx="58" cy="41" r="7.5" fill="url(#lfLed)"/>
+    <circle cx="72" cy="41" r="7.5" fill="url(#lfLed)"/>
+    <circle cx="86" cy="41" r="7" fill="url(#lfLed)"/>
+    <circle cx="99" cy="41" r="6.5" fill="url(#lfLed)"/>
+  </g>
+  <rect x="20" y="34" width="88" height="18" rx="3" fill="url(#lfFrost)"/>
+  <!-- specular skim across the top of the acrylic -->
+  <rect x="23" y="35.4" width="82" height="2.6" rx="1.3" fill="#ffffff" opacity="0.4"/>
+  <rect x="23" y="35.4" width="30" height="2.6" rx="1.3" fill="#ffffff" opacity="0.28"/>
+  <!-- bottom lip of the acrylic, in shadow -->
+  <rect x="21" y="49.4" width="86" height="2.2" rx="1.1" fill="#101821" opacity="0.42"/>
+  <rect x="20" y="34" width="88" height="18" rx="3" fill="none" stroke="#c3d5e6" stroke-width="0.7" opacity="0.32"/>
+
+  <!-- Trim between diffuser and housing edge -->
+  <rect x="16" y="52" width="96" height="3" rx="1.4" fill="#a9bccd" opacity="0.16"/>
+  <path d="M17 55.2 L111 55.2" stroke="#060a10" stroke-width="0.8" opacity="0.45"/>
+
+  <!-- Status LED on the housing end -->
+  <circle cx="20.5" cy="23" r="3" fill="#0b1119"/>
+  <circle cx="20.5" cy="23" r="1.9" fill="#e8f2ff" opacity="0.75"/>
+  <circle cx="19.9" cy="22.4" r="0.7" fill="#ffffff" opacity="0.9"/>
+</svg>

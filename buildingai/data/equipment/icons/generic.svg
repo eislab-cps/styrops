@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="gearFace" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#5b6f83"/>
+      <stop offset="35%" stop-color="#41525f"/>
+      <stop offset="70%" stop-color="#2b3742"/>
+      <stop offset="100%" stop-color="#19212a"/>
+    </linearGradient>
+    <linearGradient id="gearTooth" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#57697d"/>
+      <stop offset="100%" stop-color="#232d38"/>
+    </linearGradient>
+    <radialGradient id="gearHub" cx="0.35" cy="0.32" r="0.8">
+      <stop offset="0%" stop-color="#54687b"/>
+      <stop offset="60%" stop-color="#33424f"/>
+      <stop offset="100%" stop-color="#171e27"/>
+    </radialGradient>
+    <radialGradient id="gearao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gearsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="gearclip"><circle cx="64" cy="64" r="56"/></clipPath>
+  </defs>
+  <!-- Flange teeth (drawn behind the disc so only the crowns protrude) -->
+  <g fill="url(#gearTooth)">
+    <rect x="56" y="4" width="16" height="20" rx="3"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(45 64 64)"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(90 64 64)"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(135 64 64)"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(180 64 64)"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(225 64 64)"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(270 64 64)"/>
+    <rect x="56" y="4" width="16" height="20" rx="3" transform="rotate(315 64 64)"/>
+  </g>
+  <!-- Tooth crown lighting: lit on the top-left crowns, dark bottom-right -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M56.4 8 A3 3 0 0 1 59 4.6 L69 4.6" stroke="#c6d7ea" stroke-width="0.9" opacity="0.4"/>
+    <path d="M56.4 8 A3 3 0 0 1 59 4.6 L69 4.6" stroke="#c6d7ea" stroke-width="0.9" opacity="0.36" transform="rotate(-45 64 64)"/>
+    <path d="M56.4 8 A3 3 0 0 1 59 4.6 L69 4.6" stroke="#c6d7ea" stroke-width="0.9" opacity="0.28" transform="rotate(45 64 64)"/>
+    <path d="M56.4 8 A3 3 0 0 1 59 4.6 L69 4.6" stroke="#c6d7ea" stroke-width="0.9" opacity="0.24" transform="rotate(-90 64 64)"/>
+    <path d="M71.6 8 A3 3 0 0 0 69 4.6" stroke="#04070c" stroke-width="1" opacity="0.5" transform="rotate(90 64 64)"/>
+    <path d="M71.6 8 A3 3 0 0 0 69 4.6 L59 4.6" stroke="#04070c" stroke-width="1" opacity="0.5" transform="rotate(135 64 64)"/>
+    <path d="M71.6 8 A3 3 0 0 0 69 4.6 L59 4.6" stroke="#04070c" stroke-width="1" opacity="0.5" transform="rotate(180 64 64)"/>
+    <path d="M71.6 8 A3 3 0 0 0 69 4.6 L59 4.6" stroke="#04070c" stroke-width="1" opacity="0.45" transform="rotate(225 64 64)"/>
+  </g>
+  <!-- Machined flange face -->
+  <circle cx="64" cy="64" r="56" fill="url(#gearFace)"/>
+  <g clip-path="url(#gearclip)">
+    <circle cx="64" cy="64" r="56" fill="url(#gearsheen)"/>
+    <!-- turned finish: fine concentric machining marks -->
+    <g fill="none" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1">
+      <circle cx="64" cy="64" r="52"/>
+      <circle cx="64" cy="64" r="48.5"/>
+      <circle cx="64" cy="64" r="38"/>
+      <circle cx="64" cy="64" r="34"/>
+    </g>
+    <circle cx="64" cy="64" r="41" fill="none" stroke="#c6d7ea" stroke-width="4" opacity="0.055"/>
+    <!-- inside-bottom ambient occlusion -->
+    <ellipse cx="64" cy="122" rx="58" ry="22" fill="url(#gearao)"/>
+  </g>
+  <!-- Rim lighting -->
+  <path d="M8.9 54.3 A56 56 0 0 1 54.3 8.9" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.24" stroke-linecap="round"/>
+  <path d="M119.1 73.7 A56 56 0 0 1 73.7 119.1" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- Machined step on the face -->
+  <circle cx="64" cy="64" r="44" fill="none" stroke="#1b242d" stroke-width="1" opacity="0.55"/>
+  <path d="M28.9 78.6 A44 44 0 0 1 49.4 29.4" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.18"/>
+  <!-- Bolt circle (8 bolts) -->
+  <g>
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#3a4a58"/><circle cx="64" cy="23.3" r="2.5" fill="#a9c0d8" opacity="0.22"/><circle cx="64" cy="24" r="1" fill="#0d131a"/>
+  </g>
+  <g transform="rotate(45 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#374653"/><circle cx="64" cy="23.3" r="2.5" fill="#a9c0d8" opacity="0.16"/><circle cx="64" cy="24" r="1" fill="#0d131a"/>
+  </g>
+  <g transform="rotate(90 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#32404d"/><circle cx="64" cy="23.3" r="2.5" fill="#a9c0d8" opacity="0.1"/>
+  </g>
+  <g transform="rotate(135 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#2c3a46"/>
+  </g>
+  <g transform="rotate(180 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#2c3a46"/>
+  </g>
+  <g transform="rotate(225 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#2f3d4a"/>
+  </g>
+  <g transform="rotate(270 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#34424f"/><circle cx="64" cy="23.3" r="2.5" fill="#a9c0d8" opacity="0.12"/>
+  </g>
+  <g transform="rotate(315 64 64)">
+    <ellipse cx="64" cy="26.5" rx="6" ry="4" fill="url(#gearao)"/>
+    <circle cx="64" cy="24" r="4" fill="#141b24"/><circle cx="64" cy="24" r="2.5" fill="#3a4a58"/><circle cx="64" cy="23.3" r="2.5" fill="#a9c0d8" opacity="0.2"/><circle cx="64" cy="24" r="1" fill="#0d131a"/>
+  </g>
+  <!-- Raised hub -->
+  <ellipse cx="64" cy="68" rx="30" ry="28" fill="url(#gearao)"/>
+  <circle cx="64" cy="64" r="22" fill="url(#gearHub)"/>
+  <path d="M48.4 79.6 A22 22 0 0 1 79.6 48.4" fill="none" stroke="#a9c0d8" stroke-width="1.2" opacity="0.28"/>
+  <path d="M79.6 79.6 A22 22 0 0 1 52.5 82.2" fill="none" stroke="#04070c" stroke-width="1.4" opacity="0.5"/>
+  <circle cx="64" cy="64" r="16" fill="#2c3a46"/>
+  <path d="M52.7 75.3 A16 16 0 0 1 75.3 52.7" fill="none" stroke="#04070c" stroke-width="1" opacity="0.4"/>
+  <path d="M75.3 75.3 A16 16 0 0 1 57.5 78.5" fill="none" stroke="#8fa8c4" stroke-width="0.8" opacity="0.16"/>
+  <!-- Keyway slot -->
+  <rect x="60" y="42" width="8" height="10" rx="1" fill="#101821"/>
+  <path d="M60.4 52 V42.4 H67.6" fill="none" stroke="#04070c" stroke-width="0.8" opacity="0.5"/>
+  <!-- Shaft bore -->
+  <circle cx="64" cy="64" r="10" fill="#0e151d"/>
+  <path d="M56.9 71.1 A10 10 0 0 1 71.1 56.9" fill="none" stroke="#04070c" stroke-width="1.4" opacity="0.6"/>
+  <path d="M61.1 72.1 A8.6 8.6 0 0 0 72.5 62.5" fill="none" stroke="#8fa8c4" stroke-width="1.6" opacity="0.3" stroke-linecap="round"/>
+  <!-- Hub crown highlight -->
+  <path d="M52 54 A14 14 0 0 1 70 50" fill="none" stroke="#c6d7ea" stroke-width="1" opacity="0.28"/>
+</svg>

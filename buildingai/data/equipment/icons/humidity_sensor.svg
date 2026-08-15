@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="hsBody" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#45566a"/>
+      <stop offset="55%" stop-color="#2c3945"/>
+      <stop offset="100%" stop-color="#1a222b"/>
+    </linearGradient>
+    <linearGradient id="hsPCB" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1e3826"/>
+      <stop offset="100%" stop-color="#0d1b12"/>
+    </linearGradient>
+    <linearGradient id="hsDrop" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#5f8ba8"/>
+      <stop offset="55%" stop-color="#24404f"/>
+      <stop offset="100%" stop-color="#132430"/>
+    </linearGradient>
+    <radialGradient id="hsao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hsglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7de0a0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7de0a0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hsled" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#dceaff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#dceaff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="hsclip"><rect x="18" y="14" width="88" height="90" rx="8"/></clipPath>
+  </defs>
+  <!-- Cable -->
+  <path d="M64 108 Q64 116 56 120" fill="none" stroke="#101821" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M64 108 Q64 116 56 120" fill="none" stroke="#31404f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M63.2 108.4 Q63.2 115.4 56.2 118.9" fill="none" stroke="#c6d7ea" stroke-width="0.6" stroke-linecap="round" opacity="0.2"/>
+  <!-- Main housing -->
+  <rect x="18" y="14" width="88" height="90" rx="8" fill="url(#hsBody)"/>
+  <g clip-path="url(#hsclip)">
+    <rect x="18" y="14" width="88" height="90" fill="url(#hssheen)"/>
+    <ellipse cx="62" cy="104" rx="46" ry="10" fill="url(#hsao)"/>
+    <!-- shell seam -->
+    <path d="M18 99.4 H106" stroke="#0b1118" stroke-width="0.7" opacity="0.5"/>
+    <path d="M18 100.2 H106" stroke="#8fa8c4" stroke-width="0.5" opacity="0.1"/>
+  </g>
+  <path d="M18.5 32 L18.5 22.5 A8 8 0 0 1 26.5 14.5 L98 14.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M105.5 84 L105.5 95.5 A8 8 0 0 1 97.5 103.5 L32 103.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- Top vent grille -->
+  <ellipse cx="62" cy="39" rx="38" ry="3.6" fill="url(#hsao)"/>
+  <rect x="24" y="16" width="76" height="22" rx="5" fill="#161f28"/>
+  <rect x="24" y="16" width="76" height="22" rx="5" fill="url(#hssheen)"/>
+  <path d="M24.5 21 A5 5 0 0 1 29.5 16.5 L96 16.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.2"/>
+  <path d="M99.5 32 A5 5 0 0 1 94.5 37.5 L30 37.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Vent slots -->
+  <rect x="28" y="20" width="68" height="2" rx="1" fill="#0e151d" opacity="0.9"/>
+  <rect x="28" y="22" width="68" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <rect x="28" y="24" width="68" height="2" rx="1" fill="#0e151d" opacity="0.9"/>
+  <rect x="28" y="26" width="68" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <rect x="28" y="28" width="68" height="2" rx="1" fill="#0e151d" opacity="0.9"/>
+  <rect x="28" y="30" width="68" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <rect x="28" y="32" width="68" height="2" rx="1" fill="#0e151d" opacity="0.9"/>
+  <rect x="28" y="34" width="68" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <!-- Moisture/humidity element (droplet) -->
+  <ellipse cx="64" cy="69" rx="11" ry="3.4" fill="url(#hsao)"/>
+  <path d="M64 40 Q72 52 72 60 A8 8 0 0 1 56 60 Q56 52 64 40Z" fill="url(#hsDrop)" stroke="#a6c4e2" stroke-width="1" opacity="0.95"/>
+  <path d="M62.4 47.4 Q58.4 54 58.4 59.6 A5.6 5.6 0 0 0 61 64.4 A6.6 6.6 0 0 1 60.4 55.6Z" fill="#ffffff" opacity="0.2"/>
+  <circle cx="67.6" cy="61.4" r="2" fill="#ffffff" opacity="0.22"/>
+  <circle cx="61.4" cy="52.6" r="1.1" fill="#ffffff" opacity="0.55"/>
+  <!-- PCB visible through cutout -->
+  <ellipse cx="62" cy="99" rx="40" ry="3.6" fill="url(#hsao)"/>
+  <rect x="24" y="70" width="76" height="28" rx="4" fill="url(#hsPCB)"/>
+  <ellipse cx="60" cy="82" rx="34" ry="14" fill="url(#hsglow)"/>
+  <path d="M24.5 74 A4 4 0 0 1 28.5 70.5 L97 70.5" fill="none" stroke="#7fb08f" stroke-width="0.7" opacity="0.2"/>
+  <path d="M99.5 90 L99.5 93.5 A4 4 0 0 1 95.5 97.5 L32 97.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- PCB traces -->
+  <g stroke="#2f6338" stroke-width="1" opacity="0.85">
+    <line x1="30" y1="76" x2="60" y2="76"/>
+    <line x1="30" y1="80" x2="50" y2="80"/>
+    <line x1="60" y1="76" x2="60" y2="88"/>
+    <line x1="70" y1="78" x2="90" y2="78"/>
+    <line x1="70" y1="84" x2="88" y2="84"/>
+  </g>
+  <g stroke="#8fe0a0" stroke-width="0.4" opacity="0.15">
+    <line x1="30" y1="75.3" x2="60" y2="75.3"/>
+    <line x1="70" y1="77.3" x2="90" y2="77.3"/>
+  </g>
+  <!-- IC chip -->
+  <ellipse cx="47" cy="86" rx="11" ry="2.6" fill="url(#hsao)"/>
+  <rect x="38" y="73" width="18" height="12" rx="1" fill="#16241b"/>
+  <rect x="38" y="73" width="18" height="3" rx="1" fill="#c6d7ea" opacity="0.07"/>
+  <rect x="38" y="73" width="18" height="12" rx="1" fill="none" stroke="#0a120d" stroke-width="0.6"/>
+  <g stroke="#43604d" stroke-width="0.8">
+    <line x1="38" y1="76" x2="34" y2="76"/>
+    <line x1="38" y1="79" x2="34" y2="79"/>
+    <line x1="38" y1="82" x2="34" y2="82"/>
+    <line x1="56" y1="76" x2="60" y2="76"/>
+    <line x1="56" y1="79" x2="60" y2="79"/>
+    <line x1="56" y1="82" x2="60" y2="82"/>
+  </g>
+  <!-- Status LEDs -->
+  <ellipse cx="76" cy="76" rx="6.5" ry="6.5" fill="url(#hsled)"/>
+  <circle cx="76" cy="76" r="3" fill="#101821"/><circle cx="76" cy="76" r="2" fill="#ffffff" opacity="0.75"/>
+  <circle cx="84" cy="76" r="3" fill="#101821"/><circle cx="84" cy="76" r="2" fill="#ffffff" opacity="0.4"/>
+  <!-- Cable connector at bottom -->
+  <ellipse cx="64" cy="109" rx="14" ry="2.8" fill="url(#hsao)"/>
+  <rect x="52" y="100" width="24" height="8" rx="2" fill="#131a24"/>
+  <rect x="52" y="100" width="24" height="2.2" rx="1.1" fill="#8fa8c4" opacity="0.11"/>
+  <rect x="54" y="102" width="6" height="4" rx="1" fill="#31404f"/>
+  <rect x="62" y="102" width="6" height="4" rx="1" fill="#2d3c4a"/>
+  <rect x="70" y="102" width="4" height="4" rx="1" fill="#2a3845"/>
+  <!-- Mounting screws -->
+  <circle cx="26" cy="22" r="2.5" fill="#131a24"/><circle cx="26" cy="22" r="1.5" fill="#3a4a58"/><circle cx="26" cy="21.5" r="1.5" fill="#a9c0d8" opacity="0.2"/>
+  <circle cx="98" cy="22" r="2.5" fill="#131a24"/><circle cx="98" cy="22" r="1.5" fill="#33424f"/><circle cx="98" cy="21.5" r="1.5" fill="#a9c0d8" opacity="0.14"/>
+</svg>

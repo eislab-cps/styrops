@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="ocBar" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3b4c59"/>
+      <stop offset="55%" stop-color="#27343f"/>
+      <stop offset="100%" stop-color="#18212b"/>
+    </linearGradient>
+    <linearGradient id="ocBracket" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#2f3a47"/>
+      <stop offset="100%" stop-color="#161e27"/>
+    </linearGradient>
+    <linearGradient id="ocDisplay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1a22"/>
+      <stop offset="100%" stop-color="#050d12"/>
+    </linearGradient>
+    <linearGradient id="ocBloom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fb6e6" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#7fb6e6" stop-opacity="0.03"/>
+    </linearGradient>
+    <radialGradient id="ocao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- People passing under the beams (ghosted) -->
+  <g fill="#9fc2e6">
+    <circle cx="34" cy="88" r="7" opacity="0.13"/>
+    <rect x="27" y="95" width="14" height="22" rx="5" opacity="0.1"/>
+    <circle cx="94" cy="88" r="7" opacity="0.08"/>
+    <rect x="87" y="95" width="14" height="22" rx="5" opacity="0.06"/>
+  </g>
+
+  <!-- IR beams -->
+  <g stroke="#9fc2e6" stroke-width="1" opacity="0.26" stroke-dasharray="4,3">
+    <path d="M25 50 L25 104"/>
+    <path d="M103 50 L103 104"/>
+  </g>
+
+  <!-- Cross-beam bracket below the bar -->
+  <rect x="50" y="48" width="28" height="58" rx="4" fill="url(#ocBracket)"/>
+  <rect x="50" y="48" width="28" height="58" rx="4" fill="url(#ocsheen)"/>
+  <path d="M50.6 98 L50.6 51.6 Q50.6 48.6 53.6 48.6 L75 48.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M77.4 58 L77.4 102.4 Q77.4 105.4 74.4 105.4 L56 105.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <g stroke="#4a5f73" stroke-width="0.8" opacity="0.55">
+    <path d="M55 72 L73 72"/><path d="M55 82 L73 82"/><path d="M55 92 L73 92"/>
+  </g>
+  <g stroke="#04070c" stroke-width="0.6" opacity="0.45">
+    <path d="M55 72.9 L73 72.9"/><path d="M55 82.9 L73 82.9"/><path d="M55 92.9 L73 92.9"/>
+  </g>
+  <!-- LED row on the bracket -->
+  <ellipse cx="64" cy="62" rx="13" ry="3.5" fill="url(#ocao)"/>
+  <circle cx="57" cy="57" r="2.8" fill="#0a1017"/><circle cx="57" cy="57" r="1.7" fill="#e8f2ff" opacity="0.7"/>
+  <circle cx="64" cy="57" r="2.8" fill="#0a1017"/><circle cx="64" cy="57" r="1.7" fill="#e8f2ff" opacity="0.45"/>
+  <circle cx="71" cy="57" r="2.8" fill="#0a1017"/><circle cx="71" cy="57" r="1.7" fill="#e8f2ff" opacity="0.3"/>
+
+  <!-- Overhead mounting bar -->
+  <rect x="8" y="16" width="112" height="34" rx="6" fill="url(#ocBar)"/>
+  <rect x="8" y="16" width="112" height="34" rx="6" fill="url(#ocsheen)"/>
+  <ellipse cx="64" cy="48" rx="55" ry="6" fill="url(#ocao)"/>
+  <path d="M8.6 42 L8.6 21 Q8.6 16.6 13 16.6 L114 16.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M119.4 26 L119.4 45 Q119.4 49.4 115 49.4 L18 49.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Left IR emitter -->
+  <ellipse cx="25" cy="43" rx="13" ry="4" fill="url(#ocao)"/>
+  <rect x="14" y="20" width="22" height="22" rx="4" fill="#131b24"/>
+  <path d="M15.6 20.8 L34.4 20.8" stroke="#04070c" stroke-width="1.1" opacity="0.65"/>
+  <path d="M15.6 41.3 L34.4 41.3" stroke="#8fa8c4" stroke-width="0.7" opacity="0.16"/>
+  <circle cx="25" cy="31" r="7" fill="#080e14"/>
+  <path d="M19.5 26.6 A7 7 0 0 1 30.5 26.6" fill="none" stroke="#8fa8c4" stroke-width="0.9" opacity="0.3"/>
+  <circle cx="25" cy="31" r="4" fill="#33465a"/>
+  <circle cx="23.5" cy="29.5" r="1.6" fill="#dceafa" opacity="0.4"/>
+  <circle cx="23.2" cy="29.2" r="0.7" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Right IR emitter -->
+  <ellipse cx="103" cy="43" rx="13" ry="4" fill="url(#ocao)"/>
+  <rect x="92" y="20" width="22" height="22" rx="4" fill="#131b24"/>
+  <path d="M93.6 20.8 L112.4 20.8" stroke="#04070c" stroke-width="1.1" opacity="0.65"/>
+  <path d="M93.6 41.3 L112.4 41.3" stroke="#8fa8c4" stroke-width="0.7" opacity="0.16"/>
+  <circle cx="103" cy="31" r="7" fill="#080e14"/>
+  <path d="M97.5 26.6 A7 7 0 0 1 108.5 26.6" fill="none" stroke="#8fa8c4" stroke-width="0.9" opacity="0.3"/>
+  <circle cx="103" cy="31" r="4" fill="#33465a"/>
+  <circle cx="101.5" cy="29.5" r="1.6" fill="#dceafa" opacity="0.4"/>
+  <circle cx="101.2" cy="29.2" r="0.7" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Counter display -->
+  <ellipse cx="64" cy="49" rx="30" ry="4.5" fill="url(#ocao)"/>
+  <rect x="38" y="20" width="52" height="28" rx="4" fill="url(#ocDisplay)"/>
+  <path d="M39.6 20.8 L88.4 20.8" stroke="#04070c" stroke-width="1.2" opacity="0.7"/>
+  <path d="M39.6 47.3 L88.4 47.3" stroke="#8fa8c4" stroke-width="0.8" opacity="0.16"/>
+  <rect x="39" y="21.5" width="50" height="25" rx="3" fill="url(#ocBloom)" opacity="0.6"/>
+  <text x="43" y="35" font-size="13" font-weight="bold" fill="#9fc2e6" opacity="0.95" font-family="monospace">IN 12</text>
+  <text x="43" y="44" font-size="8" fill="#6d849c" font-family="monospace">OUT 8</text>
+  <!-- glass reflection over the top-left of the panel -->
+  <path d="M39 21.5 L64 21.5 L47 46.5 L39 46.5 Z" fill="#dceafa" opacity="0.07"/>
+
+  <!-- Mounting screws on the bar -->
+  <circle cx="45" cy="17.5" r="1.6" fill="#0c1219"/>
+  <circle cx="83" cy="17.5" r="1.6" fill="#0c1219"/>
+  <circle cx="11.5" cy="45.5" r="2.4" fill="#0c1219"/><circle cx="11.5" cy="45.5" r="1.4" fill="#3c4e5f"/>
+  <circle cx="116.5" cy="45.5" r="2.4" fill="#0c1219"/><circle cx="116.5" cy="45.5" r="1.4" fill="#3c4e5f"/>
+</svg>

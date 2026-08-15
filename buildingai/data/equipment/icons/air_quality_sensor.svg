@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="aqsBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f414d"/>
+      <stop offset="100%" stop-color="#18222c"/>
+    </linearGradient>
+    <linearGradient id="aqsPCB" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1a2820"/>
+      <stop offset="100%" stop-color="#0c1510"/>
+    </linearGradient>
+    <radialGradient id="aqsao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aqssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Housing body -->
+  <rect x="14" y="10" width="100" height="108" rx="8" fill="url(#aqsBody)"/>
+  <rect x="14" y="10" width="100" height="108" rx="8" fill="url(#aqssheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="64" cy="115" rx="48" ry="11" fill="url(#aqsao)"/>
+  <rect x="14" y="10" width="100" height="108" rx="8" fill="none" stroke="#465a6b" stroke-width="1.2" opacity="0.5"/>
+  <!-- Top chrome trim -->
+  <rect x="14" y="10" width="100" height="6" rx="4" fill="#4a5d70" opacity="0.5"/>
+  <!-- Mesh intake (left half top) -->
+  <ellipse cx="39.5" cy="40" rx="24" ry="22" fill="url(#aqsao)"/>
+  <rect x="18" y="20" width="42" height="38" rx="4" fill="#18202e"/>
+  <rect x="18" y="20" width="42" height="38" rx="4" fill="none" stroke="#334455" stroke-width="0.7"/>
+  <!-- Mesh pattern (dots array) -->
+  <circle cx="24" cy="26" r="1.5" fill="#2a3845"/><circle cx="32" cy="26" r="1.5" fill="#2a3845"/><circle cx="40" cy="26" r="1.5" fill="#2a3845"/><circle cx="48" cy="26" r="1.5" fill="#2a3845"/><circle cx="56" cy="26" r="1.5" fill="#2a3845"/>
+  <circle cx="24" cy="32" r="1.5" fill="#2a3845"/><circle cx="32" cy="32" r="1.5" fill="#2a3845"/><circle cx="40" cy="32" r="1.5" fill="#2a3845"/><circle cx="48" cy="32" r="1.5" fill="#2a3845"/><circle cx="56" cy="32" r="1.5" fill="#2a3845"/>
+  <circle cx="24" cy="38" r="1.5" fill="#2a3845"/><circle cx="32" cy="38" r="1.5" fill="#2a3845"/><circle cx="40" cy="38" r="1.5" fill="#2a3845"/><circle cx="48" cy="38" r="1.5" fill="#2a3845"/><circle cx="56" cy="38" r="1.5" fill="#2a3845"/>
+  <circle cx="24" cy="44" r="1.5" fill="#2a3845"/><circle cx="32" cy="44" r="1.5" fill="#2a3845"/><circle cx="40" cy="44" r="1.5" fill="#2a3845"/><circle cx="48" cy="44" r="1.5" fill="#2a3845"/><circle cx="56" cy="44" r="1.5" fill="#2a3845"/>
+  <circle cx="24" cy="50" r="1.5" fill="#2a3845"/><circle cx="32" cy="50" r="1.5" fill="#2a3845"/><circle cx="40" cy="50" r="1.5" fill="#2a3845"/><circle cx="48" cy="50" r="1.5" fill="#2a3845"/><circle cx="56" cy="50" r="1.5" fill="#2a3845"/>
+  <rect x="18" y="20" width="42" height="38" rx="4" fill="url(#aqssheen)" opacity="0.45"/>
+  <!-- PCB visible section (right top) -->
+  <ellipse cx="87" cy="40" rx="26" ry="22" fill="url(#aqsao)"/>
+  <rect x="64" y="20" width="46" height="38" rx="4" fill="url(#aqsPCB)"/>
+  <rect x="64" y="20" width="46" height="38" rx="4" fill="none" stroke="#2a4030" stroke-width="0.7"/>
+  <!-- PCB traces -->
+  <line x1="68" y1="26" x2="90" y2="26" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="68" y1="32" x2="80" y2="32" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="80" y1="26" x2="80" y2="44" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="86" y1="32" x2="106" y2="32" stroke="#2f5c36" stroke-width="0.8"/>
+  <line x1="94" y1="26" x2="94" y2="40" stroke="#2f5c36" stroke-width="0.8"/>
+  <!-- IC on PCB -->
+  <ellipse cx="75.4" cy="39.8" rx="10" ry="8" fill="url(#aqsao)"/>
+  <rect x="68" y="34" width="14" height="10" rx="1" fill="#16211a"/>
+  <rect x="68" y="34" width="14" height="10" rx="1" fill="none" stroke="#3a5040" stroke-width="0.5"/>
+  <rect x="68.6" y="34.6" width="12.8" height="2.4" rx="0.8" fill="#8fa8c4" opacity="0.09"/>
+  <!-- Sensor chip -->
+  <ellipse cx="94.4" cy="43.8" rx="9" ry="8" fill="url(#aqsao)"/>
+  <rect x="88" y="38" width="12" height="10" rx="1" fill="#16211a"/>
+  <rect x="88.6" y="38.6" width="10.8" height="2.4" rx="0.8" fill="#8fa8c4" opacity="0.09"/>
+  <!-- PCB glass sheen -->
+  <rect x="64" y="20" width="46" height="38" rx="4" fill="url(#aqssheen)" opacity="0.35"/>
+  <!-- Shell seam -->
+  <line x1="18" y1="59.6" x2="110" y2="59.6" stroke="#050a10" stroke-width="0.6" opacity="0.45"/>
+  <line x1="18" y1="60.3" x2="110" y2="60.3" stroke="#8fa8c4" stroke-width="0.5" opacity="0.12"/>
+  <!-- LED array (multiple colors) -->
+  <ellipse cx="64" cy="70" rx="50" ry="12" fill="url(#aqsao)"/>
+  <rect x="18" y="62" width="92" height="16" rx="3" fill="#18202e"/>
+  <rect x="18" y="62" width="92" height="16" rx="3" fill="none" stroke="#334455" stroke-width="0.7"/>
+  <rect x="19" y="62.8" width="90" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <circle cx="30" cy="70" r="6.5" fill="#cfe6ff" opacity="0.09"/>
+  <circle cx="30" cy="70" r="4" fill="#111a24"/><circle cx="30" cy="70" r="2.5" fill="#e8f3ff" opacity="0.85"/><circle cx="29.3" cy="69.3" r="0.7" fill="#ffffff"/>
+  <circle cx="44" cy="70" r="6" fill="#cfe6ff" opacity="0.06"/>
+  <circle cx="44" cy="70" r="4" fill="#111a24"/><circle cx="44" cy="70" r="2.5" fill="#e8f3ff" opacity="0.6"/>
+  <circle cx="58" cy="70" r="4" fill="#111a24"/><circle cx="58" cy="70" r="2.5" fill="#dbe8f5" opacity="0.4"/>
+  <circle cx="72" cy="70" r="4" fill="#111a24"/><circle cx="72" cy="70" r="2.5" fill="#dbe8f5" opacity="0.3"/>
+  <circle cx="86" cy="70" r="4" fill="#111a24"/><circle cx="86" cy="70" r="2.5" fill="#dbe8f5" opacity="0.3"/>
+  <circle cx="100" cy="70" r="4" fill="#111a24"/><circle cx="100" cy="70" r="2.5" fill="#dbe8f5" opacity="0.4"/>
+  <!-- Connector block -->
+  <ellipse cx="64" cy="91" rx="50" ry="13" fill="url(#aqsao)"/>
+  <rect x="18" y="82" width="92" height="18" rx="3" fill="#18202e"/>
+  <rect x="18" y="82" width="92" height="18" rx="3" fill="none" stroke="#334455" stroke-width="0.7"/>
+  <rect x="19" y="82.8" width="90" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <rect x="22" y="85" width="12" height="10" rx="1" fill="#2a3845"/><circle cx="28" cy="90" r="2" fill="#334455"/><circle cx="28" cy="90" r="1" fill="#7d92a8"/>
+  <rect x="36" y="85" width="12" height="10" rx="1" fill="#2a3845"/><circle cx="42" cy="90" r="2" fill="#334455"/>
+  <rect x="50" y="85" width="12" height="10" rx="1" fill="#2a3845"/><circle cx="56" cy="90" r="2" fill="#334455"/>
+  <rect x="64" y="85" width="12" height="10" rx="1" fill="#2a3845"/><circle cx="70" cy="90" r="2" fill="#334455"/>
+  <rect x="78" y="85" width="12" height="10" rx="1" fill="#2a3845"/><circle cx="84" cy="90" r="2" fill="#334455"/>
+  <rect x="92" y="85" width="12" height="10" rx="1" fill="#2a3845"/><circle cx="98" cy="90" r="2" fill="#334455"/>
+  <!-- Bottom cable area -->
+  <ellipse cx="64" cy="109" rx="30" ry="8" fill="url(#aqsao)"/>
+  <rect x="40" y="104" width="48" height="10" rx="3" fill="#161e2a"/>
+  <rect x="41" y="104.8" width="46" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.09"/>
+  <!-- Mounting holes -->
+  <circle cx="22" cy="16" r="2.5" fill="#141c26"/><circle cx="22" cy="16" r="1.5" fill="#3b4d5e"/>
+  <circle cx="106" cy="16" r="2.5" fill="#141c26"/><circle cx="106" cy="16" r="1.5" fill="#3b4d5e"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M14.7 96 L14.7 18.7 A8 8 0 0 1 22.7 10.7 L96 10.7" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M113.3 34 L113.3 109.3 A8 8 0 0 1 105.3 117.3 L38 117.3" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+</svg>

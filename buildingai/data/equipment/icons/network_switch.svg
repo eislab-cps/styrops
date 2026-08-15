@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="nswBody" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#354754"/>
+      <stop offset="55%" stop-color="#25323d"/>
+      <stop offset="100%" stop-color="#17202a"/>
+    </linearGradient>
+    <linearGradient id="nswEar" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#2c3746"/>
+      <stop offset="100%" stop-color="#141a24"/>
+    </linearGradient>
+    <linearGradient id="nswBay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070c12"/>
+      <stop offset="100%" stop-color="#131b24"/>
+    </linearGradient>
+    <radialGradient id="nswao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nswsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rack ears -->
+  <rect x="4" y="22" width="14" height="84" rx="3" fill="url(#nswEar)"/>
+  <rect x="4" y="22" width="14" height="84" rx="3" fill="url(#nswsheen)"/>
+  <path d="M4.6 100 L4.6 25 Q4.6 22.6 7 22.6 L17 22.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M17.4 30 L17.4 103 Q17.4 105.4 15 105.4 L7 105.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="11" cy="32" r="4" fill="#0b1017"/><circle cx="11" cy="32" r="2.8" fill="#3a4b5c"/><circle cx="10.2" cy="31.2" r="1" fill="#b6cbe2" opacity="0.5"/>
+  <circle cx="11" cy="64" r="4" fill="#0b1017"/><circle cx="11" cy="64" r="2.8" fill="#3a4b5c"/><circle cx="10.2" cy="63.2" r="1" fill="#b6cbe2" opacity="0.5"/>
+  <circle cx="11" cy="96" r="4" fill="#0b1017"/><circle cx="11" cy="96" r="2.8" fill="#3a4b5c"/><circle cx="10.2" cy="95.2" r="1" fill="#b6cbe2" opacity="0.5"/>
+  <rect x="110" y="22" width="14" height="84" rx="3" fill="url(#nswEar)"/>
+  <rect x="110" y="22" width="14" height="84" rx="3" fill="url(#nswsheen)"/>
+  <path d="M110.6 100 L110.6 25 Q110.6 22.6 113 22.6 L123 22.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M123.4 30 L123.4 103 Q123.4 105.4 121 105.4 L113 105.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="117" cy="32" r="4" fill="#0b1017"/><circle cx="117" cy="32" r="2.8" fill="#3a4b5c"/><circle cx="116.2" cy="31.2" r="1" fill="#b6cbe2" opacity="0.5"/>
+  <circle cx="117" cy="64" r="4" fill="#0b1017"/><circle cx="117" cy="64" r="2.8" fill="#3a4b5c"/><circle cx="116.2" cy="63.2" r="1" fill="#b6cbe2" opacity="0.5"/>
+  <circle cx="117" cy="96" r="4" fill="#0b1017"/><circle cx="117" cy="96" r="2.8" fill="#3a4b5c"/><circle cx="116.2" cy="95.2" r="1" fill="#b6cbe2" opacity="0.5"/>
+
+  <!-- Main chassis -->
+  <rect x="18" y="22" width="92" height="84" rx="4" fill="url(#nswBody)"/>
+  <rect x="18" y="22" width="92" height="84" rx="4" fill="url(#nswsheen)"/>
+  <ellipse cx="64" cy="104" rx="45" ry="8" fill="url(#nswao)"/>
+  <path d="M18.6 96 L18.6 26 Q18.6 22.6 22 22.6 L106 22.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M109.4 34 L109.4 102 Q109.4 105.4 106 105.4 L26 105.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- Shell seam -->
+  <path d="M19 78 L109 78" stroke="#060a10" stroke-width="0.7" opacity="0.4"/>
+  <path d="M19 78.9 L109 78.9" stroke="#8fa8c4" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Port bay: two recessed rows -->
+  <ellipse cx="63" cy="66" rx="44" ry="5" fill="url(#nswao)"/>
+  <rect x="20" y="29" width="86" height="36" rx="3" fill="url(#nswBay)"/>
+  <path d="M22 29.9 L104 29.9" stroke="#04070c" stroke-width="1.3" opacity="0.7"/>
+  <path d="M20.7 31 L20.7 63" stroke="#04070c" stroke-width="1" opacity="0.55"/>
+  <path d="M22 64.3 L104 64.3" stroke="#8fa8c4" stroke-width="0.8" opacity="0.17"/>
+  <path d="M105.3 32 L105.3 63" stroke="#8fa8c4" stroke-width="0.6" opacity="0.12"/>
+
+  <!-- Row 1 ports -->
+  <g fill="#060b10">
+    <rect x="22" y="32" width="12" height="10" rx="1.4"/><rect x="36" y="32" width="12" height="10" rx="1.4"/>
+    <rect x="50" y="32" width="12" height="10" rx="1.4"/><rect x="64" y="32" width="12" height="10" rx="1.4"/>
+    <rect x="78" y="32" width="12" height="10" rx="1.4"/><rect x="92" y="32" width="12" height="10" rx="1.4"/>
+  </g>
+  <g stroke="#04070c" stroke-width="1" opacity="0.75">
+    <path d="M22.8 32.7 L33.2 32.7"/><path d="M36.8 32.7 L47.2 32.7"/><path d="M50.8 32.7 L61.2 32.7"/>
+    <path d="M64.8 32.7 L75.2 32.7"/><path d="M78.8 32.7 L89.2 32.7"/><path d="M92.8 32.7 L103.2 32.7"/>
+  </g>
+  <g fill="#22303c">
+    <rect x="26" y="39" width="4" height="3" rx="0.6"/><rect x="40" y="39" width="4" height="3" rx="0.6"/>
+    <rect x="54" y="39" width="4" height="3" rx="0.6"/><rect x="68" y="39" width="4" height="3" rx="0.6"/>
+    <rect x="82" y="39" width="4" height="3" rx="0.6"/><rect x="96" y="39" width="4" height="3" rx="0.6"/>
+  </g>
+  <g stroke="#8fa8c4" stroke-width="0.6" opacity="0.24">
+    <path d="M22.8 41.5 L33.2 41.5"/><path d="M36.8 41.5 L47.2 41.5"/><path d="M50.8 41.5 L61.2 41.5"/>
+    <path d="M64.8 41.5 L75.2 41.5"/><path d="M78.8 41.5 L89.2 41.5"/><path d="M92.8 41.5 L103.2 41.5"/>
+  </g>
+  <!-- Row 1 link LEDs -->
+  <g fill="#0a1017">
+    <circle cx="26" cy="46.5" r="1.8"/><circle cx="30" cy="46.5" r="1.8"/><circle cx="40" cy="46.5" r="1.8"/><circle cx="44" cy="46.5" r="1.8"/>
+    <circle cx="54" cy="46.5" r="1.8"/><circle cx="58" cy="46.5" r="1.8"/><circle cx="68" cy="46.5" r="1.8"/><circle cx="72" cy="46.5" r="1.8"/>
+    <circle cx="82" cy="46.5" r="1.8"/><circle cx="86" cy="46.5" r="1.8"/><circle cx="96" cy="46.5" r="1.8"/><circle cx="100" cy="46.5" r="1.8"/>
+  </g>
+  <g fill="#e8f2ff">
+    <circle cx="26" cy="46.5" r="1.1" opacity="0.85"/><circle cx="30" cy="46.5" r="1.1" opacity="0.4"/>
+    <circle cx="40" cy="46.5" r="1.1" opacity="0.8"/><circle cx="44" cy="46.5" r="1.1" opacity="0.3"/>
+    <circle cx="54" cy="46.5" r="1.1" opacity="0.7"/><circle cx="58" cy="46.5" r="1.1" opacity="0.4"/>
+    <circle cx="68" cy="46.5" r="1.1" opacity="0.5"/><circle cx="72" cy="46.5" r="1.1" opacity="0.3"/>
+    <circle cx="82" cy="46.5" r="1.1" opacity="0.6"/><circle cx="86" cy="46.5" r="1.1" opacity="0.4"/>
+    <circle cx="96" cy="46.5" r="1.1" opacity="0.3"/><circle cx="100" cy="46.5" r="1.1" opacity="0.3"/>
+  </g>
+
+  <!-- Row 2 ports -->
+  <g fill="#060b10">
+    <rect x="22" y="51" width="12" height="10" rx="1.4"/><rect x="36" y="51" width="12" height="10" rx="1.4"/>
+    <rect x="50" y="51" width="12" height="10" rx="1.4"/><rect x="64" y="51" width="12" height="10" rx="1.4"/>
+    <rect x="78" y="51" width="12" height="10" rx="1.4"/><rect x="92" y="51" width="12" height="10" rx="1.4"/>
+  </g>
+  <g stroke="#04070c" stroke-width="1" opacity="0.75">
+    <path d="M22.8 51.7 L33.2 51.7"/><path d="M36.8 51.7 L47.2 51.7"/><path d="M50.8 51.7 L61.2 51.7"/>
+    <path d="M64.8 51.7 L75.2 51.7"/><path d="M78.8 51.7 L89.2 51.7"/><path d="M92.8 51.7 L103.2 51.7"/>
+  </g>
+  <g fill="#22303c">
+    <rect x="26" y="58" width="4" height="3" rx="0.6"/><rect x="40" y="58" width="4" height="3" rx="0.6"/>
+    <rect x="54" y="58" width="4" height="3" rx="0.6"/><rect x="68" y="58" width="4" height="3" rx="0.6"/>
+    <rect x="82" y="58" width="4" height="3" rx="0.6"/><rect x="96" y="58" width="4" height="3" rx="0.6"/>
+  </g>
+  <g stroke="#8fa8c4" stroke-width="0.6" opacity="0.24">
+    <path d="M22.8 60.5 L33.2 60.5"/><path d="M36.8 60.5 L47.2 60.5"/><path d="M50.8 60.5 L61.2 60.5"/>
+    <path d="M64.8 60.5 L75.2 60.5"/><path d="M78.8 60.5 L89.2 60.5"/><path d="M92.8 60.5 L103.2 60.5"/>
+  </g>
+
+  <!-- Console port + SFP uplinks -->
+  <ellipse cx="26" cy="76" rx="9" ry="3" fill="url(#nswao)"/>
+  <rect x="21" y="69" width="10" height="7" rx="1.2" fill="#060b10"/>
+  <path d="M21.8 69.7 L30.2 69.7" stroke="#04070c" stroke-width="1" opacity="0.7"/>
+  <path d="M21.8 75.3 L30.2 75.3" stroke="#8fa8c4" stroke-width="0.6" opacity="0.22"/>
+  <ellipse cx="96" cy="77" rx="16" ry="3.5" fill="url(#nswao)"/>
+  <rect x="84" y="68" width="11" height="8" rx="1.2" fill="#060b10"/>
+  <rect x="97" y="68" width="11" height="8" rx="1.2" fill="#060b10"/>
+  <g stroke="#04070c" stroke-width="1" opacity="0.7">
+    <path d="M84.8 68.7 L94.2 68.7"/><path d="M97.8 68.7 L107.2 68.7"/>
+  </g>
+  <g stroke="#8fa8c4" stroke-width="0.6" opacity="0.22">
+    <path d="M84.8 75.3 L94.2 75.3"/><path d="M97.8 75.3 L107.2 75.3"/>
+  </g>
+  <g fill="#2b3a48">
+    <rect x="86" y="71" width="7" height="2.6" rx="0.6"/><rect x="99" y="71" width="7" height="2.6" rx="0.6"/>
+  </g>
+
+  <!-- Vent slots, recessed -->
+  <ellipse cx="60" cy="95" rx="42" ry="4" fill="url(#nswao)"/>
+  <rect x="22" y="82" width="78" height="12" rx="2.5" fill="#0d141c"/>
+  <path d="M24 82.8 L98 82.8" stroke="#04070c" stroke-width="1.2" opacity="0.7"/>
+  <path d="M24 93.4 L98 93.4" stroke="#8fa8c4" stroke-width="0.7" opacity="0.16"/>
+  <g stroke="#2b3846" stroke-width="1.2" opacity="0.7">
+    <path d="M25 85.4 L97 85.4"/><path d="M25 89 L97 89"/><path d="M25 92.2 L97 92.2"/>
+  </g>
+  <g stroke="#04070c" stroke-width="1.1" opacity="0.75">
+    <path d="M25 86.7 L97 86.7"/><path d="M25 90.3 L97 90.3"/>
+  </g>
+  <g stroke="#8fa8c4" stroke-width="0.4" opacity="0.13">
+    <path d="M25 87.4 L97 87.4"/><path d="M25 91 L97 91"/>
+  </g>
+
+  <!-- Power LED -->
+  <circle cx="104" cy="86" r="3.4" fill="#0a1017"/>
+  <circle cx="104" cy="86" r="2" fill="#e8f2ff" opacity="0.85"/>
+  <circle cx="103.3" cy="85.3" r="0.8" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Bottom feet -->
+  <ellipse cx="29" cy="103.5" rx="9" ry="3" fill="url(#nswao)"/>
+  <ellipse cx="99" cy="103.5" rx="9" ry="3" fill="url(#nswao)"/>
+  <rect x="24" y="98" width="10" height="5" rx="2" fill="#151b24"/>
+  <rect x="94" y="98" width="10" height="5" rx="2" fill="#151b24"/>
+  <path d="M25 98.6 L33 98.6" stroke="#8fa8c4" stroke-width="0.6" opacity="0.16"/>
+  <path d="M95 98.6 L103 98.6" stroke="#8fa8c4" stroke-width="0.6" opacity="0.16"/>
+</svg>

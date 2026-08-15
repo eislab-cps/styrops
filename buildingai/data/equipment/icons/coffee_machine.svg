@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="cmBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f515e"/>
+      <stop offset="100%" stop-color="#1c262e"/>
+    </linearGradient>
+    <linearGradient id="cmScreen" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1c3446"/>
+      <stop offset="100%" stop-color="#0a1820"/>
+    </linearGradient>
+    <linearGradient id="cmCup" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b3540"/>
+      <stop offset="100%" stop-color="#211c24"/>
+    </linearGradient>
+    <radialGradient id="cmao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cmsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Main body -->
+  <rect x="22" y="12" width="70" height="90" rx="8" fill="url(#cmBody)"/>
+  <rect x="22" y="12" width="70" height="90" rx="8" fill="url(#cmsheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="57" cy="99" rx="33" ry="9" fill="url(#cmao)"/>
+  <!-- Body chrome border -->
+  <rect x="22" y="12" width="70" height="90" rx="8" fill="none" stroke="#8a9cad" stroke-width="1" opacity="0.35"/>
+  <!-- Panel line -->
+  <rect x="22" y="12" width="70" height="6" rx="4" fill="#465768" opacity="0.7"/>
+  <!-- Shell seam -->
+  <line x1="26" y1="18.4" x2="88" y2="18.4" stroke="#050a10" stroke-width="0.6" opacity="0.45"/>
+  <line x1="26" y1="19.1" x2="88" y2="19.1" stroke="#8fa8c4" stroke-width="0.5" opacity="0.12"/>
+  <!-- Bean hopper (trapezoid) -->
+  <ellipse cx="57" cy="24" rx="25" ry="13" fill="url(#cmao)"/>
+  <path d="M36 14 L78 14 L72 34 L42 34Z" fill="#2e404c"/>
+  <path d="M36 14 L78 14 L72 34 L42 34Z" fill="none" stroke="#5d707f" stroke-width="0.8"/>
+  <!-- Hopper shine -->
+  <path d="M38 15 L62 15 L58 30 L44 30Z" fill="#c6d7ea" opacity="0.09"/>
+  <!-- Bean dots in hopper -->
+  <ellipse cx="51" cy="22" rx="4" ry="3" fill="#1a1214" opacity="0.85"/>
+  <ellipse cx="63" cy="24" rx="4" ry="3" fill="#1a1214" opacity="0.85"/>
+  <ellipse cx="55" cy="29" rx="4" ry="3" fill="#1a1214" opacity="0.85"/>
+  <path d="M48.4 20.6 A4 3 0 0 1 52.6 19.4" fill="none" stroke="#8a6a52" stroke-width="0.6" opacity="0.35"/>
+  <line x1="51" y1="22" x2="51" y2="25" stroke="#3a2020" stroke-width="0.8"/>
+  <line x1="63" y1="24" x2="63" y2="27" stroke="#3a2020" stroke-width="0.8"/>
+  <!-- Display screen -->
+  <ellipse cx="57" cy="49" rx="31" ry="14" fill="url(#cmao)"/>
+  <rect x="28.5" y="36.5" width="57" height="25" rx="5" fill="#5f9fd8" opacity="0.07"/>
+  <rect x="30" y="38" width="54" height="22" rx="3" fill="url(#cmScreen)"/>
+  <rect x="30" y="38" width="54" height="22" rx="3" fill="none" stroke="#465a6b" stroke-width="1"/>
+  <!-- Screen content lines -->
+  <rect x="34" y="42" width="24" height="2" rx="1" fill="#88aacc" opacity="0.65"/>
+  <rect x="34" y="47" width="18" height="2" rx="1" fill="#88aacc" opacity="0.42"/>
+  <rect x="34" y="52" width="28" height="2" rx="1" fill="#ffffff" opacity="0.5"/>
+  <!-- Temperature display -->
+  <text x="68" y="55" font-size="9" fill="#9dc0e0" opacity="0.85" font-family="monospace">92°</text>
+  <!-- Screen glass reflection -->
+  <path d="M31 59 L31 41 A3 3 0 0 1 34 38 L52 38 L35 59Z" fill="#c6d7ea" opacity="0.08"/>
+  <!-- Nozzle group -->
+  <ellipse cx="57" cy="66.5" rx="17" ry="7" fill="url(#cmao)"/>
+  <rect x="44" y="62" width="26" height="8" rx="2" fill="#334455"/>
+  <rect x="44" y="62" width="26" height="3" rx="1" fill="#57697a"/>
+  <rect x="44.8" y="62.4" width="24.4" height="1.1" rx="0.55" fill="#c9dcf0" opacity="0.22"/>
+  <!-- Two spouts -->
+  <rect x="50" y="70" width="5" height="10" rx="2" fill="#2a3845"/>
+  <rect x="59" y="70" width="5" height="10" rx="2" fill="#2a3845"/>
+  <rect x="50.5" y="70.5" width="1.4" height="9" rx="0.7" fill="#8fa8c4" opacity="0.16"/>
+  <rect x="59.5" y="70.5" width="1.4" height="9" rx="0.7" fill="#8fa8c4" opacity="0.16"/>
+  <circle cx="52" cy="80" r="2.5" fill="#141c26" stroke="#465a6b" stroke-width="0.8"/>
+  <circle cx="61" cy="80" r="2.5" fill="#141c26" stroke="#465a6b" stroke-width="0.8"/>
+  <!-- Drip tray -->
+  <ellipse cx="57" cy="90" rx="33" ry="10" fill="url(#cmao)"/>
+  <rect x="28" y="84" width="58" height="12" rx="3" fill="#2a3040"/>
+  <rect x="28" y="84" width="58" height="5" rx="2" fill="#3b4d5e" opacity="0.75"/>
+  <rect x="28.8" y="84.4" width="56.4" height="1.4" rx="0.7" fill="#c9dcf0" opacity="0.18"/>
+  <!-- Drip grate lines -->
+  <line x1="34" y1="87" x2="34" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="40" y1="87" x2="40" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="46" y1="87" x2="46" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="52" y1="87" x2="52" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="58" y1="87" x2="58" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="64" y1="87" x2="64" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="70" y1="87" x2="70" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <line x1="76" y1="87" x2="76" y2="94" stroke="#465a6b" stroke-width="0.8"/>
+  <!-- Coffee cup below -->
+  <path d="M72 100 Q80 100 80 106 Q80 112 72 112" fill="none" stroke="#2f2a34" stroke-width="2.5"/>
+  <path d="M48 96 L52 112 L68 112 L72 96Z" fill="url(#cmCup)"/>
+  <path d="M48 96 L52 112 L57 112 L53.6 96Z" fill="#c6d7ea" opacity="0.08"/>
+  <ellipse cx="60" cy="96" rx="12" ry="2.6" fill="#1a1214"/>
+  <path d="M48.4 95 A12 2.6 0 0 1 71.6 95" fill="none" stroke="#8fa0b4" stroke-width="0.9" opacity="0.35"/>
+  <!-- Steam wisps -->
+  <path d="M52 94 Q54 90 52 86 Q50 82 52 78" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+  <path d="M60 94 Q62 89 60 85 Q58 81 60 77" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.25" stroke-linecap="round"/>
+  <path d="M68 94 Q70 90 68 86 Q66 82 68 78" fill="none" stroke="#88aacc" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+  <!-- Chrome accent strip -->
+  <rect x="22" y="98" width="70" height="3" rx="1" fill="#8a9cad" opacity="0.25"/>
+  <!-- Status LED -->
+  <circle cx="84" cy="65" r="5" fill="#cfe6ff" opacity="0.12"/>
+  <circle cx="84" cy="65" r="3" fill="#111a24"/>
+  <circle cx="84" cy="65" r="2" fill="#e8f3ff" opacity="0.85"/>
+  <circle cx="83.4" cy="64.4" r="0.6" fill="#ffffff"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M22.6 88 L22.6 20.6 A8 8 0 0 1 30.6 12.6 L80 12.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M91.4 34 L91.4 93.4 A8 8 0 0 1 83.4 101.4 L40 101.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+</svg>

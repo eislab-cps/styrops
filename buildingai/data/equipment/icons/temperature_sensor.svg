@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="tsHousing" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#44545f"/>
+      <stop offset="55%" stop-color="#2c3a44"/>
+      <stop offset="100%" stop-color="#19222b"/>
+    </linearGradient>
+    <linearGradient id="tsProbe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38474f"/>
+      <stop offset="18%" stop-color="#93a9bf"/>
+      <stop offset="34%" stop-color="#cfe0f0"/>
+      <stop offset="52%" stop-color="#465866"/>
+      <stop offset="72%" stop-color="#1e2a34"/>
+      <stop offset="92%" stop-color="#6d8296"/>
+      <stop offset="100%" stop-color="#2a3743"/>
+    </linearGradient>
+    <linearGradient id="tsDisplay" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#1d2c46"/>
+      <stop offset="100%" stop-color="#080e1a"/>
+    </linearGradient>
+    <radialGradient id="tsao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tsGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fa8d8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7fa8d8" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <!-- Cable (behind the housing) -->
+  <path d="M90 65 Q100 65 100 80 Q100 96 86 96" fill="none" stroke="#10161e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 65 Q100 65 100 80 Q100 96 86 96" fill="none" stroke="#2c3b48" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M91 64 Q99 64.4 99.2 78" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.25" stroke-linecap="round"/>
+  <!-- Mounting bracket (wall plate) -->
+  <rect x="52" y="8" width="24" height="90" rx="3" fill="#1c252e"/>
+  <rect x="52" y="8" width="24" height="4" rx="2" fill="#2c3846"/>
+  <path d="M52.5 9.5 H75.5" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.2"/>
+  <circle cx="64" cy="12" r="3" fill="#131a22"/><circle cx="64" cy="12" r="2" fill="#334455"/><circle cx="63.4" cy="11.4" r="0.7" fill="#a8c2dc" opacity="0.5"/>
+  <circle cx="64" cy="92" r="3" fill="#131a22"/><circle cx="64" cy="92" r="2" fill="#334455"/><circle cx="63.4" cy="91.4" r="0.7" fill="#a8c2dc" opacity="0.5"/>
+  <!-- Housing body (matte plastic) -->
+  <rect x="30" y="18" width="68" height="60" rx="7" fill="url(#tsHousing)"/>
+  <rect x="30" y="18" width="68" height="60" rx="7" fill="url(#tssheen)"/>
+  <ellipse cx="64" cy="76" rx="32" ry="9" fill="url(#tsao)"/>
+  <!-- Shell seam -->
+  <path d="M30.6 56 H97.4" fill="none" stroke="#0b1119" stroke-width="0.7" opacity="0.4"/>
+  <path d="M30.6 56.8 H97.4" fill="none" stroke="#8fa8c4" stroke-width="0.5" opacity="0.13"/>
+  <!-- Edge lighting -->
+  <path d="M30 68 V25 A7 7 0 0 1 37 18 H88" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M98 30 V71 A7 7 0 0 1 91 78 H42" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Display screen (bedded in, with bloom) -->
+  <ellipse cx="64" cy="52" rx="32" ry="8" fill="url(#tsao)"/>
+  <rect x="34" y="22" width="60" height="32" rx="5" fill="url(#tsGlow)"/>
+  <rect x="36" y="24" width="56" height="28" rx="3" fill="url(#tsDisplay)"/>
+  <rect x="36" y="24" width="56" height="28" rx="3" fill="none" stroke="#0a1018" stroke-width="1" opacity="0.6"/>
+  <!-- Temperature reading -->
+  <rect x="38" y="27" width="30" height="2" rx="1" fill="#445566" opacity="0.5"/>
+  <text x="48" y="43" font-size="14" font-weight="bold" fill="#9dc0e2" opacity="0.92" font-family="monospace">23.4</text>
+  <text x="82" y="43" font-size="8" fill="#7d93a9" font-family="monospace">°C</text>
+  <!-- Glass reflection streak on the screen -->
+  <path d="M36 44 L54 24 H70 L40 52 H36 Z" fill="#c6d7ea" opacity="0.07"/>
+  <path d="M36 30.4 L44 24 H50 L36 35 Z" fill="#dcecff" opacity="0.06"/>
+  <rect x="36" y="24" width="56" height="28" rx="3" fill="none" stroke="#4a5c6c" stroke-width="0.8" opacity="0.7"/>
+  <!-- Terminal block / screw terminals -->
+  <ellipse cx="64" cy="72" rx="32" ry="7" fill="url(#tsao)"/>
+  <rect x="36" y="58" width="56" height="14" rx="3" fill="#151d26"/>
+  <path d="M37 58.7 H91" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.18"/>
+  <rect x="40" y="61" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="44" cy="65" r="2" fill="#334455"/><circle cx="43.4" cy="64.4" r="0.9" fill="#8697aa"/>
+  <rect x="51" y="61" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="55" cy="65" r="2" fill="#334455"/><circle cx="54.4" cy="64.4" r="0.9" fill="#8697aa"/>
+  <rect x="62" y="61" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="66" cy="65" r="2" fill="#334455"/><circle cx="65.4" cy="64.4" r="0.9" fill="#8697aa"/>
+  <rect x="73" y="61" width="8" height="8" rx="1" fill="#2a3845"/><circle cx="77" cy="65" r="2" fill="#334455"/><circle cx="76.4" cy="64.4" r="0.9" fill="#8697aa"/>
+  <!-- Status LED -->
+  <circle cx="88" cy="28" r="4.6" fill="#c6d7ea" opacity="0.12"/>
+  <circle cx="88" cy="28" r="3" fill="#131a22"/>
+  <circle cx="88" cy="28" r="2" fill="#ffffff" opacity="0.85"/>
+  <!-- Probe cylinder extending down -->
+  <ellipse cx="64" cy="80" rx="14" ry="6" fill="url(#tsao)"/>
+  <rect x="58" y="78" width="12" height="34" rx="5" fill="url(#tsProbe)"/>
+  <rect x="59.4" y="80" width="1.4" height="29" rx="0.7" fill="#ffffff" opacity="0.45"/>
+  <!-- Probe connector rings -->
+  <rect x="58" y="82" width="12" height="2" rx="1" fill="#54677a"/>
+  <rect x="58" y="84" width="12" height="0.8" fill="#060a10" opacity="0.5"/>
+  <rect x="58" y="88" width="12" height="2" rx="1" fill="#54677a"/>
+  <rect x="58" y="90" width="12" height="0.8" fill="#060a10" opacity="0.5"/>
+  <!-- Probe tip -->
+  <ellipse cx="64" cy="112" rx="5" ry="3" fill="#3a4a58"/>
+  <ellipse cx="63" cy="111.4" rx="2.6" ry="1.4" fill="#c6d7ea" opacity="0.4"/>
+</svg>

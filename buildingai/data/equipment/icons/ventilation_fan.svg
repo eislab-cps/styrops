@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="vfFlange" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#54677a"/>
+      <stop offset="55%" stop-color="#34434f"/>
+      <stop offset="100%" stop-color="#1a242d"/>
+    </linearGradient>
+    <radialGradient id="vfDuct" cx="36%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#26323d"/>
+      <stop offset="60%" stop-color="#1a232d"/>
+      <stop offset="100%" stop-color="#0e151d"/>
+    </radialGradient>
+    <radialGradient id="vfWell" cx="50%" cy="50%" r="50%">
+      <stop offset="62%" stop-color="#04070c" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#04070c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0.62"/>
+    </radialGradient>
+    <linearGradient id="vfBlade" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#54697c"/>
+      <stop offset="55%" stop-color="#37485a"/>
+      <stop offset="100%" stop-color="#1e2934"/>
+    </linearGradient>
+    <radialGradient id="vfCenter" cx="34%" cy="28%" r="84%">
+      <stop offset="0%" stop-color="#5b6f82"/>
+      <stop offset="55%" stop-color="#334252"/>
+      <stop offset="100%" stop-color="#151e27"/>
+    </radialGradient>
+    <radialGradient id="vfao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vfsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Mounting flange (brushed metal) -->
+  <rect x="8" y="8" width="112" height="112" rx="12" fill="url(#vfFlange)"/>
+  <rect x="8" y="8" width="112" height="112" rx="12" fill="url(#vfsheen)"/>
+  <!-- Brushed streaks -->
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.1">
+    <line x1="12" y1="16" x2="116" y2="16"/>
+    <line x1="10" y1="24" x2="118" y2="24"/>
+    <line x1="10" y1="104" x2="118" y2="104"/>
+    <line x1="12" y1="112" x2="116" y2="112"/>
+  </g>
+  <rect x="9" y="18" width="110" height="5" fill="#c6d7ea" opacity="0.06"/>
+  <!-- Flange edge lighting -->
+  <path d="M8 100 V20 A12 12 0 0 1 20 8 H104" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M120 28 V108 A12 12 0 0 1 108 120 H24" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Mounting bolt holes -->
+  <circle cx="22" cy="22" r="5" fill="#101720"/><circle cx="22" cy="22" r="3.5" fill="#2a3845"/><circle cx="21" cy="21" r="1.4" fill="#a8c2dc" opacity="0.5"/>
+  <circle cx="106" cy="22" r="5" fill="#101720"/><circle cx="106" cy="22" r="3.5" fill="#2a3845"/><circle cx="105" cy="21" r="1.4" fill="#a8c2dc" opacity="0.5"/>
+  <circle cx="22" cy="106" r="5" fill="#101720"/><circle cx="22" cy="106" r="3.5" fill="#2a3845"/><circle cx="21" cy="105" r="1.4" fill="#a8c2dc" opacity="0.5"/>
+  <circle cx="106" cy="106" r="5" fill="#101720"/><circle cx="106" cy="106" r="3.5" fill="#2a3845"/><circle cx="105" cy="105" r="1.4" fill="#a8c2dc" opacity="0.5"/>
+  <!-- Circular duct opening (recessed) -->
+  <circle cx="64" cy="64" r="52" fill="url(#vfDuct)"/>
+  <circle cx="64" cy="64" r="52" fill="url(#vfWell)"/>
+  <path d="M27.2 100.8 A52 52 0 0 1 27.2 27.2" fill="none" stroke="#060a10" stroke-width="2" opacity="0.45"/>
+  <path d="M100.8 27.2 A52 52 0 0 1 100.8 100.8" fill="none" stroke="#8fa8c4" stroke-width="0.9" opacity="0.16"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#0a1018" stroke-width="1.4" opacity="0.6"/>
+  <!-- Protective grille rings -->
+  <circle cx="64" cy="64" r="46" fill="none" stroke="#33424f" stroke-width="1"/>
+  <circle cx="64" cy="64" r="38" fill="none" stroke="#33424f" stroke-width="1"/>
+  <circle cx="64" cy="64" r="30" fill="none" stroke="#33424f" stroke-width="1"/>
+  <!-- Grille spokes -->
+  <g stroke="#33424f" stroke-width="1">
+    <line x1="64" y1="18" x2="64" y2="110"/>
+    <line x1="18" y1="64" x2="110" y2="64"/>
+    <line x1="29" y1="29" x2="99" y2="99"/>
+    <line x1="99" y1="29" x2="29" y2="99"/>
+  </g>
+  <!-- Fan blades -->
+  <ellipse cx="66" cy="68" rx="34" ry="34" fill="url(#vfao)"/>
+  <g fill="url(#vfBlade)">
+    <path d="M64 64 Q76 46 68 38 Q56 42 64 64Z"/>
+    <path d="M64 64 Q82 66 86 56 Q78 46 64 64Z"/>
+    <path d="M64 64 Q80 78 90 74 Q88 62 64 64Z"/>
+    <path d="M64 64 Q64 84 72 90 Q80 82 64 64Z"/>
+    <path d="M64 64 Q44 78 42 90 Q54 92 64 64Z"/>
+    <path d="M64 64 Q44 52 38 58 Q40 70 64 64Z"/>
+  </g>
+  <!-- Blade edge highlights (leading edges catch the top-left light) -->
+  <g fill="none" stroke="#a8c2dc" stroke-width="0.7" opacity="0.28">
+    <path d="M64 64 Q76 46 68 38"/>
+    <path d="M64 64 Q44 52 38 58"/>
+    <path d="M64 64 Q82 66 86 56"/>
+  </g>
+  <g fill="none" stroke="#060a10" stroke-width="0.8" opacity="0.4">
+    <path d="M64 64 Q80 78 90 74"/>
+    <path d="M64 64 Q64 84 72 90"/>
+    <path d="M64 64 Q44 78 42 90"/>
+  </g>
+  <!-- Motor hub -->
+  <circle cx="65" cy="66" r="18" fill="url(#vfao)"/>
+  <circle cx="64" cy="64" r="14" fill="url(#vfCenter)"/>
+  <path d="M54.1 74 A14 14 0 0 1 74 54.1" fill="none" stroke="#a8c2dc" stroke-width="1" opacity="0.32"/>
+  <path d="M74 74 A14 14 0 0 1 54.1 74" fill="none" stroke="#060a10" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="64" cy="64" r="9" fill="#2a3845"/>
+  <circle cx="64" cy="64" r="9" fill="none" stroke="#060a10" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="64" cy="64" r="5" fill="#3c4d5c"/>
+  <circle cx="64" cy="64" r="2.5" fill="#c6d7ea" opacity="0.7"/>
+  <circle cx="62.6" cy="62.6" r="1" fill="#ffffff" opacity="0.75"/>
+</svg>

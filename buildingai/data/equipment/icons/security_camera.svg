@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="scBody" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#485966"/>
+      <stop offset="45%" stop-color="#2e3b45"/>
+      <stop offset="100%" stop-color="#1a222b"/>
+    </linearGradient>
+    <linearGradient id="scPlate" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#3b4954"/>
+      <stop offset="100%" stop-color="#171f27"/>
+    </linearGradient>
+    <linearGradient id="scArm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a232c"/>
+      <stop offset="30%" stop-color="#4a5c6c"/>
+      <stop offset="70%" stop-color="#26313c"/>
+      <stop offset="100%" stop-color="#141b23"/>
+    </linearGradient>
+    <!-- glass: dark well, cool tint, deep centre -->
+    <radialGradient id="scLens" cx="0.34" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#4e6a80"/>
+      <stop offset="30%" stop-color="#22374a"/>
+      <stop offset="70%" stop-color="#0e1722"/>
+      <stop offset="100%" stop-color="#050a12"/>
+    </radialGradient>
+    <linearGradient id="scGlassStreak" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#e8f2ff" stop-opacity="0.42"/>
+      <stop offset="60%" stop-color="#9fc0dd" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#9fc0dd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scSheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="scAo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- wall plate -->
+  <rect x="44" y="6" width="40" height="20" rx="4" fill="url(#scPlate)"/>
+  <rect x="44" y="6" width="40" height="8" rx="3" fill="#40505d" opacity="0.6"/>
+  <path d="M47 6.6 L81 6.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.32" stroke-linecap="round"/>
+  <path d="M47 25.4 L81 25.4 M83.4 10 L83.4 22" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="54" cy="14" r="4" fill="#0d131a"/><circle cx="54" cy="13.7" r="2.8" fill="#41535f"/><circle cx="53.2" cy="13" r="1.1" fill="#c3d6e9" opacity="0.55"/>
+  <circle cx="74" cy="14" r="4" fill="#0d131a"/><circle cx="74" cy="13.7" r="2.8" fill="#41535f"/><circle cx="73.2" cy="13" r="1.1" fill="#c3d6e9" opacity="0.45"/>
+
+  <!-- arm, shaded as a tube -->
+  <rect x="58" y="24" width="12" height="22" rx="3" fill="url(#scArm)"/>
+  <ellipse cx="64" cy="26" rx="8" ry="3" fill="url(#scAo)"/>
+
+  <!-- pan/tilt joint -->
+  <ellipse cx="64" cy="46" rx="14" ry="8" fill="#3c4d5b"/>
+  <path d="M52 42.6 A14 8 0 0 1 74 41.4" fill="none" stroke="#a8c0d6" stroke-width="0.9" opacity="0.32" stroke-linecap="round"/>
+  <ellipse cx="64" cy="46" rx="14" ry="8" fill="none" stroke="#5b7085" stroke-width="0.8"/>
+
+  <!-- housing -->
+  <rect x="18" y="46" width="66" height="36" rx="8" fill="url(#scBody)"/>
+  <rect x="18" y="46" width="66" height="36" rx="8" fill="url(#scSheen)"/>
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.09">
+    <path d="M22 52 L80 52"/><path d="M22 72 L80 72"/><path d="M22 77 L80 77"/>
+  </g>
+  <path d="M26 46.6 L76 46.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.34" stroke-linecap="round"/>
+  <path d="M83.3 54 L83.3 74 M26 81.4 L76 81.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <ellipse cx="56" cy="81" rx="26" ry="4" fill="url(#scAo)"/>
+  <rect x="18" y="46" width="66" height="36" rx="8" fill="none" stroke="#6b8093" stroke-width="0.9" opacity="0.45"/>
+
+  <!-- lens barrel -->
+  <circle cx="42" cy="64" r="20" fill="#2a3641"/>
+  <circle cx="42" cy="64" r="20" fill="none" stroke="#060a10" stroke-width="1.2" opacity="0.5"/>
+  <path d="M28.4 49.6 A20 20 0 0 1 56 50" fill="none" stroke="#b3c9de" stroke-width="1.2" opacity="0.34" stroke-linecap="round"/>
+  <path d="M56 78 A20 20 0 0 1 28.4 78.4" fill="none" stroke="#060a10" stroke-width="1.4" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="42" cy="64" r="16.5" fill="#1a232c"/>
+  <!-- knurled focus ring -->
+  <circle cx="42" cy="64" r="14" fill="none" stroke="#0e161d" stroke-width="2.6"/>
+  <circle cx="42" cy="64" r="14" fill="none" stroke="#7d92a8" stroke-width="1.8" stroke-dasharray="1.2,2.2" opacity="0.28"/>
+
+  <!-- glass -->
+  <circle cx="42" cy="64" r="11" fill="url(#scLens)"/>
+  <path d="M33.6 56.8 A11 11 0 0 1 50 57.6" fill="none" stroke="#dbeaf9" stroke-width="1.4" opacity="0.5" stroke-linecap="round"/>
+  <path d="M34.4 71.8 A11 11 0 0 0 49.6 71.6" fill="none" stroke="#7fa3c4" stroke-width="0.8" opacity="0.2" stroke-linecap="round"/>
+  <ellipse cx="38.4" cy="58.6" rx="6.6" ry="3.2" fill="url(#scGlassStreak)" transform="rotate(-28 38.4 58.6)"/>
+  <circle cx="37.2" cy="59.2" r="1.7" fill="#ffffff" opacity="0.72"/>
+  <circle cx="46.4" cy="69.6" r="1.1" fill="#a8c8e6" opacity="0.2"/>
+  <circle cx="42" cy="64" r="11" fill="none" stroke="#0a1119" stroke-width="0.7" opacity="0.7"/>
+
+  <!-- IR illuminator ring -->
+  <g>
+    <circle cx="42" cy="44" r="3" fill="#0b1119"/><circle cx="42" cy="43.7" r="2" fill="#e2eefb" opacity="0.45"/>
+    <circle cx="54" cy="50" r="3" fill="#0b1119"/><circle cx="54" cy="49.7" r="2" fill="#e2eefb" opacity="0.42"/>
+    <circle cx="58" cy="64" r="3" fill="#0b1119"/><circle cx="58" cy="63.7" r="2" fill="#e2eefb" opacity="0.38"/>
+    <circle cx="54" cy="78" r="3" fill="#0b1119"/><circle cx="54" cy="77.7" r="2" fill="#e2eefb" opacity="0.34"/>
+    <circle cx="42" cy="84" r="3" fill="#0b1119"/><circle cx="42" cy="83.7" r="2" fill="#e2eefb" opacity="0.32"/>
+    <circle cx="30" cy="78" r="3" fill="#0b1119"/><circle cx="30" cy="77.7" r="2" fill="#e2eefb" opacity="0.36"/>
+    <circle cx="26" cy="64" r="3" fill="#0b1119"/><circle cx="26" cy="63.7" r="2" fill="#e2eefb" opacity="0.42"/>
+    <circle cx="30" cy="50" r="3" fill="#0b1119"/><circle cx="30" cy="49.7" r="2" fill="#e2eefb" opacity="0.46"/>
+  </g>
+
+  <!-- record LED -->
+  <circle cx="74" cy="54" r="5.4" fill="#bfe0ff" opacity="0.13"/>
+  <circle cx="74" cy="54" r="4" fill="#0d131a"/>
+  <circle cx="74" cy="54" r="2.6" fill="#eaf4ff" opacity="0.9"/>
+  <circle cx="73.3" cy="53.3" r="0.9" fill="#ffffff"/>
+
+  <!-- cable gland and tail -->
+  <rect x="82" y="60" width="10" height="8" rx="3" fill="#151d25"/>
+  <path d="M83 60.6 L91 60.6" stroke="#9fb4cc" stroke-width="0.6" opacity="0.24"/>
+  <path d="M92 64 Q106 64 110 56" fill="none" stroke="#0c131a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M92 64 Q106 64 110 56" fill="none" stroke="#2f3d4b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M93 62.8 Q105.4 62.8 109 55.6" fill="none" stroke="#a3b8cd" stroke-width="0.6" opacity="0.22" stroke-linecap="round"/>
+</svg>

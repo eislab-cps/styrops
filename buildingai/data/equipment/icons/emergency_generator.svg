@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="egBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f3a3a"/>
+      <stop offset="100%" stop-color="#131818"/>
+    </linearGradient>
+    <linearGradient id="egEngine" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#45566a"/>
+      <stop offset="55%" stop-color="#2b3947"/>
+      <stop offset="100%" stop-color="#1a222c"/>
+    </linearGradient>
+    <linearGradient id="egAlt" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3a4757"/>
+      <stop offset="55%" stop-color="#28323f"/>
+      <stop offset="100%" stop-color="#171e26"/>
+    </linearGradient>
+    <linearGradient id="egTank" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3f4d5d"/>
+      <stop offset="100%" stop-color="#1a222c"/>
+    </linearGradient>
+    <radialGradient id="egao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="egglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#9fe0a8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#9fe0a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="egsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="egclipE"><rect x="10" y="44" width="56" height="50" rx="5"/></clipPath>
+    <clipPath id="egclipA"><rect x="70" y="54" width="40" height="36" rx="5"/></clipPath>
+    <clipPath id="egclipT"><rect x="70" y="34" width="40" height="18" rx="4"/></clipPath>
+  </defs>
+  <!-- Frame rails (feet) -->
+  <rect x="6" y="86" width="10" height="22" rx="2" fill="#171c1c"/>
+  <rect x="6" y="86" width="3.5" height="22" rx="1.5" fill="#c6d7ea" opacity="0.07"/>
+  <rect x="112" y="86" width="10" height="22" rx="2" fill="#131717"/>
+  <rect x="119" y="86" width="3" height="22" rx="1.5" fill="#04070c" opacity="0.4"/>
+  <!-- Base skid frame -->
+  <rect x="6" y="96" width="116" height="10" rx="3" fill="url(#egBody)"/>
+  <rect x="6" y="96" width="116" height="3.5" rx="2" fill="#c6d7ea" opacity="0.09"/>
+  <path d="M6.5 99 A3 3 0 0 1 9.5 96.5 L112 96.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M121.5 101 A3 3 0 0 1 118.5 105.5 L16 105.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Exhaust smoke -->
+  <path d="M62 22 Q66 18 62 14 Q58 10 62 6" fill="none" stroke="#5f7386" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+  <!-- Exhaust pipe -->
+  <rect x="54" y="28" width="8" height="20" rx="2" fill="#242c38"/>
+  <rect x="55.2" y="28" width="2.2" height="20" rx="1.1" fill="#c6d7ea" opacity="0.14"/>
+  <rect x="50" y="24" width="16" height="6" rx="3" fill="#31404f"/>
+  <rect x="51" y="24.6" width="14" height="1.8" rx="0.9" fill="#cfe0f2" opacity="0.28"/>
+  <!-- Fuel tank (right) -->
+  <ellipse cx="90" cy="53" rx="21" ry="3.5" fill="url(#egao)"/>
+  <rect x="70" y="34" width="40" height="18" rx="4" fill="url(#egTank)"/>
+  <g clip-path="url(#egclipT)">
+    <rect x="70" y="34" width="40" height="18" fill="url(#egsheen)"/>
+    <ellipse cx="90" cy="52" rx="21" ry="4" fill="url(#egao)"/>
+    <path d="M70 39.5 H110" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M70 43 H110" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M70 46.5 H110" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+  </g>
+  <path d="M70.5 38 A4 4 0 0 1 74.5 34.5 L106 34.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M109.5 46 L109.5 48 A4 4 0 0 1 105.5 51.5 L78 51.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Fuel gauge on tank -->
+  <ellipse cx="98" cy="45" rx="9" ry="2.4" fill="url(#egao)"/>
+  <rect x="90" y="36" width="16" height="8" rx="2" fill="#141b25"/>
+  <rect x="92" y="38" width="10" height="4" rx="1" fill="#28323f"/>
+  <rect x="92" y="38" width="6" height="4" rx="1" fill="#3f6b34" opacity="0.85"/>
+  <rect x="92" y="38" width="10" height="1.4" rx="0.7" fill="#c6d7ea" opacity="0.12"/>
+  <!-- Coupling between engine and alt -->
+  <rect x="64" y="60" width="8" height="24" rx="1" fill="#2e3d4b"/>
+  <rect x="64" y="60" width="2.6" height="24" rx="1" fill="#c6d7ea" opacity="0.13"/>
+  <rect x="64" y="66" width="8" height="6" rx="1" fill="#4a5c6d"/>
+  <rect x="64" y="66" width="8" height="1.8" rx="0.9" fill="#cfe0f2" opacity="0.2"/>
+  <!-- Alternator (right section) -->
+  <ellipse cx="90" cy="91" rx="21" ry="4" fill="url(#egao)"/>
+  <rect x="70" y="54" width="40" height="36" rx="5" fill="url(#egAlt)"/>
+  <g clip-path="url(#egclipA)">
+    <rect x="70" y="54" width="40" height="36" fill="url(#egsheen)"/>
+    <ellipse cx="90" cy="90" rx="21" ry="6" fill="url(#egao)"/>
+    <rect x="72" y="54" width="9" height="36" fill="#c6d7ea" opacity="0.06"/>
+    <path d="M70 57.5 H110" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M70 70 H110" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M70 83 H110" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+  </g>
+  <!-- Alternator vents -->
+  <rect x="72" y="60" width="36" height="2" rx="1" fill="#0d1219" opacity="0.9"/>
+  <rect x="72" y="62" width="36" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.12"/>
+  <rect x="72" y="66" width="36" height="2" rx="1" fill="#0d1219" opacity="0.9"/>
+  <rect x="72" y="68" width="36" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.12"/>
+  <rect x="72" y="72" width="36" height="2" rx="1" fill="#0d1219" opacity="0.9"/>
+  <rect x="72" y="74" width="36" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.12"/>
+  <rect x="72" y="78" width="36" height="2" rx="1" fill="#0d1219" opacity="0.9"/>
+  <rect x="72" y="80" width="36" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.12"/>
+  <path d="M70.5 59 A5 5 0 0 1 75.5 54.5 L105 54.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M109.5 80 L109.5 84.5 A5 5 0 0 1 104.5 89.5 L78 89.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Radiator grille front -->
+  <ellipse cx="28" cy="47" rx="19" ry="3" fill="url(#egao)"/>
+  <rect x="10" y="30" width="36" height="16" rx="3" fill="#141b25"/>
+  <rect x="10" y="30" width="36" height="16" rx="3" fill="none" stroke="#060a10" stroke-width="0.8" opacity="0.5"/>
+  <line x1="12" y1="33" x2="44" y2="33" stroke="#2a3845" stroke-width="1.2"/>
+  <line x1="12" y1="34" x2="44" y2="34" stroke="#8fa8c4" stroke-width="0.4" opacity="0.14"/>
+  <line x1="12" y1="37" x2="44" y2="37" stroke="#2a3845" stroke-width="1.2"/>
+  <line x1="12" y1="38" x2="44" y2="38" stroke="#8fa8c4" stroke-width="0.4" opacity="0.14"/>
+  <line x1="12" y1="41" x2="44" y2="41" stroke="#2a3845" stroke-width="1.2"/>
+  <line x1="12" y1="42" x2="44" y2="42" stroke="#8fa8c4" stroke-width="0.4" opacity="0.14"/>
+  <!-- Engine block -->
+  <rect x="10" y="44" width="56" height="50" rx="5" fill="url(#egEngine)"/>
+  <g clip-path="url(#egclipE)">
+    <rect x="10" y="44" width="56" height="50" fill="url(#egsheen)"/>
+    <ellipse cx="38" cy="95" rx="29" ry="7" fill="url(#egao)"/>
+    <rect x="13" y="44" width="11" height="50" fill="#c6d7ea" opacity="0.06"/>
+    <path d="M10 47.5 H66" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M10 68 H66" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M10 82 H66" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+    <path d="M10 90 H66" stroke="#9fb4cc" stroke-width="0.4" opacity="0.1"/>
+  </g>
+  <path d="M10.5 49 A5 5 0 0 1 15.5 44.5 L61 44.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M65.5 84 L65.5 88.5 A5 5 0 0 1 60.5 93.5 L20 93.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Engine fins/cooling -->
+  <rect x="12" y="50" width="52" height="2" rx="1" fill="#1a2531" opacity="0.9"/>
+  <rect x="12" y="52" width="52" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <rect x="12" y="56" width="52" height="2" rx="1" fill="#1a2531" opacity="0.9"/>
+  <rect x="12" y="58" width="52" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <rect x="12" y="62" width="52" height="2" rx="1" fill="#1a2531" opacity="0.9"/>
+  <rect x="12" y="64" width="52" height="0.7" rx="0.35" fill="#8fa8c4" opacity="0.13"/>
+  <!-- Cylinder heads -->
+  <rect x="14" y="42" width="10" height="12" rx="2" fill="#33424f"/>
+  <rect x="14" y="42" width="10" height="3" rx="1.5" fill="#cfe0f2" opacity="0.2"/>
+  <rect x="28" y="42" width="10" height="12" rx="2" fill="#30404c"/>
+  <rect x="28" y="42" width="10" height="3" rx="1.5" fill="#cfe0f2" opacity="0.18"/>
+  <rect x="42" y="42" width="10" height="12" rx="2" fill="#2d3c48"/>
+  <rect x="42" y="42" width="10" height="3" rx="1.5" fill="#cfe0f2" opacity="0.16"/>
+  <circle cx="19" cy="48" r="3" fill="#101821"/>
+  <path d="M16.6 46.4 A3 3 0 0 1 21.4 46.4" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.3"/>
+  <circle cx="33" cy="48" r="3" fill="#101821"/>
+  <path d="M30.6 46.4 A3 3 0 0 1 35.4 46.4" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.28"/>
+  <circle cx="47" cy="48" r="3" fill="#101821"/>
+  <path d="M44.6 46.4 A3 3 0 0 1 49.4 46.4" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.26"/>
+  <!-- Control panel -->
+  <ellipse cx="27" cy="93" rx="20" ry="3.6" fill="url(#egao)"/>
+  <rect x="8" y="68" width="38" height="24" rx="3" fill="#161d27"/>
+  <rect x="8" y="68" width="38" height="24" rx="3" fill="url(#egsheen)"/>
+  <path d="M8.5 71 A3 3 0 0 1 11.5 68.5 L43 68.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.2"/>
+  <path d="M45.5 86 L45.5 88.5 A3 3 0 0 1 42.5 91.5 L14 91.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Control panel display -->
+  <rect x="10" y="70" width="24" height="10" rx="2" fill="#08151d"/>
+  <rect x="12" y="72" width="12" height="2" rx="1" fill="#88aacc" opacity="0.65"/>
+  <rect x="12" y="76" width="8" height="2" rx="1" fill="#88aacc" opacity="0.45"/>
+  <path d="M10.6 70.6 H24 L16 79.4 H10.6Z" fill="#c6d7ea" opacity="0.06"/>
+  <!-- Control buttons -->
+  <circle cx="40" cy="75" r="3" fill="#173021" stroke="#2f5a38" stroke-width="0.8"/>
+  <path d="M37.8 73.6 A3 3 0 0 1 42.2 73.6" fill="none" stroke="#a8e0b4" stroke-width="0.6" opacity="0.3"/>
+  <circle cx="40" cy="83" r="3" fill="#38100f" stroke="#5c1a1a" stroke-width="0.8"/>
+  <path d="M37.8 81.6 A3 3 0 0 1 42.2 81.6" fill="none" stroke="#e8b0ac" stroke-width="0.6" opacity="0.25"/>
+  <!-- Status LED on control panel -->
+  <ellipse cx="36" cy="90" rx="7" ry="7" fill="url(#egglow)"/>
+  <circle cx="36" cy="90" r="3" fill="#ffffff" opacity="0.75"/>
+</svg>

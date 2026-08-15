@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <!-- cylinder: dark top edge, hot band, mid tone, shadow, floor bounce -->
+    <linearGradient id="cTankG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b3a45"/>
+      <stop offset="14%" stop-color="#61798c"/>
+      <stop offset="34%" stop-color="#41545f"/>
+      <stop offset="72%" stop-color="#1d2831"/>
+      <stop offset="92%" stop-color="#141c24"/>
+      <stop offset="100%" stop-color="#28343e"/>
+    </linearGradient>
+    <linearGradient id="cCapG" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0%" stop-color="#4d6274"/>
+      <stop offset="55%" stop-color="#2b3946"/>
+      <stop offset="100%" stop-color="#18222b"/>
+    </linearGradient>
+    <linearGradient id="cMotorG" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#4c5f70"/>
+      <stop offset="45%" stop-color="#33404f"/>
+      <stop offset="100%" stop-color="#1d2430"/>
+    </linearGradient>
+    <linearGradient id="cSheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="cAo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cGauge" cx="0.36" cy="0.32" r="0.75">
+      <stop offset="0%" stop-color="#3b4d5e"/>
+      <stop offset="60%" stop-color="#1e2833"/>
+      <stop offset="100%" stop-color="#10171f"/>
+    </radialGradient>
+    <linearGradient id="cPipe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a232c"/>
+      <stop offset="30%" stop-color="#4a5d6d"/>
+      <stop offset="65%" stop-color="#26313c"/>
+      <stop offset="100%" stop-color="#141b22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- skid -->
+  <rect x="8" y="97" width="112" height="10" rx="2" fill="#1a232c"/>
+  <rect x="8" y="97" width="112" height="3" rx="1" fill="#33434f"/>
+  <path d="M10 97.5 L118 97.5" stroke="#93aabf" stroke-width="0.6" opacity="0.24" stroke-linecap="round"/>
+  <path d="M11 106.4 L117 106.4" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <g>
+    <circle cx="18" cy="102" r="3" fill="#0f151c"/><circle cx="18" cy="101.7" r="2" fill="#4a5d6d"/><circle cx="17.4" cy="101.2" r="0.8" fill="#bcd0e2" opacity="0.7"/>
+    <circle cx="40" cy="102" r="3" fill="#0f151c"/><circle cx="40" cy="101.7" r="2" fill="#4a5d6d"/><circle cx="39.4" cy="101.2" r="0.8" fill="#bcd0e2" opacity="0.6"/>
+    <circle cx="88" cy="102" r="3" fill="#0f151c"/><circle cx="88" cy="101.7" r="2" fill="#4a5d6d"/><circle cx="87.4" cy="101.2" r="0.8" fill="#bcd0e2" opacity="0.6"/>
+    <circle cx="110" cy="102" r="3" fill="#0f151c"/><circle cx="110" cy="101.7" r="2" fill="#4a5d6d"/><circle cx="109.4" cy="101.2" r="0.8" fill="#bcd0e2" opacity="0.55"/>
+  </g>
+  <!-- receiver and motor bed into the skid -->
+  <ellipse cx="46" cy="97" rx="34" ry="4.5" fill="url(#cAo)"/>
+  <ellipse cx="99" cy="96" rx="20" ry="4" fill="url(#cAo)"/>
+
+  <!-- suction pipe -->
+  <rect x="52" y="94" width="7" height="11" rx="2" fill="url(#cPipe)"/>
+  <rect x="50" y="101" width="11" height="4" rx="2" fill="#3b4b59"/>
+  <path d="M51 101.6 L60 101.6" stroke="#a3b8cd" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- air receiver -->
+  <rect x="12" y="56" width="68" height="40" rx="9" fill="url(#cTankG)"/>
+  <ellipse cx="21" cy="76" rx="10" ry="20" fill="url(#cCapG)"/>
+  <ellipse cx="21" cy="76" rx="7" ry="17.5" fill="none" stroke="#0d141b" stroke-width="1" opacity="0.55"/>
+  <path d="M15.4 63 A10 20 0 0 0 15 88" fill="none" stroke="#b3c8dc" stroke-width="0.9" opacity="0.3" stroke-linecap="round"/>
+  <ellipse cx="71" cy="76" rx="10" ry="20" fill="url(#cCapG)"/>
+  <ellipse cx="71" cy="76" rx="7" ry="17.5" fill="none" stroke="#0d141b" stroke-width="1" opacity="0.5"/>
+  <!-- welds and rolled-plate grain -->
+  <path d="M21 62 L71 62" stroke="#0f1820" stroke-width="0.7" stroke-dasharray="4,2" opacity="0.65"/>
+  <path d="M21 90 L71 90" stroke="#0f1820" stroke-width="0.7" stroke-dasharray="4,2" opacity="0.65"/>
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.1">
+    <path d="M16 66 L76 66"/><path d="M16 72 L76 72"/><path d="M16 80 L76 80"/><path d="M16 86 L76 86"/>
+  </g>
+  <!-- cooling fins, each with a lit edge and a shadow side -->
+  <g>
+    <rect x="28" y="55" width="2.2" height="42" rx="1" fill="#111a22"/><rect x="30.2" y="55" width="0.7" height="42" fill="#a8bed3" opacity="0.22"/>
+    <rect x="36" y="55" width="2.2" height="42" rx="1" fill="#111a22"/><rect x="38.2" y="55" width="0.7" height="42" fill="#a8bed3" opacity="0.2"/>
+    <rect x="44" y="55" width="2.2" height="42" rx="1" fill="#111a22"/><rect x="46.2" y="55" width="0.7" height="42" fill="#a8bed3" opacity="0.18"/>
+    <rect x="52" y="55" width="2.2" height="42" rx="1" fill="#111a22"/><rect x="54.2" y="55" width="0.7" height="42" fill="#a8bed3" opacity="0.16"/>
+    <rect x="60" y="55" width="2.2" height="42" rx="1" fill="#111a22"/><rect x="62.2" y="55" width="0.7" height="42" fill="#a8bed3" opacity="0.14"/>
+  </g>
+  <!-- hard specular band along the top of the drum -->
+  <rect x="23" y="59.6" width="54" height="3.4" rx="1.7" fill="#dcecfb" opacity="0.2"/>
+  <rect x="26" y="60.4" width="30" height="1.6" rx="0.8" fill="#ffffff" opacity="0.22"/>
+  <rect x="12" y="56" width="68" height="40" rx="9" fill="none" stroke="#8ba1b6" stroke-width="0.9" opacity="0.35"/>
+  <path d="M21 95.4 L71 95.4" stroke="#060a10" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- discharge pipe -->
+  <rect x="31" y="44" width="7" height="14" rx="2" fill="url(#cPipe)"/>
+  <rect x="29" y="42" width="11" height="4" rx="2" fill="#3b4b59"/>
+  <path d="M30 42.6 L39 42.6" stroke="#a3b8cd" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- motor -->
+  <rect x="83" y="59" width="33" height="36" rx="5" fill="url(#cMotorG)"/>
+  <rect x="83" y="59" width="33" height="36" rx="5" fill="url(#cSheen)"/>
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.1">
+    <path d="M85 63 L114 63"/><path d="M85 90 L114 90"/><path d="M85 93 L114 93"/>
+  </g>
+  <rect x="83" y="59" width="33" height="6.5" rx="4" fill="#5a7085" opacity="0.6"/>
+  <path d="M87 59.6 L112 59.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.34" stroke-linecap="round"/>
+  <path d="M115.3 64 L115.3 91 M87 94.4 L112 94.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- vent slots: dark cut, lit lower lip -->
+  <g>
+    <rect x="86" y="70" width="27" height="2" rx="1" fill="#0a1017"/><rect x="86" y="72" width="27" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.2"/>
+    <rect x="86" y="75" width="27" height="2" rx="1" fill="#0a1017"/><rect x="86" y="77" width="27" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.18"/>
+    <rect x="86" y="80" width="27" height="2" rx="1" fill="#0a1017"/><rect x="86" y="82" width="27" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.16"/>
+    <rect x="86" y="85" width="27" height="2" rx="1" fill="#0a1017"/><rect x="86" y="87" width="27" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.14"/>
+  </g>
+  <!-- cooling fan, recessed -->
+  <circle cx="99" cy="76" r="11" fill="#111a22"/>
+  <circle cx="99" cy="76" r="11" fill="none" stroke="#060a10" stroke-width="1.2" opacity="0.6"/>
+  <path d="M91 68.4 A11 11 0 0 1 106.6 69" fill="none" stroke="#8fa8c4" stroke-width="0.8" opacity="0.3" stroke-linecap="round"/>
+  <g fill="#3d5464">
+    <path d="M99 65 Q104 69 99 73 Q94 69 99 65Z"/>
+    <path d="M110 76 Q106 81 102 76 Q106 71 110 76Z"/>
+    <path d="M99 87 Q94 83 99 79 Q104 83 99 87Z"/>
+    <path d="M88 76 Q92 71 96 76 Q92 81 88 76Z"/>
+  </g>
+  <path d="M99 66 Q103 69.2 99.4 72" fill="none" stroke="#a8c2d8" stroke-width="0.5" opacity="0.35" stroke-linecap="round"/>
+  <path d="M99 86 Q95.2 82.8 98.6 80" fill="none" stroke="#070c12" stroke-width="0.5" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="99" cy="76" r="3.6" fill="#41556a"/>
+  <circle cx="98.2" cy="75.2" r="1.2" fill="#dbe9f8" opacity="0.7"/>
+  <rect x="83" y="59" width="33" height="36" rx="5" fill="none" stroke="#6b8093" stroke-width="0.8" opacity="0.42"/>
+
+  <!-- coupling guard -->
+  <rect x="79" y="73" width="6" height="6" rx="1" fill="#2c3947"/>
+  <path d="M79.6 73.6 L79.6 78.4" stroke="#9fb4cc" stroke-width="0.6" opacity="0.28"/>
+
+  <!-- pressure gauge with a glass reflection -->
+  <circle cx="99" cy="53" r="10" fill="#33424f"/>
+  <circle cx="99" cy="53" r="10" fill="none" stroke="#6b8093" stroke-width="1.2" opacity="0.7"/>
+  <path d="M92.4 45.6 A10 10 0 0 1 106 46.4" fill="none" stroke="#cfe0f2" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <circle cx="99" cy="53" r="8.6" fill="url(#cGauge)"/>
+  <circle cx="99" cy="53" r="7.5" fill="none" stroke="#455767" stroke-width="0.5"/>
+  <g stroke="#8ba1b6" stroke-linecap="round">
+    <path d="M99 45 L99 47.5" stroke-width="1.2"/>
+    <path d="M106 50 L104 51.5" stroke-width="1"/><path d="M92 50 L94 51.5" stroke-width="1"/>
+    <path d="M92 56 L94 54.5" stroke-width="1"/><path d="M106 56 L104 54.5" stroke-width="1"/>
+  </g>
+  <path d="M99 53 L104 47" stroke="#f2f7ff" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="99" cy="53" r="1.5" fill="#a3b6c8"/>
+  <path d="M93.6 48.6 A8.6 8.6 0 0 1 103.4 45.6 L99.6 60.4 A8.6 8.6 0 0 1 93.6 48.6 Z" fill="#dcecfb" opacity="0.08"/>
+
+  <!-- run LED -->
+  <circle cx="87" cy="59" r="4.4" fill="#bfe0ff" opacity="0.14"/>
+  <circle cx="87" cy="59" r="2.6" fill="#eaf4ff" opacity="0.9"/>
+  <circle cx="86.4" cy="58.4" r="0.9" fill="#ffffff"/>
+</svg>

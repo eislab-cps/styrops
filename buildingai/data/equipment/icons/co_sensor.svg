@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="coBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#42301f"/>
+      <stop offset="100%" stop-color="#1b160f"/>
+    </linearGradient>
+    <radialGradient id="coao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cosheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Warning stripe housing -->
+  <rect x="6" y="6" width="116" height="116" rx="8" fill="url(#coBody)"/>
+  <!-- Diagonal warning stripes -->
+  <clipPath id="coClip"><rect x="6" y="6" width="116" height="116" rx="8"/></clipPath>
+  <g clip-path="url(#coClip)" opacity="0.15">
+    <line x1="-10" y1="20" x2="130" y2="160" stroke="#cc8800" stroke-width="14"/>
+    <line x1="10" y1="0" x2="150" y2="140" stroke="#cc8800" stroke-width="14"/>
+    <line x1="-30" y1="40" x2="110" y2="180" stroke="#cc8800" stroke-width="14"/>
+    <line x1="30" y1="-20" x2="170" y2="120" stroke="#cc8800" stroke-width="14"/>
+  </g>
+  <rect x="6" y="6" width="116" height="116" rx="8" fill="url(#cosheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="64" cy="119" rx="56" ry="11" fill="url(#coao)"/>
+  <!-- Main face plate -->
+  <rect x="12" y="12" width="104" height="104" rx="6" fill="#2a2010" opacity="0.82"/>
+  <ellipse cx="64" cy="113" rx="50" ry="9" fill="url(#coao)"/>
+  <rect x="12" y="12" width="104" height="104" rx="6" fill="url(#cosheen)" opacity="0.7"/>
+  <rect x="12" y="12" width="104" height="104" rx="6" fill="none" stroke="#cc8800" stroke-width="1.5" opacity="0.45"/>
+  <!-- CO label (large, center) -->
+  <ellipse cx="64" cy="31" rx="53" ry="19" fill="url(#coao)"/>
+  <rect x="14.5" y="14.5" width="99" height="33" rx="6" fill="#ffaa22" opacity="0.06"/>
+  <rect x="16" y="16" width="96" height="30" rx="4" fill="#1a1208"/>
+  <text x="26" y="38" font-size="22" font-weight="bold" fill="#d99400" opacity="0.95" font-family="monospace">CO</text>
+  <path d="M17 45 L17 20 A4 4 0 0 1 21 16 L44 16 L22 45Z" fill="#ffe1b0" opacity="0.06"/>
+  <!-- Warning subtitle -->
+  <ellipse cx="64" cy="56" rx="52" ry="11" fill="url(#coao)"/>
+  <rect x="16" y="49" width="96" height="14" rx="3" fill="#1a1208"/>
+  <rect x="18" y="51" width="60" height="3" rx="1" fill="#cc8800" opacity="0.42"/>
+  <rect x="18" y="57" width="40" height="2" rx="1" fill="#cc8800" opacity="0.3"/>
+  <rect x="17" y="49.8" width="94" height="1.4" rx="0.7" fill="#ffe1b0" opacity="0.07"/>
+  <!-- Buzzer grille -->
+  <ellipse cx="41" cy="87" rx="29" ry="24" fill="url(#coao)"/>
+  <rect x="16" y="66" width="50" height="40" rx="4" fill="#1a1208"/>
+  <rect x="16" y="66" width="50" height="40" rx="4" fill="none" stroke="#443318" stroke-width="0.8"/>
+  <!-- Grille dots -->
+  <circle cx="27" cy="74" r="2" fill="#2a2010"/><circle cx="36" cy="74" r="2" fill="#2a2010"/><circle cx="45" cy="74" r="2" fill="#2a2010"/><circle cx="54" cy="74" r="2" fill="#2a2010"/>
+  <circle cx="27" cy="82" r="2" fill="#2a2010"/><circle cx="36" cy="82" r="2" fill="#2a2010"/><circle cx="45" cy="82" r="2" fill="#2a2010"/><circle cx="54" cy="82" r="2" fill="#2a2010"/>
+  <circle cx="27" cy="90" r="2" fill="#2a2010"/><circle cx="36" cy="90" r="2" fill="#2a2010"/><circle cx="45" cy="90" r="2" fill="#2a2010"/><circle cx="54" cy="90" r="2" fill="#2a2010"/>
+  <circle cx="27" cy="98" r="2" fill="#2a2010"/><circle cx="36" cy="98" r="2" fill="#2a2010"/><circle cx="45" cy="98" r="2" fill="#2a2010"/><circle cx="54" cy="98" r="2" fill="#2a2010"/>
+  <rect x="16" y="66" width="50" height="40" rx="4" fill="url(#cosheen)" opacity="0.3"/>
+  <!-- Test button -->
+  <ellipse cx="87.5" cy="79" rx="15" ry="15" fill="url(#coao)"/>
+  <circle cx="87" cy="78" r="12" fill="#1a1208" stroke="#443318" stroke-width="1.2"/>
+  <circle cx="87" cy="78" r="8" fill="#2a2010"/>
+  <circle cx="87" cy="78" r="5" fill="#3a3018"/>
+  <path d="M82.5 73.5 A8 8 0 0 1 92.7 72.9" fill="none" stroke="#ffe1b0" stroke-width="0.9" opacity="0.16"/>
+  <rect x="84" y="77" width="6" height="2" rx="1" fill="#cc8800" opacity="0.5"/>
+  <!-- Multi-color LED row -->
+  <circle cx="70" cy="100" r="6.5" fill="#ffe1b0" opacity="0.1"/>
+  <circle cx="70" cy="100" r="4" fill="#140e06"/>
+  <circle cx="70" cy="100" r="2.5" fill="#fff6e6" opacity="0.85"/><circle cx="69.3" cy="99.3" r="0.7" fill="#ffffff"/>
+  <circle cx="82" cy="100" r="4" fill="#140e06"/>
+  <circle cx="82" cy="100" r="2.5" fill="#fff6e6" opacity="0.5"/>
+  <circle cx="94" cy="100" r="4" fill="#140e06"/>
+  <circle cx="94" cy="100" r="2.5" fill="#f3e9dc" opacity="0.3"/>
+  <circle cx="106" cy="100" r="4" fill="#140e06"/>
+  <circle cx="106" cy="100" r="2.5" fill="#f3e9dc" opacity="0.3"/>
+  <!-- Corner screws -->
+  <circle cx="18" cy="18" r="3" fill="#140e06"/><circle cx="18" cy="18" r="2" fill="#33270f"/>
+  <circle cx="110" cy="18" r="3" fill="#140e06"/><circle cx="110" cy="18" r="2" fill="#33270f"/>
+  <circle cx="18" cy="110" r="3" fill="#140e06"/><circle cx="18" cy="110" r="2" fill="#33270f"/>
+  <circle cx="110" cy="110" r="3" fill="#140e06"/><circle cx="110" cy="110" r="2" fill="#33270f"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M6.6 100 L6.6 14.6 A8 8 0 0 1 14.6 6.6 L100 6.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M121.4 28 L121.4 113.4 A8 8 0 0 1 113.4 121.4 L28 121.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+</svg>

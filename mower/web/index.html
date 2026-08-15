@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUTOMOWER · Moa — CPS Lab, LTU</title>
+<meta name="theme-color" content="#070a0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6600'/%3E%3Crect x='7' y='11' width='18' height='11' rx='5' fill='%230a0d11'/%3E%3Ccircle cx='21' cy='15' r='1.8' fill='%2334d399'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three.module.js",
+    "three/addons/controls/OrbitControls.js": "./vendor/OrbitControls.js",
+    "three/addons/": "./vendor/addons/"
+  }
+}
+</script>
+</head>
+<body>
+
+<canvas id="view"></canvas>
+<div id="vignette"></div>
+
+<!-- ─────────────────────────── TOP BAR ─────────────────────────── -->
+<header id="topbar">
+  <div class="brand">
+    <div class="brand-mark"><span></span></div>
+    <div class="brand-text">
+      <h1>AUTOMOWER</h1>
+      <p>CPS Lab · LTU</p>
+    </div>
+  </div>
+
+  <div class="chips">
+    <div class="chip" id="chip-state" title="Robot state">
+      <span class="state-dot"></span>
+      <span class="chip-val" id="v-state">—</span>
+    </div>
+
+    <div class="chip" id="chip-batt" title="Battery">
+      <svg class="ico batt" viewBox="0 0 26 14" aria-hidden="true">
+        <rect x="0.6" y="0.6" width="21" height="12.8" rx="3"/>
+        <path d="M23.2 4.6h1.2a1 1 0 0 1 1 1v2.8a1 1 0 0 1-1 1h-1.2z" class="cap"/>
+        <rect id="batt-fill" x="2.4" y="2.4" width="17.2" height="9.2" rx="1.6" class="fill"/>
+      </svg>
+      <span class="chip-val" id="v-batt">—</span>
+      <span class="bolt" id="v-bolt"></span>
+    </div>
+
+    <div class="chip" id="chip-blade" title="Blade sharpness" hidden>
+      <span class="ico blade" id="v-bladeico"></span>
+      <span class="chip-val" id="v-blade">—</span>
+      <span class="chip-unit">blade</span>
+    </div>
+
+    <div class="chip" id="chip-cov" title="Lawn coverage">
+      <svg class="ring" viewBox="0 0 24 24" aria-hidden="true">
+        <circle class="ring-bg" cx="12" cy="12" r="9"/>
+        <circle class="ring-fg" id="cov-ring" cx="12" cy="12" r="9"/>
+      </svg>
+      <span class="chip-val" id="v-cov">—</span>
+      <span class="chip-unit">cut</span>
+    </div>
+
+    <div class="chip" id="chip-weather" title="Local weather">
+      <span class="wx-ico" id="v-wxico"></span>
+      <span class="chip-val" id="v-temp">—</span>
+      <div class="forecast-pop" id="forecast"></div>
+    </div>
+
+    <div class="chip" id="wx-set" title="Set the weather">
+      <button class="wxb" data-wx="sunny"  aria-label="Make it sunny"></button>
+      <button class="wxb" data-wx="cloudy" aria-label="Make it cloudy"></button>
+      <button class="wxb" data-wx="rain"   aria-label="Make it rain"></button>
+      <button class="wxb" data-wx="storm"  aria-label="Bring a storm"></button>
+    </div>
+
+    <div class="chip chip-clock">
+      <span class="chip-lbl">SIM</span>
+      <span class="chip-val mono" id="v-clock">00:00:00</span>
+      <span class="sep"></span>
+      <div class="speeds">
+        <button class="spd" data-speed="1">1×</button>
+        <button class="spd" data-speed="10">10×</button>
+        <button class="spd" data-speed="50">50×</button>
+      </div>
+      <input type="range" id="rng-speed" min="0" max="100" step="1" value="0" title="Simulation speed">
+      <span class="chip-val mono spd-out" id="v-speed">1×</span>
+    </div>
+  </div>
+
+  <div class="topbtns">
+    <button id="btn-cam" class="mapbtn" title="Moa's camera — the garden from her point of view"
+            aria-pressed="false">CAM</button>
+    <button id="btn-map" class="mapbtn" title="Moa's SLAM map and cut coverage">MAP</button>
+  </div>
+  <div class="link">
+    <span class="ws-dot" id="ws-dot"></span>
+    <span id="ws-text">CONNECTING</span>
+  </div>
+</header>
+
+<!-- ─────────────────────────── PALETTE ─────────────────────────── -->
+<aside id="palette" class="panel">
+  <div class="pal-title">DROP</div>
+  <button class="pal-item" data-type="rock"       title="Rock"></button>
+  <button class="pal-item" data-type="tree"       title="Tree"></button>
+  <button class="pal-item" data-type="trampoline" title="Trampoline"></button>
+  <button class="pal-item" data-type="toy"        title="Toy"></button>
+  <button class="pal-item" data-type="flowerbed"  title="Flowerbed"></button>
+  <button class="pal-item" data-type="hedgehog"   title="Hedgehog"></button>
+  <div class="pal-hint">drag&nbsp;→&nbsp;lawn</div>
+</aside>
+
+<!-- ────────────────────────── CONTROLS ─────────────────────────── -->
+<section id="controls" class="panel">
+  <div class="ctl-head">MISSION</div>
+  <div class="ctl-row btnrow">
+    <button class="btn primary" id="btn-mow"><span>▶</span>Mow</button>
+    <button class="btn" id="btn-stop"><span>■</span>Stop</button>
+    <button class="btn" id="btn-dock"><span>⌂</span>Dock</button>
+    <button class="btn ghost" id="btn-reset"><span>↻</span>Reset</button>
+  </div>
+  <div class="ctl-row growrow">
+    <button class="btn sprout" id="btn-grow"><span class="gi"></span>Grow grass</button>
+  </div>
+  <div class="ctl-row bladerow">
+    <button class="btn" id="btn-wear"><span class="bi"></span>Wear blade</button>
+    <button class="btn" id="btn-newblade"><span class="bi"></span>New blade</button>
+  </div>
+  <div class="ctl-row">
+    <label for="sel-zone">Zone</label>
+    <select id="sel-zone"><option value="">Whole lawn</option></select>
+  </div>
+  <div class="ctl-row">
+    <label for="sel-brain">Brain</label>
+    <select id="sel-brain"></select>
+  </div>
+  <div class="ctl-row">
+    <label for="rng-cut">Cut</label>
+    <input type="range" id="rng-cut" min="20" max="60" step="1" value="35">
+    <output id="out-cut" class="mono">35&nbsp;mm</output>
+  </div>
+  <div class="ctl-row toggles">
+    <button class="tgl" data-view="wire">Guide wire</button>
+    <button class="tgl on" data-view="trail">Trail</button>
+    <button class="tgl" data-view="ghost">SLAM</button>
+    <button class="tgl" data-view="heat">Heat</button>
+  </div>
+  <div class="ctl-row" id="heat-legend">
+    <b>Grass height</b>
+    <div class="hl-bar"></div>
+    <div class="hl-scale"><span>20</span><span>90&nbsp;mm</span></div>
+  </div>
+  <div class="ctl-foot"><span id="mission-note">no active mission</span></div>
+</section>
+
+<!-- ──────────────────────── LOG DRAWER ─────────────────────────── -->
+<section id="logdrawer" class="panel collapsed">
+  <header id="log-head">
+    <span class="log-led"></span>
+    <span class="log-title">HARDWARE LOG</span>
+    <span class="log-meta mono" id="log-count">0</span>
+    <span class="grow"></span>
+    <span class="log-last mono" id="log-last"></span>
+    <button class="chev" id="log-toggle" aria-label="Toggle log">▴</button>
+  </header>
+  <div id="log-body" class="mono"></div>
+</section>
+
+<!-- ────────────────────────── CHAT ─────────────────────────────── -->
+<aside id="chat" class="panel">
+  <header id="chat-head">
+    <div class="ai-mark"></div>
+    <div class="chat-title">
+      <b>Moa</b>
+      <small id="chat-sub">ask the mower anything</small>
+    </div>
+    <button class="chev" id="chat-help" aria-label="Example questions" title="Example questions">?</button>
+    <button class="chev" id="chat-toggle" aria-label="Collapse chat">›</button>
+  </header>
+  <div id="chat-log">
+    <div class="chat-hero">
+      <div class="hero-glow"></div>
+      <p>I'm Moa. I run the mower. Ask me to cut the back lawn, tell you why I stopped, or plan around the rain.</p>
+      <div class="hero-chips">
+        <button class="sugg">Mow the back lawn</button>
+        <button class="sugg">What is your battery status?</button>
+        <button class="sugg">Should I mow today given the weather?</button>
+      </div>
+    </div>
+  </div>
+  <div id="chat-input-wrap">
+    <textarea id="chat-input" rows="1" placeholder="Ask the mower…" spellcheck="false"></textarea>
+    <button id="chat-send" aria-label="Send"></button>
+  </div>
+</aside>
+<button id="chat-reopen" aria-label="Open chat"></button>
+
+<!-- ───────────── MOA CAM · picture-in-picture ──────────────────── -->
+<!-- The frame is deliberately EMPTY of background: the feed itself is painted
+     into this exact rectangle by a second render pass on the WebGL canvas
+     underneath (see cam.mjs). Everything here is dressing. -->
+<div id="campip" hidden>
+  <div id="cam-frame" class="cam-frame" title="Open the full camera view">
+    <div id="cam-dress" class="cam-dress">
+      <div class="cam-vig"></div>
+      <div class="cam-tag">MOA&nbsp;CAM</div>
+      <div class="cam-live"><i></i>LIVE</div>
+      <div class="cam-time mono" id="cam-time">00:00:00</div>
+      <div class="cam-hint">front · 70°</div>
+    </div>
+  </div>
+</div>
+
+<!-- MOA CAM · expanded. No dimmed backdrop: the card is a window onto the same
+     canvas, so the surroundings are darkened with the card's own outer shadow
+     instead — a backdrop would sit on top of the feed. -->
+<div class="modal" id="cam-modal" hidden>
+  <div class="modal-card cam-card" role="dialog" aria-modal="true" aria-labelledby="cam-h">
+    <header class="modal-head">
+      <div class="mh-txt">
+        <b id="cam-h">Moa's camera</b>
+        <small>live from the mower, 0.24&nbsp;m above the lawn</small>
+      </div>
+      <button class="modal-x" data-close="1" aria-label="Close">×</button>
+    </header>
+    <div class="cam-stage" id="cam-stage"></div>
+  </div>
+</div>
+
+<!-- ───────────────────────── OVERLAYS ──────────────────────────── -->
+<div id="slam-label"><span class="sl-dot"></span><b>SLAM&nbsp;est.</b><i id="slam-drift">0.00 m</i></div>
+<div id="toasts"></div>
+<div id="drag-ghost"></div>
+<div id="obs-pop" class="panel">
+  <span class="obs-name" id="obs-name">rock</span>
+  <button class="btn danger sm" id="obs-del">Delete</button>
+</div>
+<!-- click the mower → what she believes -->
+<div class="modal" id="slam-modal" hidden>
+  <div class="modal-back"></div>
+  <div class="modal-card panel" role="dialog" aria-modal="true" aria-labelledby="slam-h">
+    <header class="modal-head">
+      <div class="mh-txt">
+        <b id="slam-h">What Moa believes</b>
+        <small id="slam-meta">her own map, built from noisy sensors</small>
+      </div>
+      <div class="mtabs" id="slam-tabs">
+        <button class="mtab on" data-tab="slam">Her map</button>
+        <button class="mtab" data-tab="coverage">Coverage</button>
+      </div>
+      <button class="modal-x" data-close="1" aria-label="Close">×</button>
+    </header>
+    <div class="slam-stage">
+      <canvas id="slam-canvas"></canvas>
+      <div class="slam-empty" id="slam-empty" hidden></div>
+    </div>
+    <footer class="modal-foot">
+      <div class="slam-keys" id="keys-slam">
+        <span class="k k-unknown">unknown</span>
+        <span class="k k-free">free / swept</span>
+        <span class="k k-obst">obstacle</span>
+        <span class="k k-traj">her track</span>
+        <span class="k k-est">her estimated pose</span>
+        <span class="k k-truth">ground truth</span>
+      </div>
+      <div class="slam-keys" id="keys-cov" hidden>
+        <span class="k k-ramp">
+          <i class="hl-bar"></i>
+          <em>20&nbsp;mm cut</em><em>90&nbsp;mm overgrown</em>
+        </span>
+        <span class="k k-truth">lawn outline &amp; true position</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<!-- example questions -->
+<div class="modal" id="tut-modal" hidden>
+  <div class="modal-back"></div>
+  <div class="modal-card panel wide" role="dialog" aria-modal="true" aria-labelledby="tut-h">
+    <header class="modal-head">
+      <div class="mh-txt">
+        <b id="tut-h">Things you can ask Moa</b>
+        <small>click a question to send it</small>
+      </div>
+      <button class="modal-x" data-close="1" aria-label="Close">×</button>
+    </header>
+    <div class="tut-body" id="tut-body"></div>
+    <footer class="modal-foot" id="tut-foot"></footer>
+  </div>
+</div>
+
+<div id="boot"><div class="boot-inner"><div class="boot-ring"></div><span>booting garden…</span></div></div>
+
+<script type="module" src="js/main.mjs"></script>
+</body>
+</html>

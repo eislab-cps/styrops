@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <!-- Dark hermetic shell gradient (cast iron look, curved highlight) -->
+    <linearGradient id="hvcshellSide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0c0f12"/>
+      <stop offset="18%"  stop-color="#1a2028"/>
+      <stop offset="45%"  stop-color="#3a424a"/>
+      <stop offset="62%"  stop-color="#2a323a"/>
+      <stop offset="100%" stop-color="#070a0d"/>
+    </linearGradient>
+    <!-- Top dome (slightly brighter, hemispherical) -->
+    <radialGradient id="hvcshellTop" cx="40%" cy="80%" r="90%">
+      <stop offset="0%"   stop-color="#5a6670"/>
+      <stop offset="50%"  stop-color="#2a323a"/>
+      <stop offset="100%" stop-color="#0a0d10"/>
+    </radialGradient>
+    <!-- Bottom cap -->
+    <radialGradient id="hvcshellBottom" cx="50%" cy="20%" r="90%">
+      <stop offset="0%"   stop-color="#2a323a"/>
+      <stop offset="100%" stop-color="#050709"/>
+    </radialGradient>
+    <!-- Terminal box (slightly lighter dark plastic) -->
+    <linearGradient id="hvctermBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Copper suction line (larger, light patina) -->
+    <linearGradient id="hvccuSuc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#c88a4a"/>
+      <stop offset="45%" stop-color="#a86a2a"/>
+      <stop offset="100%" stop-color="#5a3510"/>
+    </linearGradient>
+    <!-- Copper discharge line (hot, more reddish) -->
+    <linearGradient id="hvccuDis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#d87a3a"/>
+      <stop offset="45%" stop-color="#a0431a"/>
+      <stop offset="100%" stop-color="#4a1a08"/>
+    </linearGradient>
+    <!-- Nameplate (aluminum) -->
+    <linearGradient id="hvcplate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8dde2"/>
+      <stop offset="100%" stop-color="#9aa3ac"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="64" cy="120" rx="40" ry="3.2" fill="#000" opacity="0.35"/>
+
+  <!-- ===== Mounting base plate (triangular stamped steel) ===== -->
+  <path d="M 28 114 L 100 114 L 96 120 L 32 120 Z" fill="#0a0d10"/>
+  <path d="M 28 114 L 100 114 L 96 120 L 32 120 Z" fill="url(#hvcshellBottom)" opacity="0.8"/>
+
+  <!-- Rubber mounting grommets (3) -->
+  <ellipse cx="34" cy="114" rx="5" ry="2.2" fill="#101418"/>
+  <ellipse cx="34" cy="113.5" rx="4.2" ry="1.6" fill="#2a2a2a"/>
+  <circle cx="34" cy="113.5" r="0.9" fill="#4a4a4a"/>
+  <ellipse cx="94" cy="114" rx="5" ry="2.2" fill="#101418"/>
+  <ellipse cx="94" cy="113.5" rx="4.2" ry="1.6" fill="#2a2a2a"/>
+  <circle cx="94" cy="113.5" r="0.9" fill="#4a4a4a"/>
+  <ellipse cx="64" cy="114" rx="5" ry="2.2" fill="#101418"/>
+  <ellipse cx="64" cy="113.5" rx="4.2" ry="1.6" fill="#2a2a2a"/>
+  <circle cx="64" cy="113.5" r="0.9" fill="#4a4a4a"/>
+
+  <!-- ===== Bottom cap (flat-ish ellipse under shell) ===== -->
+  <ellipse cx="64" cy="110" rx="34" ry="6" fill="#040608"/>
+  <ellipse cx="64" cy="109" rx="34" ry="5.5" fill="url(#hvcshellBottom)"/>
+  <path d="M 30 109 Q 64 117 98 109" fill="none" stroke="#1a2028" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- ===== Main hermetic shell (vertical cylinder, Copeland Scroll style) ===== -->
+  <rect x="30" y="40" width="68" height="70" fill="url(#hvcshellSide)"/>
+
+  <!-- Weld seam at bottom joint (horizontal dark ring) -->
+  <ellipse cx="64" cy="110" rx="34" ry="3" fill="none" stroke="#000" stroke-width="1.2"/>
+  <ellipse cx="64" cy="110" rx="34" ry="3" fill="none" stroke="#5a6670" stroke-width="0.4" opacity="0.5"/>
+
+  <!-- Horizontal mid weld bead (where upper/lower shell halves join) -->
+  <ellipse cx="64" cy="75" rx="34" ry="3" fill="none" stroke="#000" stroke-width="1.5"/>
+  <path d="M 30 75 Q 64 72 98 75" fill="none" stroke="#6a7680" stroke-width="0.5" opacity="0.6"/>
+  <path d="M 30 75 Q 64 78 98 75" fill="none" stroke="#000" stroke-width="0.4" opacity="0.8"/>
+
+  <!-- Vertical curvature highlights to sell cylinder shape -->
+  <rect x="40" y="40" width="5" height="70" fill="#6a7680" opacity="0.22"/>
+  <rect x="46" y="40" width="2" height="70" fill="#8a95a0" opacity="0.15"/>
+  <rect x="82" y="40" width="4" height="70" fill="#000" opacity="0.45"/>
+  <rect x="88" y="40" width="6" height="70" fill="#000" opacity="0.3"/>
+
+  <!-- ===== Top dome (rounded hemispherical cap) ===== -->
+  <path d="M 30 40 Q 30 14 64 14 Q 98 14 98 40 Z" fill="url(#hvcshellTop)"/>
+  <!-- Dome weld seam -->
+  <ellipse cx="64" cy="40" rx="34" ry="3" fill="none" stroke="#000" stroke-width="1.5"/>
+  <path d="M 30 40 Q 64 37 98 40" fill="none" stroke="#6a7680" stroke-width="0.5" opacity="0.6"/>
+  <!-- Dome specular highlight -->
+  <path d="M 38 32 Q 42 20 58 17" fill="none" stroke="#aab5c0" stroke-width="2" opacity="0.55" stroke-linecap="round"/>
+  <path d="M 40 28 Q 44 22 52 20" fill="none" stroke="#d0d8e0" stroke-width="1" opacity="0.7" stroke-linecap="round"/>
+
+  <!-- ===== Discharge line (upper, smaller, copper) ===== -->
+  <!-- Stub out of dome top-left -->
+  <rect x="38" y="18" width="6" height="10" rx="0.5" fill="url(#hvccuDis)"/>
+  <!-- Elbow -->
+  <path d="M 38 18 Q 34 16 30 16 L 22 16 L 22 22 L 30 22 Q 36 22 38 24 Z" fill="url(#hvccuDis)"/>
+  <!-- Vertical up to the stub, darker shadow -->
+  <rect x="38" y="18" width="6" height="10" fill="#000" opacity="0.15"/>
+  <!-- Flare fitting at top of stub -->
+  <rect x="36" y="14" width="10" height="4" rx="1" fill="#b86a2a"/>
+  <rect x="36" y="14" width="10" height="1.5" rx="0.7" fill="#e8a06a"/>
+
+  <!-- ===== Suction line (lower, larger, copper) ===== -->
+  <!-- Horizontal large copper pipe going to the right -->
+  <rect x="98" y="82" width="24" height="10" rx="1" fill="url(#hvccuSuc)"/>
+  <rect x="98" y="82" width="24" height="3" rx="1" fill="#e0a868" opacity="0.8"/>
+  <!-- End cap / flare on right -->
+  <rect x="120" y="80" width="4" height="14" rx="1" fill="#8a4818"/>
+  <rect x="120" y="80" width="4" height="3" rx="1" fill="#c88856"/>
+  <!-- Where it meets the shell: slight darker joint -->
+  <rect x="96" y="82" width="4" height="10" fill="#000" opacity="0.5"/>
+  <!-- Rubber insulation sleeve (suction is cold) -->
+  <rect x="103" y="79" width="12" height="16" rx="2" fill="#1a1a1a"/>
+  <rect x="103" y="79" width="12" height="3" rx="1.5" fill="#3a3a3a"/>
+  <rect x="103" y="92" width="12" height="3" rx="1.5" fill="#050505"/>
+  <!-- Zip-tie on insulation -->
+  <rect x="108" y="79" width="1.5" height="16" fill="#2a2a2a"/>
+
+  <!-- ===== Terminal / electrical box (the raised bump on upper side) ===== -->
+  <!-- Raised pedestal where box attaches to shell -->
+  <rect x="64" y="44" width="34" height="30" rx="3" fill="url(#hvctermBox)"/>
+  <rect x="64" y="44" width="34" height="30" rx="3" fill="none" stroke="#000" stroke-width="0.6"/>
+  <!-- Cover plate (slightly inset) -->
+  <rect x="67" y="47" width="28" height="24" rx="2" fill="#1a1a1a"/>
+  <rect x="67" y="47" width="28" height="24" rx="2" fill="none" stroke="#3a3a3a" stroke-width="0.4"/>
+  <!-- 4 cover plate screws -->
+  <circle cx="70" cy="50" r="1.1" fill="#0a0a0a"/>
+  <circle cx="70" cy="50" r="0.7" fill="#5a5a5a"/>
+  <line x1="69.4" y1="50" x2="70.6" y2="50" stroke="#101010" stroke-width="0.3"/>
+  <circle cx="92" cy="50" r="1.1" fill="#0a0a0a"/>
+  <circle cx="92" cy="50" r="0.7" fill="#5a5a5a"/>
+  <line x1="91.4" y1="50" x2="92.6" y2="50" stroke="#101010" stroke-width="0.3"/>
+  <circle cx="70" cy="68" r="1.1" fill="#0a0a0a"/>
+  <circle cx="70" cy="68" r="0.7" fill="#5a5a5a"/>
+  <line x1="69.4" y1="68" x2="70.6" y2="68" stroke="#101010" stroke-width="0.3"/>
+  <circle cx="92" cy="68" r="1.1" fill="#0a0a0a"/>
+  <circle cx="92" cy="68" r="0.7" fill="#5a5a5a"/>
+  <line x1="91.4" y1="68" x2="92.6" y2="68" stroke="#101010" stroke-width="0.3"/>
+  <!-- 3 terminal studs (S, R, C for single-phase compressors) -->
+  <circle cx="75"  cy="59" r="2.4" fill="#050505"/>
+  <circle cx="75"  cy="59" r="1.8" fill="#2a2a2a"/>
+  <circle cx="75"  cy="59" r="0.8" fill="#c8aa5a"/>
+  <circle cx="81"  cy="59" r="2.4" fill="#050505"/>
+  <circle cx="81"  cy="59" r="1.8" fill="#2a2a2a"/>
+  <circle cx="81"  cy="59" r="0.8" fill="#c8aa5a"/>
+  <circle cx="87"  cy="59" r="2.4" fill="#050505"/>
+  <circle cx="87"  cy="59" r="1.8" fill="#2a2a2a"/>
+  <circle cx="87"  cy="59" r="0.8" fill="#c8aa5a"/>
+  <!-- Terminal labels (tiny) -->
+  <text x="75" y="66" font-family="sans-serif" font-size="3" fill="#8a8a8a" text-anchor="middle">S</text>
+  <text x="81" y="66" font-family="sans-serif" font-size="3" fill="#8a8a8a" text-anchor="middle">R</text>
+  <text x="87" y="66" font-family="sans-serif" font-size="3" fill="#8a8a8a" text-anchor="middle">C</text>
+
+  <!-- Status LED on terminal box -->
+  <circle cx="91" cy="72" r="1.4" fill="#0a0a0a"/>
+  <circle cx="91" cy="72" r="1.0" fill="#22ff66" opacity="0.95"/>
+  <circle cx="91" cy="72" r="0.4" fill="#ffffff"/>
+
+  <!-- ===== Manufacturer nameplate on front center ===== -->
+  <rect x="38" y="82" width="34" height="18" rx="1" fill="url(#hvcplate)"/>
+  <rect x="38" y="82" width="34" height="18" rx="1" fill="none" stroke="#000" stroke-width="0.5"/>
+  <rect x="38" y="82" width="34" height="3.5" fill="#1a2028"/>
+  <!-- Brand line -->
+  <text x="55" y="85.2" font-family="sans-serif" font-size="2.8" font-weight="bold" fill="#d8dde2" text-anchor="middle">SCROLL</text>
+  <!-- Model line (mocked) -->
+  <text x="55" y="90" font-family="monospace" font-size="2.6" fill="#1a2028" text-anchor="middle">ZR34K5-TF5</text>
+  <line x1="41" y1="92" x2="69" y2="92" stroke="#1a2028" stroke-width="0.3" opacity="0.5"/>
+  <text x="42" y="95" font-family="monospace" font-size="2.2" fill="#2a323a">208-230V 1PH 60Hz</text>
+  <text x="42" y="98" font-family="monospace" font-size="2.2" fill="#2a323a">R-410A  LRA 84A</text>
+  <!-- Plate corner screws -->
+  <circle cx="40" cy="84" r="0.6" fill="#5a5a5a"/>
+  <circle cx="70" cy="84" r="0.6" fill="#5a5a5a"/>
+  <circle cx="40" cy="98" r="0.6" fill="#5a5a5a"/>
+  <circle cx="70" cy="98" r="0.6" fill="#5a5a5a"/>
+
+  <!-- Oil sight glass near bottom -->
+  <circle cx="50" cy="106" r="2.4" fill="#0a0a0a"/>
+  <circle cx="50" cy="106" r="1.8" fill="#6a4a1a"/>
+  <circle cx="50" cy="106" r="1.8" fill="#c8aa5a" opacity="0.5"/>
+  <circle cx="49.4" cy="105.4" r="0.5" fill="#ffe0a0" opacity="0.8"/>
+
+  <!-- Subtle outer outline for definition -->
+  <path d="M 30 40 Q 30 14 64 14 Q 98 14 98 40 L 98 110 Q 64 117 30 110 Z"
+        fill="none" stroke="#aab5c0" stroke-width="0.5" opacity="0.25"/>
+</svg>

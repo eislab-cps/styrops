@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="sdBody" cx="36%" cy="28%" r="84%">
+      <stop offset="0%" stop-color="#56697b"/>
+      <stop offset="42%" stop-color="#35454f"/>
+      <stop offset="100%" stop-color="#151e27"/>
+    </radialGradient>
+    <radialGradient id="sdForm" cx="38%" cy="30%" r="74%">
+      <stop offset="50%" stop-color="#04070c" stop-opacity="0"/>
+      <stop offset="80%" stop-color="#04070c" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="sdChamber" cx="38%" cy="34%" r="74%">
+      <stop offset="0%" stop-color="#27313f"/>
+      <stop offset="55%" stop-color="#151c27"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </radialGradient>
+    <radialGradient id="sdao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sdsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sdglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#dcecff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#dcecff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sdplate" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#2a3743"/>
+      <stop offset="100%" stop-color="#18212a"/>
+    </linearGradient>
+  </defs>
+  <!-- Ceiling mount plate -->
+  <ellipse cx="64" cy="24" rx="54" ry="8" fill="url(#sdplate)"/>
+  <ellipse cx="64" cy="24" rx="40" ry="5" fill="#2a3845" opacity="0.45"/>
+  <path d="M10 24 A54 8 0 0 1 64 16" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M118 24 A54 8 0 0 1 64 32" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Mount screws -->
+  <circle cx="30" cy="24" r="3.5" fill="#141b24"/><circle cx="30" cy="24" r="2.5" fill="#334455"/><circle cx="30" cy="24" r="1" fill="#a8c2dc" opacity="0.5"/>
+  <circle cx="98" cy="24" r="3.5" fill="#141b24"/><circle cx="98" cy="24" r="2.5" fill="#334455"/><circle cx="98" cy="24" r="1" fill="#a8c2dc" opacity="0.5"/>
+  <!-- Top connecting stem -->
+  <rect x="54" y="22" width="20" height="18" rx="3" fill="#26333e"/>
+  <rect x="54" y="22" width="6" height="18" rx="3" fill="#8fa8c4" opacity="0.12"/>
+  <!-- Detector body dome -->
+  <ellipse cx="64" cy="72" rx="54" ry="46" fill="url(#sdBody)"/>
+  <ellipse cx="64" cy="72" rx="54" ry="46" fill="url(#sdForm)"/>
+  <!-- Top-left dome sheen -->
+  <ellipse cx="47" cy="52" rx="34" ry="21" fill="url(#sdsheen)" transform="rotate(-22 47 52)"/>
+  <!-- Rim light / rim shade -->
+  <path d="M10 72 A54 46 0 0 1 64 26" fill="none" stroke="#a8c2dc" stroke-width="1.1" opacity="0.3"/>
+  <path d="M118 72 A54 46 0 0 1 64 118" fill="none" stroke="#060a10" stroke-width="1.3" opacity="0.5"/>
+  <path d="M20 92 A54 46 0 0 0 64 118" fill="none" stroke="#060a10" stroke-width="1" opacity="0.3"/>
+  <!-- Ventilation slots around body -->
+  <line x1="14" y1="60" x2="24" y2="60" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="14" y1="66" x2="24" y2="66" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="14" y1="72" x2="24" y2="72" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="14" y1="78" x2="24" y2="78" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="14" y1="84" x2="24" y2="84" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="104" y1="60" x2="114" y2="60" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="104" y1="66" x2="114" y2="66" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="104" y1="72" x2="114" y2="72" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="104" y1="78" x2="114" y2="78" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="104" y1="84" x2="114" y2="84" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <!-- Vent slots bottom -->
+  <line x1="38" y1="112" x2="38" y2="118" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="46" y1="114" x2="46" y2="118" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="54" y1="116" x2="54" y2="118" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="74" y1="116" x2="74" y2="118" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="82" y1="114" x2="82" y2="118" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <line x1="90" y1="112" x2="90" y2="118" stroke="#10161e" stroke-width="2" opacity="0.8"/>
+  <!-- Occlusion where the chamber beds into the dome -->
+  <ellipse cx="66" cy="75" rx="42" ry="42" fill="url(#sdao)"/>
+  <!-- Sensing chamber (dark glass well) -->
+  <circle cx="64" cy="72" r="32" fill="url(#sdChamber)"/>
+  <circle cx="64" cy="72" r="32" fill="none" stroke="#0a0f16" stroke-width="1.4" opacity="0.7"/>
+  <path d="M41.4 49.4 A32 32 0 0 1 79 43.6" fill="none" stroke="#a8c2dc" stroke-width="1.2" opacity="0.35"/>
+  <!-- Chamber vent slots (radiating) -->
+  <g stroke="#31404e" stroke-width="2">
+    <line x1="64" y1="40" x2="64" y2="46"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(30 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(60 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(90 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(120 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(150 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(180 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(210 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(240 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(270 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(300 64 72)"/>
+    <line x1="64" y1="40" x2="64" y2="46" transform="rotate(330 64 72)"/>
+  </g>
+  <!-- Reflection streak across the upper third of the chamber -->
+  <ellipse cx="57" cy="56" rx="19" ry="5" fill="#c6d7ea" opacity="0.09" transform="rotate(-18 57 56)"/>
+  <!-- Inner ring -->
+  <ellipse cx="64" cy="74" rx="24" ry="24" fill="url(#sdao)"/>
+  <circle cx="64" cy="72" r="20" fill="#161d28"/>
+  <path d="M49.9 57.9 A20 20 0 0 1 73.4 53.4" fill="none" stroke="#8fa8c4" stroke-width="0.8" opacity="0.25"/>
+  <path d="M78.1 86.1 A20 20 0 0 1 54.6 90.6" fill="none" stroke="#060a10" stroke-width="1" opacity="0.5"/>
+  <!-- LED bloom + LED -->
+  <circle cx="64" cy="72" r="16" fill="url(#sdglow)"/>
+  <circle cx="64" cy="72" r="9" fill="#101722" stroke="#3a4a58" stroke-width="1"/>
+  <circle cx="64" cy="72" r="6" fill="#e8f2ff" opacity="0.65"/>
+  <circle cx="64" cy="72" r="3.5" fill="#ffffff"/>
+  <circle cx="62" cy="69.6" r="1.4" fill="#ffffff" opacity="0.9"/>
+  <!-- Test button -->
+  <ellipse cx="64" cy="101" rx="9" ry="7.5" fill="url(#sdao)"/>
+  <circle cx="64" cy="100" r="6" fill="#19212c" stroke="#3a4a58" stroke-width="1"/>
+  <circle cx="64" cy="100" r="4" fill="#2a3845"/>
+  <path d="M60.5 97.4 A4.4 4.4 0 0 1 67.2 96.9" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.3"/>
+  <rect x="62" y="99" width="4" height="2" rx="1" fill="#7d93a9"/>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="thDial" cx="34%" cy="28%" r="86%">
+      <stop offset="0%" stop-color="#51616e"/>
+      <stop offset="45%" stop-color="#33424d"/>
+      <stop offset="100%" stop-color="#161f28"/>
+    </radialGradient>
+    <radialGradient id="thForm" cx="36%" cy="30%" r="76%">
+      <stop offset="55%" stop-color="#04070c" stop-opacity="0"/>
+      <stop offset="84%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0.5"/>
+    </radialGradient>
+    <linearGradient id="thBezel" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3b4a57"/>
+      <stop offset="100%" stop-color="#151d25"/>
+    </linearGradient>
+    <radialGradient id="thScreen" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#1c2c46"/>
+      <stop offset="60%" stop-color="#0e1626"/>
+      <stop offset="100%" stop-color="#070c16"/>
+    </radialGradient>
+    <radialGradient id="thao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="thsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="thGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#88aacc" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#88aacc" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="thclip"><circle cx="64" cy="58" r="28"/></clipPath>
+  </defs>
+  <!-- Outer bezel ring -->
+  <circle cx="64" cy="64" r="58" fill="url(#thBezel)"/>
+  <path d="M6 64 A58 58 0 0 1 64 6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22"/>
+  <path d="M122 64 A58 58 0 0 1 64 122" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Dial body (matte plastic) -->
+  <circle cx="64" cy="64" r="54" fill="url(#thDial)"/>
+  <circle cx="64" cy="64" r="54" fill="url(#thForm)"/>
+  <ellipse cx="45" cy="42" rx="34" ry="24" fill="url(#thsheen)" transform="rotate(-30 45 42)"/>
+  <!-- Shell seam -->
+  <circle cx="64" cy="64" r="50" fill="none" stroke="#0b1119" stroke-width="0.7" opacity="0.35"/>
+  <circle cx="64" cy="64" r="50.7" fill="none" stroke="#8fa8c4" stroke-width="0.5" opacity="0.12"/>
+  <!-- Temperature tick marks -->
+  <g stroke="#a8c2dc" stroke-width="2" opacity="0.62">
+    <line x1="64" y1="12" x2="64" y2="20" transform="rotate(-135 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="20" transform="rotate(-90 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="20" transform="rotate(-45 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="20"/>
+    <line x1="64" y1="12" x2="64" y2="20" transform="rotate(45 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="20" transform="rotate(90 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="20" transform="rotate(135 64 64)"/>
+  </g>
+  <g stroke="#445566" stroke-width="1" opacity="0.6">
+    <line x1="64" y1="12" x2="64" y2="17" transform="rotate(-112.5 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="17" transform="rotate(-67.5 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="17" transform="rotate(-22.5 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="17" transform="rotate(22.5 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="17" transform="rotate(67.5 64 64)"/>
+    <line x1="64" y1="12" x2="64" y2="17" transform="rotate(112.5 64 64)"/>
+  </g>
+  <!-- Glass-fronted round display, bedded into the dial -->
+  <circle cx="65" cy="59.5" r="34" fill="url(#thao)"/>
+  <circle cx="64" cy="58" r="29.5" fill="#0d141d"/>
+  <circle cx="64" cy="58" r="28" fill="url(#thScreen)"/>
+  <circle cx="64" cy="58" r="24" fill="url(#thGlow)"/>
+  <!-- Display content -->
+  <text x="46" y="74" font-size="16" font-weight="bold" fill="#9dc0e2" opacity="0.92" font-family="monospace">21°C</text>
+  <text x="51" y="82" font-size="7" fill="#7d93a9" font-family="monospace">SET 20°</text>
+  <!-- Needle -->
+  <line x1="64" y1="50" x2="64" y2="18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8" transform="rotate(20 64 58)"/>
+  <circle cx="64" cy="58" r="4" fill="#334455" stroke="#a8c2dc" stroke-width="1"/>
+  <circle cx="64" cy="58" r="1.4" fill="#c6d7ea" opacity="0.8"/>
+  <!-- Glass reflection arc across the display -->
+  <g clip-path="url(#thclip)">
+    <path d="M30 62 Q40 30 76 24 L92 32 Q54 40 40 78 Z" fill="#c6d7ea" opacity="0.075"/>
+    <path d="M32 74 Q40 46 72 32 L78 34 Q46 50 38 78 Z" fill="#dcecff" opacity="0.05"/>
+  </g>
+  <path d="M44.2 38.2 A28 28 0 0 1 80.4 32.4" fill="none" stroke="#c6d7ea" stroke-width="1.1" opacity="0.28"/>
+  <path d="M86.3 76.6 A28 28 0 0 1 52 84.6" fill="none" stroke="#060a10" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="64" cy="58" r="28" fill="none" stroke="#3d4d5c" stroke-width="1" opacity="0.7"/>
+  <!-- Control buttons at bottom -->
+  <ellipse cx="49" cy="98" rx="12" ry="7" fill="url(#thao)"/>
+  <rect x="42" y="92" width="14" height="8" rx="3" fill="#1b242e" stroke="#3a4a58" stroke-width="0.8"/>
+  <path d="M43.4 93.2 H54.6" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.25"/>
+  <line x1="46" y1="96" x2="52" y2="96" stroke="#8697aa" stroke-width="1.5"/>
+  <ellipse cx="69" cy="98" rx="12" ry="7" fill="url(#thao)"/>
+  <rect x="62" y="92" width="14" height="8" rx="3" fill="#1b242e" stroke="#3a4a58" stroke-width="0.8"/>
+  <path d="M63.4 93.2 H74.6" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.25"/>
+  <line x1="66" y1="96" x2="72" y2="96" stroke="#8697aa" stroke-width="1.5"/>
+  <line x1="69" y1="93" x2="69" y2="99" stroke="#8697aa" stroke-width="1.5"/>
+  <!-- Wiring terminals at base -->
+  <ellipse cx="64" cy="110" rx="16" ry="8" fill="url(#thao)"/>
+  <rect x="54" y="104" width="20" height="10" rx="2" fill="#151d26"/>
+  <path d="M55 104.6 H73" fill="none" stroke="#8fa8c4" stroke-width="0.6" opacity="0.2"/>
+  <circle cx="58" cy="109" r="2" fill="#2a3845"/><circle cx="64" cy="109" r="2" fill="#2a3845"/><circle cx="70" cy="109" r="2" fill="#2a3845"/>
+</svg>

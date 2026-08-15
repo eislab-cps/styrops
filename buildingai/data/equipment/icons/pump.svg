@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="pumpVolute" cx="0.32" cy="0.26" r="0.85">
+      <stop offset="0%" stop-color="#61798c"/>
+      <stop offset="38%" stop-color="#3b4c59"/>
+      <stop offset="74%" stop-color="#222e38"/>
+      <stop offset="100%" stop-color="#131a21"/>
+    </radialGradient>
+    <linearGradient id="pumpMotor" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#4b5e6d"/>
+      <stop offset="42%" stop-color="#31404c"/>
+      <stop offset="100%" stop-color="#1a222c"/>
+    </linearGradient>
+    <radialGradient id="pumpImp" cx="0.36" cy="0.3" r="0.78">
+      <stop offset="0%" stop-color="#2f3f4d"/>
+      <stop offset="58%" stop-color="#1a242e"/>
+      <stop offset="100%" stop-color="#0d1319"/>
+    </radialGradient>
+    <linearGradient id="pumpPipe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#171f27"/>
+      <stop offset="28%" stop-color="#4d6272"/>
+      <stop offset="62%" stop-color="#26313c"/>
+      <stop offset="100%" stop-color="#121920"/>
+    </linearGradient>
+    <linearGradient id="pumpFlange" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#4a5d6d"/>
+      <stop offset="100%" stop-color="#1d2732"/>
+    </linearGradient>
+    <linearGradient id="pumpSheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="pumpAo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- base plate -->
+  <rect x="12" y="98" width="104" height="10" rx="2" fill="#161d26"/>
+  <rect x="12" y="98" width="104" height="3" rx="1" fill="#33414f"/>
+  <path d="M14 98.5 L114 98.5" stroke="#93aabf" stroke-width="0.6" opacity="0.24" stroke-linecap="round"/>
+  <path d="M15 107.4 L113 107.4" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <g>
+    <circle cx="24" cy="103" r="3" fill="#0d131a"/><circle cx="24" cy="102.7" r="2" fill="#41535f"/><circle cx="23.4" cy="102.2" r="0.7" fill="#bcd0e2" opacity="0.6"/>
+    <circle cx="48" cy="103" r="3" fill="#0d131a"/><circle cx="48" cy="102.7" r="2" fill="#41535f"/><circle cx="47.4" cy="102.2" r="0.7" fill="#bcd0e2" opacity="0.55"/>
+    <circle cx="80" cy="103" r="3" fill="#0d131a"/><circle cx="80" cy="102.7" r="2" fill="#41535f"/><circle cx="79.4" cy="102.2" r="0.7" fill="#bcd0e2" opacity="0.5"/>
+    <circle cx="104" cy="103" r="3" fill="#0d131a"/><circle cx="104" cy="102.7" r="2" fill="#41535f"/><circle cx="103.4" cy="102.2" r="0.7" fill="#bcd0e2" opacity="0.45"/>
+  </g>
+  <ellipse cx="44" cy="99" rx="30" ry="4.5" fill="url(#pumpAo)"/>
+  <ellipse cx="98" cy="98" rx="24" ry="4" fill="url(#pumpAo)"/>
+
+  <!-- discharge pipe and flange -->
+  <rect x="38" y="8" width="8" height="28" rx="2" fill="url(#pumpPipe)"/>
+  <path d="M40 9.4 L40 34.6" stroke="#bcd0e2" stroke-width="0.8" opacity="0.28" stroke-linecap="round"/>
+  <rect x="34" y="34" width="16" height="12" rx="3" fill="url(#pumpFlange)"/>
+  <path d="M36 34.6 L48 34.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.34" stroke-linecap="round"/>
+  <path d="M36 45.4 L48 45.4" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <g><circle cx="37" cy="37" r="2" fill="#0d131a"/><circle cx="37" cy="43" r="2" fill="#0d131a"/>
+     <circle cx="47" cy="37" r="2" fill="#0d131a"/><circle cx="47" cy="43" r="2" fill="#0d131a"/>
+     <circle cx="36.6" cy="36.6" r="0.7" fill="#a3b8cd" opacity="0.4"/><circle cx="46.6" cy="36.6" r="0.7" fill="#a3b8cd" opacity="0.3"/></g>
+
+  <!-- cast volute -->
+  <circle cx="42" cy="72" r="34" fill="url(#pumpVolute)"/>
+  <circle cx="42" cy="72" r="34" fill="url(#pumpSheen)"/>
+  <!-- rim light on the lit quadrant, dark contour opposite -->
+  <path d="M18.4 59.4 A34 34 0 0 1 61 42.6" fill="none" stroke="#c3d8ec" stroke-width="1.6" opacity="0.35" stroke-linecap="round"/>
+  <path d="M69.6 90 A34 34 0 0 1 26 104.6" fill="none" stroke="#060a10" stroke-width="1.8" opacity="0.55" stroke-linecap="round"/>
+  <circle cx="42" cy="72" r="34" fill="none" stroke="#6b8093" stroke-width="1" opacity="0.4"/>
+  <!-- cast rib ring + machining grain -->
+  <circle cx="42" cy="72" r="27" fill="none" stroke="#0c1319" stroke-width="1.4" opacity="0.45"/>
+  <path d="M22.4 53.4 A27 27 0 0 1 57 49" fill="none" stroke="#9fb4cc" stroke-width="0.6" opacity="0.22" stroke-linecap="round"/>
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.09">
+    <path d="M14 62 A34 34 0 0 0 22 96"/><path d="M22 48 A34 34 0 0 0 12 78"/>
+  </g>
+
+  <!-- impeller eye -->
+  <circle cx="42" cy="72" r="20" fill="url(#pumpImp)"/>
+  <circle cx="42" cy="72" r="20" fill="none" stroke="#060a10" stroke-width="1.4" opacity="0.6"/>
+  <path d="M28 58.6 A20 20 0 0 1 55.4 59" fill="none" stroke="#8fa8c4" stroke-width="0.9" opacity="0.3" stroke-linecap="round"/>
+  <g fill="#3d5464">
+    <path d="M42 52 Q52 56 50 64 Q44 60 42 52Z"/>
+    <path d="M62 72 Q58 82 50 80 Q54 74 62 72Z"/>
+    <path d="M42 92 Q32 88 34 80 Q40 84 42 92Z"/>
+    <path d="M22 72 Q26 62 34 64 Q30 70 22 72Z"/>
+  </g>
+  <g fill="none" stroke="#a8c2d8" stroke-width="0.55" opacity="0.32" stroke-linecap="round">
+    <path d="M42.6 53.4 Q50.6 57 49 63"/>
+    <path d="M23.6 71.4 Q27 63 33.4 65"/>
+  </g>
+  <g fill="none" stroke="#070c12" stroke-width="0.6" opacity="0.5" stroke-linecap="round">
+    <path d="M41.4 90.6 Q33.4 87 35 81"/>
+    <path d="M60.4 72.6 Q57 81 50.6 79"/>
+  </g>
+  <circle cx="42" cy="72" r="6.2" fill="#2e3d4b"/>
+  <circle cx="42" cy="72" r="6.2" fill="none" stroke="#0a1017" stroke-width="0.6" opacity="0.6"/>
+  <circle cx="40.4" cy="70.4" r="1.6" fill="#dbe9f8" opacity="0.55"/>
+
+  <!-- suction flange -->
+  <rect x="6" y="64" width="14" height="16" rx="3" fill="url(#pumpFlange)"/>
+  <path d="M8 64.6 L18 64.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.32" stroke-linecap="round"/>
+  <path d="M8 79.4 L18 79.4" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <g><circle cx="9" cy="67" r="2" fill="#0d131a"/><circle cx="9" cy="75" r="2" fill="#0d131a"/>
+     <circle cx="17" cy="67" r="2" fill="#0d131a"/><circle cx="17" cy="75" r="2" fill="#0d131a"/>
+     <circle cx="8.6" cy="66.6" r="0.7" fill="#a3b8cd" opacity="0.4"/><circle cx="16.6" cy="66.6" r="0.7" fill="#a3b8cd" opacity="0.3"/></g>
+
+  <!-- coupling guard -->
+  <rect x="74" y="66" width="4" height="12" rx="1" fill="#37485a"/>
+  <path d="M74.6 66.6 L74.6 77.4" stroke="#9fb4cc" stroke-width="0.6" opacity="0.3"/>
+
+  <!-- motor -->
+  <rect x="76" y="56" width="44" height="32" rx="6" fill="url(#pumpMotor)"/>
+  <rect x="76" y="56" width="44" height="32" rx="6" fill="url(#pumpSheen)"/>
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.1">
+    <path d="M79 60 L117 60"/><path d="M79 82 L117 82"/><path d="M79 86 L117 86"/>
+  </g>
+  <path d="M82 56.6 L114 56.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.34" stroke-linecap="round"/>
+  <path d="M119.3 62 L119.3 82 M82 87.4 L114 87.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <g>
+    <rect x="80" y="64" width="36" height="2" rx="1" fill="#0a1017"/><rect x="80" y="66" width="36" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.2"/>
+    <rect x="80" y="70" width="36" height="2" rx="1" fill="#0a1017"/><rect x="80" y="72" width="36" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.18"/>
+    <rect x="80" y="76" width="36" height="2" rx="1" fill="#0a1017"/><rect x="80" y="78" width="36" height="0.7" rx="0.35" fill="#9fb4cc" opacity="0.16"/>
+  </g>
+  <rect x="76" y="56" width="44" height="32" rx="6" fill="none" stroke="#6b8093" stroke-width="0.9" opacity="0.45"/>
+  <!-- non-drive end plate -->
+  <rect x="116" y="56" width="8" height="32" rx="4" fill="#2b3947"/>
+  <path d="M117.4 59 L117.4 85" stroke="#9fb4cc" stroke-width="0.7" opacity="0.24" stroke-linecap="round"/>
+  <!-- run LED -->
+  <circle cx="80" cy="58" r="4.2" fill="#bfe0ff" opacity="0.13"/>
+  <circle cx="80" cy="58" r="2.4" fill="#eaf4ff" opacity="0.85"/>
+  <circle cx="79.4" cy="57.4" r="0.8" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="dpBox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#303748"/>
+      <stop offset="100%" stop-color="#171b24"/>
+    </linearGradient>
+    <linearGradient id="dpDoor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#384b5e"/>
+      <stop offset="100%" stop-color="#1b2734"/>
+    </linearGradient>
+    <radialGradient id="dpao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dpsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Panel box -->
+  <rect x="6" y="6" width="116" height="116" rx="6" fill="url(#dpBox)"/>
+  <rect x="6" y="6" width="116" height="116" rx="6" fill="none" stroke="#465a6b" stroke-width="1.5" opacity="0.6"/>
+  <!-- Door panel -->
+  <rect x="10" y="10" width="108" height="108" rx="4" fill="url(#dpDoor)"/>
+  <rect x="10" y="10" width="108" height="108" rx="4" fill="url(#dpsheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="64" cy="115" rx="52" ry="10" fill="url(#dpao)"/>
+  <rect x="10" y="10" width="108" height="108" rx="4" fill="none" stroke="#334455" stroke-width="0.8" opacity="0.5"/>
+  <!-- Door hinge left -->
+  <rect x="10" y="10" width="4" height="108" rx="2" fill="#2a3845" opacity="0.55"/>
+  <rect x="10.5" y="12" width="1.2" height="104" rx="0.6" fill="#8fa8c4" opacity="0.12"/>
+  <!-- Top header - main breaker area -->
+  <ellipse cx="64" cy="23" rx="54" ry="14" fill="url(#dpao)"/>
+  <rect x="14" y="14" width="100" height="18" rx="3" fill="#161e2a"/>
+  <rect x="14" y="14" width="100" height="18" rx="3" fill="none" stroke="#334455" stroke-width="0.7"/>
+  <rect x="15" y="14.8" width="98" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <!-- Main breaker switch (large) -->
+  <ellipse cx="64" cy="23.5" rx="23" ry="9" fill="url(#dpao)"/>
+  <rect x="44" y="16" width="40" height="14" rx="3" fill="#2a3845"/>
+  <rect x="44" y="16" width="40" height="14" rx="3" fill="none" stroke="#465a6b" stroke-width="0.8"/>
+  <rect x="44.8" y="16.6" width="38.4" height="1.6" rx="0.8" fill="#c9dcf0" opacity="0.14"/>
+  <!-- Main breaker toggle -->
+  <rect x="58" y="18" width="12" height="10" rx="2" fill="#3a5060"/>
+  <rect x="58" y="18" width="12" height="5" rx="2" fill="#526779"/>
+  <rect x="62" y="19" width="4" height="3" rx="1" fill="#c9dcf0" opacity="0.5"/>
+  <!-- MAIN label -->
+  <rect x="16" y="20" width="24" height="4" rx="1" fill="#3b4d5e" opacity="0.5"/>
+  <!-- Bus bars (vertical lines center) -->
+  <line x1="62" y1="32" x2="62" y2="112" stroke="#cc8800" stroke-width="1.5" opacity="0.5"/>
+  <line x1="66" y1="32" x2="66" y2="112" stroke="#cc8800" stroke-width="1.5" opacity="0.5"/>
+  <line x1="61.4" y1="32" x2="61.4" y2="112" stroke="#ffd9a0" stroke-width="0.4" opacity="0.28"/>
+  <line x1="65.4" y1="32" x2="65.4" y2="112" stroke="#ffd9a0" stroke-width="0.4" opacity="0.28"/>
+  <!-- Breaker rows (left column) -->
+  <ellipse cx="36" cy="63" rx="26" ry="33" fill="url(#dpao)"/>
+  <rect x="14" y="34" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="14" y="34" width="18" height="8" rx="2" fill="#2a3a45"/><rect x="16" y="36" width="14" height="4" rx="1" fill="#3b4d5e"/>
+  <rect x="34" y="36" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="14" y="44" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="14" y="44" width="18" height="8" rx="2" fill="#2a3a45"/><rect x="16" y="46" width="14" height="4" rx="1" fill="#3b4d5e"/>
+  <rect x="34" y="46" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="14" y="54" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="14" y="54" width="18" height="8" rx="2" fill="#2a3a45"/><rect x="16" y="56" width="14" height="4" rx="1" fill="#3b4d5e"/>
+  <rect x="34" y="56" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="14" y="64" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="14" y="64" width="18" height="8" rx="2" fill="#2a3a45"/><rect x="16" y="66" width="14" height="4" rx="1" fill="#3b4d5e"/>
+  <rect x="34" y="66" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="14" y="74" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="14" y="74" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="34" y="76" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="14" y="84" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="14" y="84" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="34" y="86" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="14" y="34" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="14" y="44" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="14" y="54" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="14" y="64" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="14" y="74" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="14" y="84" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <!-- Breaker rows (right column) -->
+  <ellipse cx="92" cy="63" rx="26" ry="33" fill="url(#dpao)"/>
+  <rect x="70" y="34" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="70" y="34" width="18" height="8" rx="2" fill="#2a3a45"/><rect x="72" y="36" width="14" height="4" rx="1" fill="#3b4d5e"/>
+  <rect x="90" y="36" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="70" y="44" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="70" y="44" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="90" y="46" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="70" y="54" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="70" y="54" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="90" y="56" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="70" y="64" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="70" y="64" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="90" y="66" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="70" y="74" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="70" y="74" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="90" y="76" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="70" y="84" width="44" height="8" rx="2" fill="#161e2a"/>
+  <rect x="70" y="84" width="18" height="8" rx="2" fill="#2a3a45"/>
+  <rect x="90" y="86" width="8" height="4" rx="1" fill="#3a5060"/>
+  <rect x="70" y="34" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="70" y="44" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="70" y="54" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="70" y="64" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="70" y="74" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <rect x="70" y="84" width="18" height="1.3" rx="0.65" fill="#c9dcf0" opacity="0.13"/>
+  <!-- Ground bar area at bottom -->
+  <ellipse cx="64" cy="104" rx="54" ry="13" fill="url(#dpao)"/>
+  <rect x="14" y="96" width="100" height="16" rx="3" fill="#161e2a"/>
+  <rect x="14" y="96" width="100" height="16" rx="3" fill="none" stroke="#334455" stroke-width="0.6"/>
+  <rect x="15" y="96.8" width="98" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <!-- Terminal screws on ground bar -->
+  <circle cx="24" cy="104" r="2.5" fill="#2a3845"/><circle cx="24" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="34" cy="104" r="2.5" fill="#2a3845"/><circle cx="34" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="44" cy="104" r="2.5" fill="#2a3845"/><circle cx="44" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="54" cy="104" r="2.5" fill="#2a3845"/><circle cx="54" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="64" cy="104" r="2.5" fill="#2a3845"/><circle cx="64" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="74" cy="104" r="2.5" fill="#2a3845"/><circle cx="74" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="84" cy="104" r="2.5" fill="#2a3845"/><circle cx="84" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="94" cy="104" r="2.5" fill="#2a3845"/><circle cx="94" cy="104" r="1.5" fill="#7d92a8"/>
+  <circle cx="104" cy="104" r="2.5" fill="#2a3845"/><circle cx="104" cy="104" r="1.5" fill="#7d92a8"/>
+  <!-- Door handle -->
+  <ellipse cx="110" cy="64.5" rx="7" ry="11" fill="url(#dpao)"/>
+  <rect x="107" y="58" width="6" height="12" rx="3" fill="#2a3845" stroke="#465a6b" stroke-width="0.8"/>
+  <rect x="107.6" y="59" width="1.6" height="10" rx="0.8" fill="#c9dcf0" opacity="0.16"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M6.5 100 L6.5 12.5 A6 6 0 0 1 12.5 6.5 L100 6.5" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M121.5 30 L121.5 115.5 A6 6 0 0 1 115.5 121.5 L30 121.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+</svg>

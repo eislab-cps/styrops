@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="lsBoard" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1f3226"/>
+      <stop offset="55%" stop-color="#17261d"/>
+      <stop offset="100%" stop-color="#0d1712"/>
+    </linearGradient>
+    <!-- glass well: dark centre, lifting toward the lit rim -->
+    <radialGradient id="lsDome" cx="0.38" cy="0.32" r="0.78">
+      <stop offset="0%" stop-color="#9cbcac" stop-opacity="0.55"/>
+      <stop offset="32%" stop-color="#4c6857" stop-opacity="0.72"/>
+      <stop offset="72%" stop-color="#1b2833" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0d1620" stop-opacity="0.94"/>
+    </radialGradient>
+    <linearGradient id="lsRim" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#c3d8ea" stop-opacity="0.62"/>
+      <stop offset="45%" stop-color="#8fa8c4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#8fa8c4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lsGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lsao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Incoming light rays (behind the dome) -->
+  <g stroke="#ffffff" stroke-linecap="round">
+    <path d="M64 26 L64 38" stroke-width="1.6" opacity="0.36"/>
+    <path d="M48 24 L54 36" stroke-width="1.1" opacity="0.24"/>
+    <path d="M80 24 L74 36" stroke-width="1.1" opacity="0.24"/>
+    <path d="M36 33 L46 40" stroke-width="0.9" opacity="0.15"/>
+    <path d="M92 33 L82 40" stroke-width="0.9" opacity="0.15"/>
+  </g>
+
+  <!-- PCB board -->
+  <rect x="20" y="60" width="88" height="56" rx="5" fill="url(#lsBoard)"/>
+  <rect x="20" y="60" width="88" height="56" rx="5" fill="url(#lssheen)"/>
+  <ellipse cx="64" cy="114" rx="43" ry="7" fill="url(#lsao)"/>
+  <path d="M20.6 104 L20.6 64.6 Q20.6 60.6 24.6 60.6 L104 60.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M107.4 72 L107.4 111.4 Q107.4 115.4 103.4 115.4 L28 115.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- PCB traces -->
+  <g stroke="#396b45" opacity="0.85">
+    <path d="M64 62 L64 90" stroke-width="1.5"/>
+    <path d="M34 88 L94 88" stroke-width="0.8"/>
+    <path d="M34 92 L60 92" stroke-width="0.8"/>
+    <path d="M80 84 L94 84" stroke-width="0.8"/>
+    <path d="M34 96 L42 96" stroke-width="0.6" opacity="0.6"/>
+  </g>
+  <g stroke="#0b1410" stroke-width="0.6" opacity="0.5">
+    <path d="M34 88.9 L94 88.9"/><path d="M34 92.9 L60 92.9"/>
+  </g>
+
+  <!-- PCB corner holes -->
+  <circle cx="28" cy="68" r="3" fill="#080f0b"/><circle cx="28" cy="68" r="1.9" fill="#1e3226"/><circle cx="27.3" cy="67.3" r="0.7" fill="#9fb8a8" opacity="0.35"/>
+  <circle cx="100" cy="68" r="3" fill="#080f0b"/><circle cx="100" cy="68" r="1.9" fill="#1e3226"/>
+  <circle cx="28" cy="108" r="3" fill="#080f0b"/><circle cx="28" cy="108" r="1.9" fill="#1e3226"/>
+  <circle cx="100" cy="108" r="3" fill="#080f0b"/><circle cx="100" cy="108" r="1.9" fill="#1e3226"/>
+
+  <!-- Supporting components -->
+  <ellipse cx="84" cy="81" rx="12" ry="3.5" fill="url(#lsao)"/>
+  <rect x="76" y="70" width="16" height="10" rx="1.2" fill="#1b2c22"/>
+  <path d="M76.8 70.7 L91.2 70.7" stroke="#5c7f68" stroke-width="0.7" opacity="0.4"/>
+  <path d="M76.8 79.3 L91.2 79.3" stroke="#060a08" stroke-width="0.7" opacity="0.6"/>
+  <ellipse cx="40" cy="81" rx="10" ry="3.5" fill="url(#lsao)"/>
+  <rect x="34" y="70" width="12" height="10" rx="1.2" fill="#1b2c22"/>
+  <path d="M34.8 70.7 L45.2 70.7" stroke="#5c7f68" stroke-width="0.7" opacity="0.4"/>
+  <path d="M34.8 79.3 L45.2 79.3" stroke="#060a08" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- Capacitors -->
+  <ellipse cx="60" cy="107" rx="16" ry="3.5" fill="url(#lsao)"/>
+  <g>
+    <rect x="48" y="96" width="6" height="10" rx="1" fill="#22432c"/>
+    <rect x="48.6" y="96.6" width="1.6" height="8.8" rx="0.8" fill="#8fc0a0" opacity="0.24"/>
+    <rect x="57" y="96" width="6" height="10" rx="1" fill="#22432c"/>
+    <rect x="57.6" y="96.6" width="1.6" height="8.8" rx="0.8" fill="#8fc0a0" opacity="0.24"/>
+    <rect x="66" y="96" width="6" height="10" rx="1" fill="#22432c"/>
+    <rect x="66.6" y="96.6" width="1.6" height="8.8" rx="0.8" fill="#8fc0a0" opacity="0.24"/>
+  </g>
+
+  <!-- Dome base collar sitting on the board -->
+  <ellipse cx="64" cy="64" rx="26" ry="6" fill="url(#lsao)"/>
+  <ellipse cx="64" cy="60" rx="22" ry="12" fill="#16261c"/>
+  <path d="M42 60 A22 12 0 0 1 64 48" fill="none" stroke="#8fa8c4" stroke-width="0.8" opacity="0.22"/>
+  <path d="M42.6 62.5 A22 12 0 0 0 85.4 62.5" fill="none" stroke="#04070c" stroke-width="1" opacity="0.55"/>
+
+  <!-- Glass dome over the photodiode -->
+  <circle cx="64" cy="52" r="20" fill="url(#lsDome)"/>
+  <!-- fresnel rings, refracted -->
+  <g fill="none" stroke="#9ec3ad" stroke-width="0.55" opacity="0.45">
+    <circle cx="64" cy="52" r="14.5"/>
+    <circle cx="64" cy="52" r="9.5"/>
+    <circle cx="64" cy="52" r="5"/>
+  </g>
+  <!-- inner photodiode, deep in the well -->
+  <circle cx="64" cy="53" r="9" fill="#122031" opacity="0.55"/>
+  <circle cx="64" cy="53.5" r="5.4" fill="#0d1727" opacity="0.72"/>
+  <circle cx="62.4" cy="51.6" r="1.8" fill="#9fc4e0" opacity="0.38"/>
+  <!-- bright crescent on the top-left rim -->
+  <circle cx="64" cy="52" r="19.5" fill="none" stroke="url(#lsRim)" stroke-width="1.6"/>
+  <path d="M50.5 38.2 A20 20 0 0 0 44.8 47.5" fill="none" stroke="#e2eefb" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  <!-- reflection streak across the upper third -->
+  <ellipse cx="61" cy="43.5" rx="12.5" ry="3.6" fill="#dceafa" opacity="0.13" transform="rotate(-22 61 43.5)"/>
+  <ellipse cx="58.5" cy="45.5" rx="7" ry="2" fill="#ffffff" opacity="0.1" transform="rotate(-22 58.5 45.5)"/>
+  <!-- hard catch-light -->
+  <circle cx="55.6" cy="43.4" r="4.4" fill="url(#lsGlow)"/>
+  <circle cx="55.4" cy="43.2" r="1.7" fill="#ffffff" opacity="0.95"/>
+  <!-- dark rim on the lower right -->
+  <path d="M79.5 60.5 A20 20 0 0 1 62 71.9" fill="none" stroke="#04070c" stroke-width="1.3" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Signal output pins -->
+  <ellipse cx="64" cy="121" rx="18" ry="4" fill="url(#lsao)"/>
+  <rect x="50" y="114" width="28" height="8" rx="2" fill="#141b26"/>
+  <path d="M51 114.7 L77 114.7" stroke="#04070c" stroke-width="0.9" opacity="0.6"/>
+  <path d="M51 121.3 L77 121.3" stroke="#8fa8c4" stroke-width="0.6" opacity="0.16"/>
+  <circle cx="57" cy="118" r="2" fill="#4b6b58"/><circle cx="56.5" cy="117.4" r="0.7" fill="#cfe0d6" opacity="0.5"/>
+  <circle cx="64" cy="118" r="2" fill="#4b6b58"/><circle cx="63.5" cy="117.4" r="0.7" fill="#cfe0d6" opacity="0.5"/>
+  <circle cx="71" cy="118" r="2" fill="#4b6b58"/><circle cx="70.5" cy="117.4" r="0.7" fill="#cfe0d6" opacity="0.5"/>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="acBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f505c"/>
+      <stop offset="100%" stop-color="#1c2831"/>
+    </linearGradient>
+    <radialGradient id="acao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="acsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer casing -->
+  <rect x="6" y="22" width="116" height="84" rx="8" fill="url(#acBody)"/>
+  <rect x="6" y="22" width="116" height="84" rx="8" fill="url(#acsheen)"/>
+  <!-- Inside-bottom ambient occlusion -->
+  <ellipse cx="64" cy="103" rx="56" ry="11" fill="url(#acao)"/>
+  <rect x="6" y="22" width="116" height="84" rx="8" fill="none" stroke="#5d707f" stroke-width="1" opacity="0.45"/>
+  <!-- Top stripe -->
+  <rect x="6" y="22" width="116" height="8" rx="5" fill="#465768" opacity="0.6"/>
+  <!-- Shell seam -->
+  <line x1="10" y1="30.4" x2="118" y2="30.4" stroke="#0a1016" stroke-width="0.6" opacity="0.45"/>
+  <line x1="10" y1="31.1" x2="118" y2="31.1" stroke="#8fa8c4" stroke-width="0.5" opacity="0.12"/>
+  <!-- Fan grille section (left 2/3) -->
+  <ellipse cx="49" cy="66.5" rx="41" ry="36" fill="url(#acao)"/>
+  <rect x="10" y="32" width="76" height="66" rx="5" fill="#1a2530"/>
+  <rect x="10" y="32" width="76" height="66" rx="5" fill="none" stroke="#334455" stroke-width="0.8"/>
+  <!-- Grille horizontal bars -->
+  <rect x="12" y="36" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="41" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="46" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="51" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="56" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="61" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="66" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="71" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="76" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="81" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="86" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <rect x="12" y="91" width="72" height="2" rx="1" fill="#2a3845" opacity="0.8"/>
+  <!-- Grille recess shading -->
+  <rect x="10" y="32" width="76" height="66" rx="5" fill="url(#acsheen)" opacity="0.45"/>
+  <!-- Fan blades (circular overlay) -->
+  <circle cx="48" cy="65" r="26" fill="none" stroke="#3b4d5e" stroke-width="1.5"/>
+  <circle cx="48" cy="65" r="26" fill="none" stroke="#0a1016" stroke-width="0.8" opacity="0.5" stroke-dasharray="41 82" stroke-dashoffset="-20"/>
+  <path d="M48 39 Q56 48 48 57 Q40 48 48 39Z" fill="#2a4050" opacity="0.7"/>
+  <path d="M74 65 Q65 73 56 65 Q65 57 74 65Z" fill="#2a4050" opacity="0.7"/>
+  <path d="M48 91 Q40 82 48 73 Q56 82 48 91Z" fill="#2a4050" opacity="0.7"/>
+  <path d="M22 65 Q31 57 40 65 Q31 73 22 65Z" fill="#2a4050" opacity="0.7"/>
+  <path d="M48 39 Q54.5 46.4 49.4 54" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.18"/>
+  <path d="M22 65 Q29.6 58.8 37.4 63.4" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.14"/>
+  <ellipse cx="48.6" cy="66" rx="9" ry="9" fill="url(#acao)"/>
+  <circle cx="48" cy="65" r="6" fill="#2a3845"/>
+  <circle cx="48" cy="65" r="3" fill="#3b4d5e"/>
+  <path d="M44.2 61.2 A6 6 0 0 1 51 59.3" fill="none" stroke="#8fa8c4" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="48" cy="65" r="1.5" fill="#c9dcf0" opacity="0.65"/>
+  <!-- Heat exchanger fins (right section) -->
+  <ellipse cx="104.5" cy="66" rx="18" ry="37" fill="url(#acao)"/>
+  <rect x="90" y="32" width="28" height="66" rx="3" fill="#1e2a34"/>
+  <rect x="90" y="32" width="28" height="66" rx="3" fill="none" stroke="#334455" stroke-width="0.6"/>
+  <!-- Fin lines -->
+  <line x1="94" y1="36" x2="94" y2="95" stroke="#2a3845" stroke-width="1.5"/>
+  <line x1="98" y1="36" x2="98" y2="95" stroke="#2a3845" stroke-width="1.5"/>
+  <line x1="102" y1="36" x2="102" y2="95" stroke="#2a3845" stroke-width="1.5"/>
+  <line x1="106" y1="36" x2="106" y2="95" stroke="#2a3845" stroke-width="1.5"/>
+  <line x1="110" y1="36" x2="110" y2="95" stroke="#2a3845" stroke-width="1.5"/>
+  <line x1="114" y1="36" x2="114" y2="95" stroke="#2a3845" stroke-width="1.5"/>
+  <rect x="90" y="32" width="28" height="66" rx="3" fill="url(#acsheen)" opacity="0.5"/>
+  <!-- Copper pipes -->
+  <circle cx="93" cy="50" r="3" fill="#7a5020" stroke="#aa7030" stroke-width="0.8"/>
+  <circle cx="93" cy="50" r="1.5" fill="#cc9040" opacity="0.6"/>
+  <path d="M90.9 47.9 A3 3 0 0 1 94.6 47.4" fill="none" stroke="#ffd9a0" stroke-width="0.7" opacity="0.45"/>
+  <circle cx="93" cy="80" r="3" fill="#7a5020" stroke="#aa7030" stroke-width="0.8"/>
+  <circle cx="93" cy="80" r="1.5" fill="#cc9040" opacity="0.6"/>
+  <path d="M90.9 77.9 A3 3 0 0 1 94.6 77.4" fill="none" stroke="#ffd9a0" stroke-width="0.7" opacity="0.4"/>
+  <!-- Control panel bottom strip -->
+  <ellipse cx="102.5" cy="97" rx="18" ry="8" fill="url(#acao)"/>
+  <rect x="88" y="92" width="28" height="8" rx="3" fill="#18202c"/>
+  <rect x="88" y="92" width="28" height="8" rx="3" fill="none" stroke="#0a1016" stroke-width="0.5" opacity="0.6"/>
+  <!-- Status LED -->
+  <circle cx="96" cy="96" r="5" fill="#cfe6ff" opacity="0.12"/>
+  <circle cx="96" cy="96" r="3.2" fill="#101821"/>
+  <circle cx="96" cy="96" r="2.4" fill="#e8f3ff" opacity="0.85"/>
+  <circle cx="95.3" cy="95.3" r="0.8" fill="#ffffff"/>
+  <!-- Edge lighting: top + left -->
+  <path d="M6.6 88 L6.6 30.6 A8 8 0 0 1 14.6 22.6 L98 22.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <!-- Edge lighting: bottom + right -->
+  <path d="M121.4 44 L121.4 97.4 A8 8 0 0 1 113.4 105.4 L30 105.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- Airflow arrows -->
+  <path d="M6 55 L14 55 M10 52 L14 55 L10 58" stroke="#88aacc" stroke-width="1.2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M6 65 L14 65 M10 62 L14 65 L10 68" stroke="#88aacc" stroke-width="1.2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M6 75 L14 75 M10 72 L14 75 L10 78" stroke="#88aacc" stroke-width="1.2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

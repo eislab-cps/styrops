@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="nsPreamp" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#42545f"/>
+      <stop offset="55%" stop-color="#2a3742"/>
+      <stop offset="100%" stop-color="#19222b"/>
+    </linearGradient>
+    <!-- capsule barrel: metal cylinder lit from the top-left -->
+    <linearGradient id="nsCyl" x1="0" y1="0" x2="1" y2="0.15">
+      <stop offset="0%" stop-color="#28333e"/>
+      <stop offset="16%" stop-color="#6d8395"/>
+      <stop offset="42%" stop-color="#3d4d5b"/>
+      <stop offset="78%" stop-color="#222c37"/>
+      <stop offset="100%" stop-color="#161e26"/>
+    </linearGradient>
+    <linearGradient id="nsDomeMetal" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#7b91a3"/>
+      <stop offset="55%" stop-color="#3b4b58"/>
+      <stop offset="100%" stop-color="#1d2731"/>
+    </linearGradient>
+    <linearGradient id="nsBloom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6fd07a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6fd07a" stop-opacity="0.04"/>
+    </linearGradient>
+    <radialGradient id="nsao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nssheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sound wave rings -->
+  <g fill="none" stroke="#a8c2dc" stroke-linecap="round">
+    <path d="M52 18 A12 8 0 0 1 76 18" stroke-width="1.1" opacity="0.32"/>
+    <path d="M46 12 A18 12 0 0 1 82 12" stroke-width="1" opacity="0.22"/>
+    <path d="M40 6 A24 16 0 0 1 88 6" stroke-width="0.8" opacity="0.15"/>
+  </g>
+
+  <!-- Mic capsule barrel -->
+  <rect x="48" y="26" width="32" height="44" rx="10" fill="url(#nsCyl)"/>
+  <!-- grille recess -->
+  <rect x="50.5" y="29" width="27" height="36" rx="8" fill="#0d141c" opacity="0.55"/>
+  <g stroke="#04070c" stroke-width="1.2" opacity="0.75">
+    <path d="M51.5 33 L76.5 33"/><path d="M51.5 38 L76.5 38"/><path d="M51.5 43 L76.5 43"/>
+    <path d="M51.5 48 L76.5 48"/><path d="M51.5 53 L76.5 53"/><path d="M51.5 58 L76.5 58"/>
+  </g>
+  <g stroke="#8fa8c4" stroke-width="0.5" opacity="0.16">
+    <path d="M51.5 34.1 L76.5 34.1"/><path d="M51.5 39.1 L76.5 39.1"/><path d="M51.5 44.1 L76.5 44.1"/>
+    <path d="M51.5 49.1 L76.5 49.1"/><path d="M51.5 54.1 L76.5 54.1"/><path d="M51.5 59.1 L76.5 59.1"/>
+  </g>
+  <g stroke="#04070c" stroke-width="0.9" opacity="0.45">
+    <path d="M56 30 L56 64"/><path d="M64 30 L64 64"/><path d="M72 30 L72 64"/>
+  </g>
+  <!-- crisp specular down the lit side of the barrel -->
+  <rect x="51.4" y="30" width="1.7" height="36" rx="0.9" fill="#dfeaf7" opacity="0.34"/>
+  <path d="M78.6 34 L78.6 62" stroke="#04070c" stroke-width="1.1" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Capsule top dome -->
+  <ellipse cx="64" cy="26" rx="16" ry="6" fill="url(#nsDomeMetal)"/>
+  <path d="M48.6 24 A16 6 0 0 1 79.4 24" fill="none" stroke="#e2eefb" stroke-width="1" opacity="0.42"/>
+  <ellipse cx="61" cy="24.6" rx="8" ry="2.4" fill="#eaf3ff" opacity="0.2"/>
+  <path d="M50 28.5 A16 6 0 0 0 78 28.5" fill="none" stroke="#04070c" stroke-width="1" opacity="0.5"/>
+
+  <!-- Preamp housing -->
+  <ellipse cx="64" cy="70" rx="24" ry="6" fill="url(#nsao)"/>
+  <rect x="30" y="68" width="68" height="52" rx="6" fill="url(#nsPreamp)"/>
+  <rect x="30" y="68" width="68" height="52" rx="6" fill="url(#nssheen)"/>
+  <ellipse cx="64" cy="118" rx="33" ry="7" fill="url(#nsao)"/>
+  <path d="M30.6 108 L30.6 73 Q30.6 68.6 35 68.6 L93 68.6" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M97.4 80 L97.4 115 Q97.4 119.4 93 119.4 L40 119.4" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <!-- shell seam -->
+  <path d="M31 103 L97 103" stroke="#060a10" stroke-width="0.7" opacity="0.36"/>
+  <path d="M31 103.9 L97 103.9" stroke="#8fa8c4" stroke-width="0.5" opacity="0.1"/>
+  <!-- capsule collar where it meets the preamp -->
+  <rect x="46" y="66" width="36" height="5" rx="2.5" fill="#26323d"/>
+  <path d="M47.5 66.6 L80.5 66.6" stroke="#a8bed6" stroke-width="0.6" opacity="0.24"/>
+  <path d="M47.5 70.6 L80.5 70.6" stroke="#04070c" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- dB bar-graph window -->
+  <ellipse cx="64" cy="99" rx="30" ry="4.5" fill="url(#nsao)"/>
+  <rect x="36" y="78" width="56" height="20" rx="3" fill="#0c1219"/>
+  <path d="M37.6 78.8 L90.4 78.8" stroke="#04070c" stroke-width="1.1" opacity="0.65"/>
+  <path d="M37.6 97.3 L90.4 97.3" stroke="#8fa8c4" stroke-width="0.7" opacity="0.16"/>
+  <rect x="37" y="79.6" width="54" height="17" rx="2" fill="url(#nsBloom)" opacity="0.55"/>
+  <g>
+    <rect x="38" y="80" width="6" height="16" rx="1" fill="#2f6b26" opacity="0.95"/>
+    <rect x="46" y="82" width="6" height="14" rx="1" fill="#2f6b26" opacity="0.95"/>
+    <rect x="54" y="84" width="6" height="12" rx="1" fill="#357a26" opacity="0.9"/>
+    <rect x="62" y="86" width="6" height="10" rx="1" fill="#4b8425" opacity="0.85"/>
+    <rect x="70" y="88" width="6" height="8" rx="1" fill="#7a6c22" opacity="0.75"/>
+    <rect x="78" y="90" width="6" height="6" rx="1" fill="#6e2a24" opacity="0.6"/>
+  </g>
+  <!-- glass reflection across the top-left of the window -->
+  <path d="M37 79.6 L62 79.6 L44 96 L37 96 Z" fill="#dceafa" opacity="0.09"/>
+
+  <!-- Output connector -->
+  <ellipse cx="64" cy="117" rx="17" ry="4" fill="url(#nsao)"/>
+  <rect x="50" y="101" width="28" height="15" rx="3" fill="#131a24"/>
+  <path d="M51.4 101.8 L76.6 101.8" stroke="#04070c" stroke-width="1" opacity="0.6"/>
+  <path d="M51.4 115.3 L76.6 115.3" stroke="#8fa8c4" stroke-width="0.6" opacity="0.16"/>
+  <circle cx="58" cy="108.5" r="3" fill="#0e151d"/><circle cx="58" cy="108.5" r="1.8" fill="#4a5f73"/><circle cx="57.4" cy="107.9" r="0.7" fill="#c3d5e6" opacity="0.5"/>
+  <circle cx="70" cy="108.5" r="3" fill="#0e151d"/><circle cx="70" cy="108.5" r="1.8" fill="#4a5f73"/><circle cx="69.4" cy="107.9" r="0.7" fill="#c3d5e6" opacity="0.5"/>
+
+  <!-- Status LED -->
+  <circle cx="38" cy="74" r="3.5" fill="#0a1017"/>
+  <circle cx="38" cy="74" r="2.4" fill="#e8f2ff" opacity="0.75"/>
+  <circle cx="37.3" cy="73.3" r="0.8" fill="#ffffff" opacity="0.9"/>
+</svg>

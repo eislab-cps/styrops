@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="elBox" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#48596a"/>
+      <stop offset="55%" stop-color="#2f3d4a"/>
+      <stop offset="100%" stop-color="#1b242d"/>
+    </linearGradient>
+    <linearGradient id="elHead" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3d4c5a"/>
+      <stop offset="100%" stop-color="#1e2831"/>
+    </linearGradient>
+    <linearGradient id="elLens" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c7182" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#8199aa" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4d6070" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="elao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="elglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="elgreen" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7de08a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7de08a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="elsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="elclip"><rect x="16" y="42" width="96" height="44" rx="6"/></clipPath>
+    <clipPath id="elclipL"><rect x="8" y="50" width="24" height="14" rx="3"/></clipPath>
+    <clipPath id="elclipR"><rect x="96" y="50" width="24" height="14" rx="3"/></clipPath>
+  </defs>
+  <!-- Wall mount bracket bottom -->
+  <rect x="36" y="84" width="56" height="6" rx="2" fill="#151c25"/>
+  <rect x="36" y="84" width="56" height="1.6" rx="0.8" fill="#8fa8c4" opacity="0.1"/>
+  <circle cx="50" cy="87" r="2" fill="#2a3845"/><circle cx="50" cy="86.4" r="2" fill="#8fa8c4" opacity="0.16"/>
+  <circle cx="78" cy="87" r="2" fill="#2a3845"/><circle cx="78" cy="86.4" r="2" fill="#8fa8c4" opacity="0.16"/>
+  <!-- Lamp beams (subtle) -->
+  <path d="M6 52 L2 46 M6 57 L2 57 M6 62 L2 68" stroke="#ffffff" stroke-width="1" opacity="0.15" stroke-linecap="round"/>
+  <path d="M122 52 L126 46 M122 57 L126 57 M122 62 L126 68" stroke="#ffffff" stroke-width="1" opacity="0.15" stroke-linecap="round"/>
+  <!-- Left lamp head -->
+  <ellipse cx="20" cy="66" rx="15" ry="3.4" fill="url(#elao)"/>
+  <rect x="6" y="48" width="28" height="18" rx="5" fill="url(#elHead)"/>
+  <path d="M6.5 53 A5 5 0 0 1 11.5 48.5 L30 48.5" fill="none" stroke="#a9c0d8" stroke-width="0.7" opacity="0.24"/>
+  <path d="M33.5 60 A5 5 0 0 1 28.5 65.5 L12 65.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Left lens (glass) -->
+  <rect x="8" y="50" width="24" height="14" rx="3" fill="#101a22"/>
+  <rect x="8" y="50" width="24" height="14" rx="3" fill="url(#elLens)"/>
+  <g clip-path="url(#elclipL)">
+    <ellipse cx="20" cy="57" rx="13" ry="8" fill="url(#elglow)"/>
+    <circle cx="13" cy="57" r="2" fill="#ffffff" opacity="0.95"/>
+    <circle cx="20" cy="57" r="2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="27" cy="57" r="2" fill="#ffffff" opacity="0.85"/>
+    <path d="M8 51.4 H26 L16 56 H8Z" fill="#ffffff" opacity="0.14"/>
+    <ellipse cx="20" cy="65.5" rx="13" ry="3" fill="url(#elao)"/>
+  </g>
+  <path d="M9 51.4 A3 3 0 0 1 11.4 50.4 L27 50.4" fill="none" stroke="#ffffff" stroke-width="0.7" opacity="0.35"/>
+  <circle cx="11.4" cy="52.2" r="0.9" fill="#ffffff" opacity="0.8"/>
+  <!-- Right lamp head -->
+  <ellipse cx="108" cy="66" rx="15" ry="3.4" fill="url(#elao)"/>
+  <rect x="94" y="48" width="28" height="18" rx="5" fill="url(#elHead)"/>
+  <path d="M94.5 53 A5 5 0 0 1 99.5 48.5 L118 48.5" fill="none" stroke="#a9c0d8" stroke-width="0.7" opacity="0.22"/>
+  <path d="M121.5 60 A5 5 0 0 1 116.5 65.5 L100 65.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Right lens (glass) -->
+  <rect x="96" y="50" width="24" height="14" rx="3" fill="#101a22"/>
+  <rect x="96" y="50" width="24" height="14" rx="3" fill="url(#elLens)"/>
+  <g clip-path="url(#elclipR)">
+    <ellipse cx="108" cy="57" rx="13" ry="8" fill="url(#elglow)"/>
+    <circle cx="101" cy="57" r="2" fill="#ffffff" opacity="0.95"/>
+    <circle cx="108" cy="57" r="2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="115" cy="57" r="2" fill="#ffffff" opacity="0.85"/>
+    <path d="M96 51.4 H114 L104 56 H96Z" fill="#ffffff" opacity="0.13"/>
+    <ellipse cx="108" cy="65.5" rx="13" ry="3" fill="url(#elao)"/>
+  </g>
+  <path d="M97 51.4 A3 3 0 0 1 99.4 50.4 L115 50.4" fill="none" stroke="#ffffff" stroke-width="0.7" opacity="0.32"/>
+  <circle cx="99.4" cy="52.2" r="0.9" fill="#ffffff" opacity="0.75"/>
+  <!-- Main housing box -->
+  <rect x="16" y="42" width="96" height="44" rx="6" fill="url(#elBox)"/>
+  <g clip-path="url(#elclip)">
+    <rect x="16" y="42" width="96" height="44" fill="url(#elsheen)"/>
+    <ellipse cx="64" cy="86" rx="50" ry="9" fill="url(#elao)"/>
+    <!-- shell seam -->
+    <path d="M16 64.4 H112" stroke="#0b1118" stroke-width="0.7" opacity="0.5"/>
+    <path d="M16 65.2 H112" stroke="#8fa8c4" stroke-width="0.5" opacity="0.11"/>
+  </g>
+  <!-- Top edge chrome -->
+  <rect x="16" y="42" width="96" height="4.5" rx="3" fill="#5c7182" opacity="0.4"/>
+  <path d="M16.5 48 A6 6 0 0 1 22.5 42.5 L104 42.5" fill="none" stroke="#a9c0d8" stroke-width="0.7" opacity="0.26"/>
+  <path d="M111.5 74 L111.5 80 A6 6 0 0 1 105.5 85.5 L34 85.5" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5"/>
+  <!-- Battery status indicator -->
+  <ellipse cx="64" cy="63" rx="24" ry="3.4" fill="url(#elao)"/>
+  <rect x="44" y="50" width="40" height="12" rx="3" fill="#131a24"/>
+  <rect x="44" y="50" width="40" height="12" rx="3" fill="none" stroke="#060a10" stroke-width="0.8" opacity="0.5"/>
+  <ellipse cx="62" cy="56" rx="20" ry="8" fill="url(#elgreen)"/>
+  <rect x="46" y="52" width="6" height="8" rx="1" fill="#2f6323" opacity="0.95"/>
+  <rect x="54" y="52" width="6" height="8" rx="1" fill="#2f6323" opacity="0.95"/>
+  <rect x="62" y="52" width="6" height="8" rx="1" fill="#2a5a20" opacity="0.9"/>
+  <rect x="70" y="52" width="6" height="8" rx="1" fill="#2a5a20" opacity="0.7"/>
+  <rect x="78" y="52" width="4" height="8" rx="1" fill="#2a3a20" opacity="0.4"/>
+  <path d="M45 51.2 H68 L58 55 H45Z" fill="#c6d7ea" opacity="0.09"/>
+  <!-- Status LED -->
+  <ellipse cx="64" cy="72" rx="8" ry="8" fill="url(#elglow)"/>
+  <circle cx="64" cy="72" r="4" fill="#131a24"/>
+  <circle cx="64" cy="72" r="2.5" fill="#ffffff" opacity="0.85"/>
+  <circle cx="63.2" cy="71.2" r="0.9" fill="#ffffff"/>
+  <!-- Cable entry point -->
+  <ellipse cx="64" cy="88.5" rx="8" ry="2.4" fill="url(#elao)"/>
+  <rect x="58" y="82" width="12" height="6" rx="2" fill="#131a24"/>
+  <rect x="60" y="84" width="8" height="3" rx="1" fill="#3b4c5c" opacity="0.8"/>
+  <rect x="60" y="84" width="8" height="1" rx="0.5" fill="#c6d7ea" opacity="0.14"/>
+  <!-- Mounting screws -->
+  <circle cx="24" cy="44" r="2.5" fill="#131a24"/><circle cx="24" cy="44" r="1.5" fill="#3b4c5c"/><circle cx="24" cy="43.5" r="1.5" fill="#8fa8c4" opacity="0.2"/>
+  <circle cx="104" cy="44" r="2.5" fill="#131a24"/><circle cx="104" cy="44" r="1.5" fill="#3b4c5c"/><circle cx="104" cy="43.5" r="1.5" fill="#8fa8c4" opacity="0.2"/>
+</svg>

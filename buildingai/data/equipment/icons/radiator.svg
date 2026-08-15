@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <!-- painted panel face: lit left edge falling away to the right and down -->
+    <linearGradient id="radFin" x1="0" y1="0" x2="1" y2="0.12">
+      <stop offset="0%" stop-color="#68808f"/>
+      <stop offset="20%" stop-color="#4d6170"/>
+      <stop offset="55%" stop-color="#35444f"/>
+      <stop offset="100%" stop-color="#1d2732"/>
+    </linearGradient>
+    <linearGradient id="radPipe" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%" stop-color="#6e8494"/>
+      <stop offset="26%" stop-color="#4a5c6b"/>
+      <stop offset="100%" stop-color="#1e2833"/>
+    </linearGradient>
+    <linearGradient id="radValve" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#41525f"/>
+      <stop offset="100%" stop-color="#1a222c"/>
+    </linearGradient>
+    <radialGradient id="radao" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#04070c" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#04070c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#04070c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="radsheen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#c6d7ea" stop-opacity="0.17"/>
+      <stop offset="45%" stop-color="#c6d7ea" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#c6d7ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wall brackets -->
+  <rect x="18" y="24" width="10" height="8" rx="2" fill="#1b232d"/>
+  <circle cx="23" cy="28" r="2" fill="#33434f"/><circle cx="22.5" cy="27.5" r="0.9" fill="#b6cbe2" opacity="0.45"/>
+  <rect x="96" y="24" width="10" height="8" rx="2" fill="#1b232d"/>
+  <circle cx="101" cy="28" r="2" fill="#33434f"/><circle cx="100.5" cy="27.5" r="0.9" fill="#b6cbe2" opacity="0.45"/>
+  <rect x="18" y="92" width="10" height="8" rx="2" fill="#1b232d"/>
+  <circle cx="23" cy="96" r="2" fill="#33434f"/><circle cx="22.5" cy="95.5" r="0.9" fill="#b6cbe2" opacity="0.45"/>
+  <rect x="96" y="92" width="10" height="8" rx="2" fill="#1b232d"/>
+  <circle cx="101" cy="96" r="2" fill="#33434f"/><circle cx="100.5" cy="95.5" r="0.9" fill="#b6cbe2" opacity="0.45"/>
+
+  <!-- Fin bank: face / gap / bounce, repeated -->
+  <g>
+    <rect x="22" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="22" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="22.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.3"/>
+    <rect x="28.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="30" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="32" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="32" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="32.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.3"/>
+    <rect x="38.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="40" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="42" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="42" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="42.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.3"/>
+    <rect x="48.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="50" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="52" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="52" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="52.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.3"/>
+    <rect x="58.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="60" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="62" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="62" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="62.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.3"/>
+    <rect x="68.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="70" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="72" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="72" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="72.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.28"/>
+    <rect x="78.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="80" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="82" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="82" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="82.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.26"/>
+    <rect x="88.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.55"/>
+    <rect x="90" y="38" width="2" height="52" fill="#04070c" opacity="0.82"/>
+
+    <rect x="92" y="38" width="8" height="52" rx="2" fill="url(#radFin)"/>
+    <rect x="92" y="38" width="8" height="52" rx="2" fill="url(#radsheen)"/>
+    <rect x="92.6" y="39" width="1.1" height="50" rx="0.5" fill="#b3c8dc" opacity="0.24"/>
+    <rect x="98.6" y="38" width="1.4" height="52" fill="#0a121a" opacity="0.5"/>
+  </g>
+
+  <!-- Brushed paint, drawn across the whole bank -->
+  <g stroke="#9fb4cc" stroke-width="0.4" opacity="0.1">
+    <path d="M22 47 L100 47"/>
+    <path d="M22 58 L100 58"/>
+    <path d="M22 69 L100 69"/>
+    <path d="M22 80 L100 80"/>
+  </g>
+  <rect x="22" y="50" width="78" height="7" fill="#c6d7ea" opacity="0.06"/>
+
+  <!-- Occlusion where the fins meet the collectors -->
+  <ellipse cx="61" cy="41" rx="42" ry="5" fill="url(#radao)"/>
+  <ellipse cx="61" cy="87" rx="42" ry="5" fill="url(#radao)"/>
+
+  <!-- Top collector pipe -->
+  <rect x="20" y="30" width="84" height="10" rx="5" fill="url(#radPipe)"/>
+  <rect x="23" y="31.2" width="78" height="1.8" rx="0.9" fill="#dce8f5" opacity="0.35"/>
+  <path d="M22 30.6 L102 30.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.22" stroke-linecap="round"/>
+  <path d="M24 39.4 L100 39.4" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Bottom collector pipe -->
+  <rect x="20" y="88" width="84" height="10" rx="5" fill="url(#radPipe)"/>
+  <rect x="23" y="89.2" width="78" height="1.6" rx="0.8" fill="#dce8f5" opacity="0.24"/>
+  <path d="M22 88.6 L102 88.6" stroke="#8fa8c4" stroke-width="0.7" opacity="0.2" stroke-linecap="round"/>
+  <path d="M24 97.4 L100 97.4" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Inlet / outlet stubs -->
+  <rect x="18" y="36.6" width="8" height="4.4" rx="1" fill="#5d7080" opacity="0.75"/>
+  <rect x="18" y="36.6" width="8" height="1.4" rx="0.7" fill="#c3d5e6" opacity="0.3"/>
+  <rect x="98" y="36.6" width="8" height="4.4" rx="1" fill="#4a5c6b" opacity="0.75"/>
+  <rect x="98" y="36.6" width="8" height="1.4" rx="0.7" fill="#c3d5e6" opacity="0.18"/>
+
+  <!-- Thermostatic valve -->
+  <ellipse cx="16" cy="41" rx="10" ry="3.5" fill="url(#radao)"/>
+  <rect x="8" y="30" width="16" height="11" rx="4" fill="url(#radValve)"/>
+  <path d="M8.7 36 L8.7 33.6 Q8.7 30.7 11.6 30.7 L21 30.7" fill="none" stroke="#8fa8c4" stroke-width="0.7" opacity="0.24" stroke-linecap="round"/>
+  <path d="M23.3 35 L23.3 37.4 Q23.3 40.3 20.4 40.3 L12 40.3" fill="none" stroke="#060a10" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="16" cy="35.5" r="4.2" fill="#101821"/>
+  <circle cx="16" cy="35.5" r="2.6" fill="#3a4b5c"/>
+  <path d="M14 34.2 A2.6 2.6 0 0 1 18 34.2" fill="none" stroke="#c3d5e6" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Heat rising -->
+  <g fill="none" stroke="#d2803a" stroke-linecap="round">
+    <path d="M30 22 Q33.5 18 30 14" stroke-width="1.1" opacity="0.42"/>
+    <path d="M50 22 Q53.5 18 50 14" stroke-width="1.1" opacity="0.4"/>
+    <path d="M70 22 Q73.5 18 70 14" stroke-width="1.1" opacity="0.36"/>
+    <path d="M90 22 Q93.5 18 90 14" stroke-width="1.1" opacity="0.32"/>
+  </g>
+</svg>
